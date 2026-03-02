@@ -14,8 +14,15 @@
       "blocks": {
         "title_3hLRq6": {
           "type": "title",
+          "disabled": true,
           "settings": {
             "heading_tag": "h3"
+          }
+        },
+        "text_Gzwrqg": {
+          "type": "text",
+          "settings": {
+            "text": "<h3>Site Brandée de A à Z - UPBrand</h3>"
           }
         },
         "badges_tXURHF": {
@@ -71,6 +78,7 @@
       },
       "block_order": [
         "title_3hLRq6",
+        "text_Gzwrqg",
         "badges_tXURHF",
         "price_MLhfBz",
         "rating_px4zW6",
