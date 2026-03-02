@@ -9,6 +9,40 @@
  */
 {
   "sections": {
+    "rich_text_yxCh4p": {
+      "type": "rich-text",
+      "blocks": {
+        "subheading_7HrAc4": {
+          "type": "subheading",
+          "disabled": true,
+          "settings": {
+            "text": "Notre Savoir Faire, Boutique Brandée"
+          }
+        },
+        "heading_LCFPBW": {
+          "type": "heading",
+          "settings": {
+            "text": "Nos Réalisations",
+            "heading_tag": "h1",
+            "text_color": "",
+            "gradient": ""
+          }
+        }
+      },
+      "block_order": [
+        "subheading_7HrAc4",
+        "heading_LCFPBW"
+      ],
+      "name": "Rich text",
+      "settings": {
+        "full_width": true,
+        "content_width": "small",
+        "text_position": "center",
+        "background": "",
+        "background_gradient": "",
+        "text_color": ""
+      }
+    },
     "featured_product_6NKNnk": {
       "type": "featured-product",
       "blocks": {
@@ -134,7 +168,7 @@
         "full_width": true,
         "content_width": "small",
         "text_position": "center",
-        "background": "#fcfcfc",
+        "background": "#ffffff",
         "background_gradient": "",
         "text_color": ""
       }
@@ -147,7 +181,7 @@
           "settings": {
             "round_avatar": true,
             "show_rating": true,
-            "rating": 4,
+            "rating": 5,
             "author": "John S.",
             "title": "Testimonial 1",
             "content": "<p>Share what your customers are saying about your products, customer service or shipping rates.</p>"
@@ -226,13 +260,72 @@
         "content": "",
         "link_url": "",
         "link_text": "",
-        "background": "#fcfcfc",
+        "background": "#ffffff",
         "background_gradient": "",
         "text_color": "",
         "heading_color": "",
         "heading_gradient": "",
         "testimonial_card_background": "",
         "testimonial_card_text_color": ""
+      }
+    },
+    "multi_column_UxP6EL": {
+      "type": "multi-column",
+      "blocks": {
+        "item_Y7qKtN": {
+          "type": "item",
+          "settings": {
+            "column_size": "3",
+            "title": "Column title",
+            "heading_tag": "h4",
+            "content": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        },
+        "item_fGDGgQ": {
+          "type": "item",
+          "settings": {
+            "column_size": "3",
+            "title": "Column title",
+            "heading_tag": "h4",
+            "content": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        },
+        "item_WmQBmD": {
+          "type": "item",
+          "settings": {
+            "column_size": "3",
+            "title": "Column title",
+            "heading_tag": "h4",
+            "content": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        }
+      },
+      "block_order": [
+        "item_Y7qKtN",
+        "item_fGDGgQ",
+        "item_WmQBmD"
+      ],
+      "name": "Multi-column",
+      "settings": {
+        "full_width": true,
+        "stack_on_mobile": false,
+        "gap": "small",
+        "text_alignment": "center",
+        "subheading": "",
+        "title": "Notre Processus",
+        "content": "",
+        "background": "#000000",
+        "background_gradient": "",
+        "text_color": "#ffffff"
       }
     },
     "faq": {
@@ -265,18 +358,17 @@
         "166442457738b23caf-1",
         "166442457738b23caf-2"
       ],
-      "disabled": true,
       "settings": {
         "full_width": false,
         "subheading": "",
-        "title": "FAQ",
-        "content": "<p>Use this text to share information about your product or shipping policies.</p>",
+        "title": "Questions Fréquentes",
+        "content": "",
         "team_avatar_width": 160,
-        "support_hours": "Our customer support is available Monday to Friday: 8am-8:30pm.",
-        "answer_time": "Average answer time: 24h",
+        "support_hours": "",
+        "answer_time": "",
         "button_text": "",
         "button_url": "",
-        "text_position": "start",
+        "text_position": "center",
         "background": "#ffffff",
         "background_gradient": "",
         "text_color": "",
@@ -290,9 +382,11 @@
     }
   },
   "order": [
+    "rich_text_yxCh4p",
     "featured_product_6NKNnk",
     "rich_text_eYq63L",
     "testimonials_TjqyDD",
+    "multi_column_UxP6EL",
     "faq"
   ]
 }
