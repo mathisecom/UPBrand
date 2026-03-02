@@ -269,6 +269,63 @@
         "testimonial_card_text_color": ""
       }
     },
+    "step_process_M7mPTb": {
+      "type": "step-process",
+      "blocks": {
+        "step_8bPkXt": {
+          "type": "step",
+          "settings": {
+            "step_label": "STEP 01",
+            "card_title": "Choisissez un template",
+            "card_description": "Parcourez notre collection de templates premium pour trouver le design parfait pour votre projet.",
+            "floating_label": "",
+            "floating_icon": ""
+          }
+        },
+        "step_gxDKee": {
+          "type": "step",
+          "settings": {
+            "step_label": "STEP 02",
+            "card_title": "Personnalisez-le",
+            "card_description": "Modifiez facilement les contenus, couleurs et typographies en quelques minutes pour refléter votre marque.",
+            "floating_label": "",
+            "floating_icon": ""
+          }
+        },
+        "step_qaCyWB": {
+          "type": "step",
+          "settings": {
+            "step_label": "STEP 03",
+            "card_title": "Publiez instantanément",
+            "card_description": "Mettez votre boutique en ligne en un clic. Aucun code, aucun développeur, aucun stress.",
+            "floating_label": "",
+            "floating_icon": ""
+          }
+        }
+      },
+      "block_order": [
+        "step_8bPkXt",
+        "step_gxDKee",
+        "step_qaCyWB"
+      ],
+      "name": "Processus en étapes",
+      "settings": {
+        "eyebrow": "RAPIDITÉ & SIMPLICITÉ",
+        "heading": "De l'idée à la boutique en 1-2 jours",
+        "subheading": "Arrêtez de perdre du temps sur le design. Notre processus en 3 étapes transforme votre vision en une boutique en ligne de qualité, plus vite que vous ne le pensez.",
+        "cta_label": "",
+        "cta_url": "",
+        "section_padding_top": 28,
+        "section_padding_bottom": 28,
+        "section_bg_color": "#fcfcfc",
+        "card_bg_color": "#ffffff",
+        "accent_color": "#2563eb",
+        "badge_bg_color": "#2563eb",
+        "badge_text_color": "#ffffff",
+        "heading_color": "#111111",
+        "body_color": "#555555"
+      }
+    },
     "multi_column_UxP6EL": {
       "type": "multi-column",
       "blocks": {
@@ -387,6 +444,7 @@
     "featured_product_6NKNnk",
     "rich_text_eYq63L",
     "testimonials_TjqyDD",
+    "step_process_M7mPTb",
     "multi_column_UxP6EL",
     "faq"
   ]
