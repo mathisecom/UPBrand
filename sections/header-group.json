@@ -41,11 +41,11 @@
     "header": {
       "type": "header",
       "settings": {
-        "enable_sticky": true,
+        "enable_sticky": false,
         "hide_on_scroll": false,
         "logo": "shopify://shop_images/Vestige._9.png",
         "logo_max_width": 175,
-        "logo_mobile_max_width": 150,
+        "logo_mobile_max_width": 140,
         "menu": "main-menu",
         "sidebar_menu": "",
         "secondary_menu": "",
