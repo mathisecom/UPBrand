@@ -275,7 +275,7 @@
         "step_8bPkXt": {
           "type": "step",
           "settings": {
-            "step_label": "STEP 01",
+            "step_label": "ÉTAPE 0",
             "card_title": "Choisissez un template",
             "card_description": "Parcourez notre collection de templates premium pour trouver le design parfait pour votre projet.",
             "floating_label": "",
@@ -285,7 +285,7 @@
         "step_gxDKee": {
           "type": "step",
           "settings": {
-            "step_label": "STEP 02",
+            "step_label": "ÉTAPE 0",
             "card_title": "Personnalisez-le",
             "card_description": "Modifiez facilement les contenus, couleurs et typographies en quelques minutes pour refléter votre marque.",
             "floating_label": "",
@@ -295,7 +295,7 @@
         "step_qaCyWB": {
           "type": "step",
           "settings": {
-            "step_label": "STEP 03",
+            "step_label": "ÉTAPE 0",
             "card_title": "Publiez instantanément",
             "card_description": "Mettez votre boutique en ligne en un clic. Aucun code, aucun développeur, aucun stress.",
             "floating_label": "",
@@ -310,9 +310,9 @@
       ],
       "name": "Processus en étapes",
       "settings": {
-        "eyebrow": "RAPIDITÉ & SIMPLICITÉ",
-        "heading": "De l'idée à la boutique en 1-2 jours",
-        "subheading": "Arrêtez de perdre du temps sur le design. Notre processus en 3 étapes transforme votre vision en une boutique en ligne de qualité, plus vite que vous ne le pensez.",
+        "eyebrow": "3 étapes simples.",
+        "heading": "Notre Processus.",
+        "subheading": "",
         "cta_label": "",
         "cta_url": "",
         "section_padding_top": 28,
