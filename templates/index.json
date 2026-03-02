@@ -108,6 +108,17 @@
             "payment_button_background": "",
             "payment_button_text_color": ""
           }
+        },
+        "collapsible_text_zRgpxD": {
+          "type": "collapsible_text",
+          "disabled": true,
+          "settings": {
+            "icon": "none",
+            "icon_width": 20,
+            "title": "Title",
+            "content": "<p>Share some content to your customers about your products.</p>",
+            "page": ""
+          }
         }
       },
       "block_order": [
@@ -119,7 +130,8 @@
         "separator_PWMPRm",
         "variant_picker_8e3kex",
         "quantity_selector_GYfDKW",
-        "buy_buttons_dKAM7q"
+        "buy_buttons_dKAM7q",
+        "collapsible_text_zRgpxD"
       ],
       "name": "Featured product",
       "settings": {
