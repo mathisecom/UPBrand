@@ -14,19 +14,6 @@
     "text-with-icons": {
       "type": "text-with-icons",
       "blocks": {
-        "free-shipping": {
-          "type": "item",
-          "settings": {
-            "icon": "picto-box",
-            "mobile_icon_width": 24,
-            "icon_width": 24,
-            "icon_background_type": "none",
-            "icon_background": "",
-            "icon_color": "",
-            "title": "6 Années D'Expériences",
-            "content": "<p>Tell your customers about your shipping offer.</p>"
-          }
-        },
         "customer-support": {
           "type": "item",
           "settings": {
@@ -36,8 +23,8 @@
             "icon_background_type": "none",
             "icon_background": "",
             "icon_color": "",
-            "title": "Customer service",
-            "content": "<p>Tell your customers how they can reach you.</p>"
+            "title": "Livraison Rapide 48H",
+            "content": ""
           }
         },
         "discount": {
@@ -49,31 +36,29 @@
             "icon_background_type": "none",
             "icon_background": "",
             "icon_color": "",
-            "title": "Refer a friend",
-            "content": "<p>Tell your customers about your promotional offers.</p>"
+            "title": "WhatsApp Dédié",
+            "content": ""
           }
         },
-        "payment": {
+        "free-shipping": {
           "type": "item",
           "settings": {
-            "icon": "picto-lock",
+            "icon": "picto-box",
             "mobile_icon_width": 24,
             "icon_width": 24,
             "icon_background_type": "none",
             "icon_background": "",
             "icon_color": "",
-            "title": "Secure payment",
-            "content": "<p>Tel your customers about your payment methods.</p>"
+            "title": "6 Années D'Expériences",
+            "content": ""
           }
         }
       },
       "block_order": [
-        "free-shipping",
         "customer-support",
         "discount",
-        "payment"
+        "free-shipping"
       ],
-      "disabled": true,
       "settings": {
         "full_width": true,
         "stack_on_mobile": false,
@@ -81,7 +66,7 @@
         "heading_tag": "h6",
         "text_alignment": "center",
         "icon_spacing": "small",
-        "background": "",
+        "background": "#fafafa",
         "background_gradient": "",
         "text_color": ""
       }
