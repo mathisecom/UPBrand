@@ -67,6 +67,19 @@
         "glow_color": "#2563eb"
       }
     },
+    "custom_liquid_PXXVtp": {
+      "type": "custom-liquid",
+      "name": "Custom Liquid",
+      "settings": {
+        "full_width": true,
+        "remove_vertical_spacing": true,
+        "remove_horizontal_spacing": true,
+        "liquid": "<section style=\"padding: 60px 20px; text-align: center; font-family: 'Plus Jakarta Sans', Arial, sans-serif;\">\n\n  <!-- Badge -->\n  <div style=\"display: inline-flex; align-items: center; gap: 7px; padding: 5px 14px; border: 1.5px solid #d1d5db; border-radius: 20px; font-size: 13px; font-weight: 500; color: #111; margin-bottom: 20px;\">\n    <svg width=\"15\" height=\"15\" viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n      <path d=\"M12 15a6 6 0 1 0 0-12 6 6 0 0 0 0 12Z\" stroke=\"#111\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>\n      <path d=\"M8.21 13.89 7 23l5-3 5 3-1.21-9.12\" stroke=\"#111\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>\n    </svg>\n    + 6 Années D'Expériences\n  </div>\n\n  <!-- Titre -->\n  <h2 style=\"font-size: clamp(20px, 6vw, 36px); font-weight: 700; letter-spacing: -0.03em; color: #0a0a0a; margin: 0; line-height: 1.1;\">\n    Notre Expertises, <span style=\"font-family: 'Playfair Display', Georgia, serif; font-style: italic; font-weight: 700; color: #2563EB;\">au prix juste.</span>\n  </h2>\n\n</section>\n\n<link href=\"https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,700&display=swap\" rel=\"stylesheet\">",
+        "background": "",
+        "background_gradient": "",
+        "text_color": ""
+      }
+    },
     "featured_product_6NKNnk": {
       "type": "featured-product",
       "blocks": {
@@ -731,6 +744,7 @@
   },
   "order": [
     "stats_chiffres_KEqh3R",
+    "custom_liquid_PXXVtp",
     "featured_product_6NKNnk",
     "rich_text_R3LMfB",
     "logo_scroll_g9UXwK",
