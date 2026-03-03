@@ -9,6 +9,64 @@
  */
 {
   "sections": {
+    "stats_chiffres_KEqh3R": {
+      "type": "stats-chiffres",
+      "blocks": {
+        "stat_GnNGbM": {
+          "type": "stat",
+          "settings": {
+            "number": "+3,000",
+            "label": "Boutiques créées depuis 2020"
+          }
+        },
+        "stat_4i3T8B": {
+          "type": "stat",
+          "settings": {
+            "number": "+23M€",
+            "label": "CA généré par nos Clients"
+          }
+        },
+        "stat_G6UzEn": {
+          "type": "stat",
+          "settings": {
+            "number": "99,8%",
+            "label": "De nos Clients Satisfaits"
+          }
+        },
+        "stat_cVrMCG": {
+          "type": "stat",
+          "settings": {
+            "number": "48H",
+            "label": "Livraison Rapide en 48H"
+          }
+        }
+      },
+      "block_order": [
+        "stat_GnNGbM",
+        "stat_4i3T8B",
+        "stat_G6UzEn",
+        "stat_cVrMCG"
+      ],
+      "name": "Chiffres clés / Stats",
+      "settings": {
+        "max_width": 1100,
+        "gap": 40,
+        "alignment": "center",
+        "padding_top": 60,
+        "padding_bottom": 60,
+        "bg_color": "#1a1a1a",
+        "number_color": "#ffffff",
+        "label_color": "#aaaaaa",
+        "number_size_min": 36,
+        "number_size_max": 60,
+        "label_size": 16,
+        "show_dividers": false,
+        "divider_color": "#1a1a1a",
+        "show_stars": false,
+        "show_glow": false,
+        "glow_color": "#2563eb"
+      }
+    },
     "logo_scroll_LQGnj8": {
       "type": "logo-scroll",
       "blocks": {
@@ -575,6 +633,7 @@
     }
   },
   "order": [
+    "stats_chiffres_KEqh3R",
     "logo_scroll_LQGnj8",
     "featured_product_6NKNnk",
     "rich_text_eYq63L",
