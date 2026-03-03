@@ -1,0 +1,266 @@
+{% comment %}
+  Section: Barre de preuve sociale
+  Ex: "Over 4,000 websites launched for 1540+ happy customers"
+{% endcomment %}
+
+<section class="spb-section" id="spb-{{ section.id }}">
+  <style>
+    #spb-{{ section.id }} {
+      background: {{ section.settings.bg_color }};
+      padding: {{ section.settings.padding_top }}px 20px {{ section.settings.padding_bottom }}px;
+    }
+
+    #spb-{{ section.id }} .spb-wrap {
+      max-width: {{ section.settings.max_width }}px;
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      justify-content: {{ section.settings.alignment }};
+      gap: 20px;
+    }
+
+    /* ── Images empilées ── */
+    #spb-{{ section.id }} .spb-images {
+      display: flex;
+      align-items: center;
+      flex-shrink: 0;
+    }
+
+    #spb-{{ section.id }} .spb-img-wrap {
+      width: {{ section.settings.image_size }}px;
+      height: {{ section.settings.image_size }}px;
+      border-radius: {{ section.settings.image_radius }}px;
+      overflow: hidden;
+      border: 2px solid {{ section.settings.bg_color }};
+      box-shadow: 0 2px 8px rgba(0,0,0,0.12);
+      flex-shrink: 0;
+    }
+
+    #spb-{{ section.id }} .spb-img-wrap + .spb-img-wrap {
+      margin-left: -{{ section.settings.image_overlap }}px;
+    }
+
+    #spb-{{ section.id }} .spb-img-wrap img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }
+
+    /* Placeholder gris si pas d'image */
+    #spb-{{ section.id }} .spb-img-placeholder {
+      width: 100%;
+      height: 100%;
+      background: #ddd;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 10px;
+      color: #999;
+    }
+
+    /* ── Texte ── */
+    #spb-{{ section.id }} .spb-text {
+      font-size: {{ section.settings.font_size }}px;
+      color: {{ section.settings.text_color }};
+      line-height: 1.4;
+      margin: 0;
+    }
+
+    #spb-{{ section.id }} .spb-text strong {
+      font-weight: 700;
+      color: {{ section.settings.highlight_color }};
+    }
+
+    /* ── Responsive ── */
+    @media (max-width: 600px) {
+      #spb-{{ section.id }} .spb-wrap {
+        flex-direction: column;
+        text-align: center;
+      }
+    }
+  </style>
+
+  <div class="spb-wrap">
+
+    {%- comment %} Images empilées {%- endcomment %}
+    {%- assign images = section.blocks | where: "type", "image" -%}
+    {%- if images.size > 0 -%}
+      <div class="spb-images">
+        {%- for block in images -%}
+          <div class="spb-img-wrap" {{ block.shopify_attributes }}>
+            {%- if block.settings.image != blank -%}
+              {{
+                block.settings.image
+                | image_url: width: 120
+                | image_tag: loading: 'lazy', alt: ''
+              }}
+            {%- else -%}
+              <div class="spb-img-placeholder">img</div>
+            {%- endif -%}
+          </div>
+        {%- endfor -%}
+      </div>
+    {%- endif -%}
+
+    {%- comment %} Texte {%- endcomment %}
+    {%- if section.settings.text != blank -%}
+      <p class="spb-text">{{ section.settings.text }}</p>
+    {%- endif -%}
+
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "Barre preuve sociale",
+  "tag": "section",
+  "settings": [
+    {
+      "type": "header",
+      "content": "Texte"
+    },
+    {
+      "type": "richtext",
+      "id": "text",
+      "label": "Texte (utilisez <strong> pour le gras)",
+      "default": "<p>Plus de <strong>4 000 sites</strong> lancés pour <strong>1 540+</strong> clients satisfaits</p>"
+    },
+    {
+      "type": "header",
+      "content": "Couleurs"
+    },
+    {
+      "type": "color",
+      "id": "bg_color",
+      "label": "Fond",
+      "default": "#ffffff"
+    },
+    {
+      "type": "color",
+      "id": "text_color",
+      "label": "Couleur du texte",
+      "default": "#333333"
+    },
+    {
+      "type": "color",
+      "id": "highlight_color",
+      "label": "Couleur du texte en gras",
+      "default": "#111111"
+    },
+    {
+      "type": "header",
+      "content": "Images empilées"
+    },
+    {
+      "type": "range",
+      "id": "image_size",
+      "min": 32,
+      "max": 100,
+      "step": 4,
+      "unit": "px",
+      "label": "Taille des images",
+      "default": 56
+    },
+    {
+      "type": "range",
+      "id": "image_overlap",
+      "min": 4,
+      "max": 30,
+      "step": 2,
+      "unit": "px",
+      "label": "Chevauchement",
+      "default": 14
+    },
+    {
+      "type": "range",
+      "id": "image_radius",
+      "min": 0,
+      "max": 50,
+      "step": 2,
+      "unit": "px",
+      "label": "Arrondi des images",
+      "default": 8
+    },
+    {
+      "type": "header",
+      "content": "Mise en page"
+    },
+    {
+      "type": "select",
+      "id": "alignment",
+      "label": "Alignement",
+      "options": [
+        { "value": "flex-start", "label": "Gauche" },
+        { "value": "center",     "label": "Centre" },
+        { "value": "flex-end",   "label": "Droite" }
+      ],
+      "default": "flex-start"
+    },
+    {
+      "type": "range",
+      "id": "max_width",
+      "min": 400,
+      "max": 1400,
+      "step": 20,
+      "unit": "px",
+      "label": "Largeur maximale",
+      "default": 1100
+    },
+    {
+      "type": "range",
+      "id": "font_size",
+      "min": 12,
+      "max": 24,
+      "step": 1,
+      "unit": "px",
+      "label": "Taille du texte",
+      "default": 16
+    },
+    {
+      "type": "range",
+      "id": "padding_top",
+      "min": 0,
+      "max": 80,
+      "step": 4,
+      "unit": "px",
+      "label": "Espacement haut",
+      "default": 20
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom",
+      "min": 0,
+      "max": 80,
+      "step": 4,
+      "unit": "px",
+      "label": "Espacement bas",
+      "default": 20
+    }
+  ],
+  "blocks": [
+    {
+      "type": "image",
+      "name": "Image",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Image"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Barre preuve sociale",
+      "blocks": [
+        { "type": "image" },
+        { "type": "image" },
+        { "type": "image" }
+      ]
+    }
+  ],
+  "max_blocks": 8
+}
+{% endschema %}
