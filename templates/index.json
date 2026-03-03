@@ -253,6 +253,13 @@
             "image": "shopify://shop_images/BANNER_MOBILE_27.png",
             "url": ""
           }
+        },
+        "image_AqkkFc": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/BANNER_MOBILE_28.png",
+            "url": ""
+          }
         }
       },
       "block_order": [
@@ -261,7 +268,8 @@
         "image_DbHyiw",
         "image_nWpEwG",
         "image_6UaxCY",
-        "image_UWgKPj"
+        "image_UWgKPj",
+        "image_AqkkFc"
       ],
       "name": "SS - Scrolling logo cloud #5",
       "settings": {
@@ -274,13 +282,13 @@
         "heading_size_mobile": 18,
         "heading_height": 130,
         "scrolling_velocity": 22,
-        "scrolling_velocity_mobile": 14,
+        "scrolling_velocity_mobile": 34,
         "scrolling_direction": "left",
         "pause_hover": false,
         "scrolling_gap": 0,
         "scrolling_gap_mobile": 0,
         "card_width_desktop": 360,
-        "card_width_mobile": 330,
+        "card_width_mobile": 260,
         "heading_color": "#121212",
         "layout_bg_color": "#ffffff",
         "layout_border_color": "#121212",
