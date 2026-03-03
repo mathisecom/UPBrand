@@ -1,0 +1,316 @@
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+<section class="cmp-section">
+  <div class="cmp-inner">
+
+    <!-- ── TITRE ── -->
+    <div class="cmp-header">
+      {% if section.settings.badge_text != blank %}
+      <div class="cmp-badge">{{ section.settings.badge_text }}</div>
+      {% endif %}
+      <h2 class="cmp-title">{{ section.settings.title }}</h2>
+      {% if section.settings.subtitle != blank %}
+      <p class="cmp-subtitle">{{ section.settings.subtitle }}</p>
+      {% endif %}
+    </div>
+
+    <!-- ── CARTES ── -->
+    <div class="cmp-grid">
+
+      <!-- Carte gauche (sans) -->
+      <div class="cmp-card cmp-card--left">
+        <div class="cmp-card-header">
+          <div class="cmp-icon cmp-icon--dark">
+            {% if section.settings.left_icon != blank %}
+              <img src="{{ section.settings.left_icon | img_url: '60x60', crop: 'center' }}" alt="icon">
+            {% else %}
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M16 16s-1.5-2-4-2-4 2-4 2"/><line x1="9" y1="9" x2="9.01" y2="9"/><line x1="15" y1="9" x2="15.01" y2="9"/></svg>
+            {% endif %}
+          </div>
+          <h3 class="cmp-card-title" style="color:{{ section.settings.left_title_color }};">{{ section.settings.left_title }}</h3>
+        </div>
+        <hr class="cmp-divider">
+        <ul class="cmp-list">
+          {% for i in (1..6) %}
+            {% assign item_key = 'left_item_' | append: i %}
+            {% assign item = section.settings[item_key] %}
+            {% if item != blank %}
+            <li class="cmp-list-item cmp-list-item--bad">
+              <span class="cmp-icon-item cmp-icon-item--bad">✕</span>
+              {{ item }}
+            </li>
+            {% endif %}
+          {% endfor %}
+        </ul>
+      </div>
+
+      <!-- Carte droite (avec) -->
+      <div class="cmp-card cmp-card--right">
+        <div class="cmp-card-header">
+          <div class="cmp-icon cmp-icon--gradient">
+            {% if section.settings.right_icon != blank %}
+              <img src="{{ section.settings.right_icon | img_url: '60x60', crop: 'center' }}" alt="icon">
+            {% else %}
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            {% endif %}
+          </div>
+          <h3 class="cmp-card-title" style="color:{{ section.settings.right_title_color }};">{{ section.settings.right_title }}</h3>
+        </div>
+        <hr class="cmp-divider">
+        <ul class="cmp-list">
+          {% for i in (1..6) %}
+            {% assign item_key = 'right_item_' | append: i %}
+            {% assign item = section.settings[item_key] %}
+            {% if item != blank %}
+            <li class="cmp-list-item cmp-list-item--good">
+              <span class="cmp-icon-item cmp-icon-item--good">✓</span>
+              {{ item }}
+            </li>
+            {% endif %}
+          {% endfor %}
+        </ul>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<style>
+  .cmp-section {
+    background: {{ section.settings.bg_color }};
+    padding: {{ section.settings.padding_top }}px 24px {{ section.settings.padding_bottom }}px;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+  }
+  .cmp-inner {
+    max-width: 1100px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 48px;
+  }
+
+  /* ── HEADER ── */
+  .cmp-header {
+    text-align: center;
+    max-width: 780px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+  }
+  .cmp-badge {
+    display: inline-flex;
+    align-items: center;
+    padding: 5px 14px;
+    background: {{ section.settings.badge_bg }};
+    color: {{ section.settings.badge_color }};
+    border-radius: 999px;
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 0.02em;
+  }
+  .cmp-title {
+    font-size: clamp({{ section.settings.title_size_mobile }}px, 5vw, {{ section.settings.title_size_desktop }}px);
+    font-weight: 800;
+    line-height: 1.1;
+    letter-spacing: -0.03em;
+    color: {{ section.settings.title_color }};
+    margin: 0;
+  }
+  .cmp-subtitle {
+    font-size: {{ section.settings.subtitle_size }}px;
+    color: {{ section.settings.subtitle_color }};
+    line-height: 1.65;
+    margin: 0;
+    max-width: 680px;
+  }
+
+  /* ── GRILLE ── */
+  .cmp-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    width: 100%;
+  }
+
+  /* ── CARTES ── */
+  .cmp-card {
+    border-radius: 20px;
+    padding: 32px;
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+  }
+  .cmp-card--left {
+    background: {{ section.settings.left_card_bg }};
+    border: 1.5px solid {{ section.settings.left_card_border }};
+  }
+  .cmp-card--right {
+    background: {{ section.settings.right_card_bg }};
+    border: 2px solid transparent;
+    background-clip: padding-box;
+    position: relative;
+  }
+  .cmp-card--right::before {
+    content: '';
+    position: absolute;
+    inset: -2px;
+    border-radius: 22px;
+    background: linear-gradient(135deg, {{ section.settings.right_border_color_1 }}, {{ section.settings.right_border_color_2 }});
+    z-index: -1;
+  }
+
+  /* ── ICÔNE ── */
+  .cmp-card-header {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    margin-bottom: 20px;
+  }
+  .cmp-icon {
+    width: 52px;
+    height: 52px;
+    border-radius: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    overflow: hidden;
+  }
+  .cmp-icon img { width: 100%; height: 100%; object-fit: cover; }
+  .cmp-icon--dark { background: #1a1a1a; }
+  .cmp-icon--gradient { background: linear-gradient(135deg, {{ section.settings.right_border_color_1 }}, {{ section.settings.right_border_color_2 }}); }
+
+  .cmp-card-title {
+    font-size: 22px;
+    font-weight: 700;
+    letter-spacing: -0.02em;
+    margin: 0;
+  }
+
+  /* ── DIVIDER ── */
+  .cmp-divider {
+    border: none;
+    border-top: 1px solid {{ section.settings.divider_color }};
+    margin: 0 0 24px 0;
+  }
+
+  /* ── LISTE ── */
+  .cmp-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+  .cmp-list-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    font-size: {{ section.settings.item_size }}px;
+    line-height: 1.55;
+    letter-spacing: -0.01em;
+  }
+  .cmp-list-item--bad  { color: {{ section.settings.left_item_color }}; }
+  .cmp-list-item--good { color: {{ section.settings.right_item_color }}; }
+
+  .cmp-icon-item {
+    flex-shrink: 0;
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 10px;
+    font-weight: 700;
+    margin-top: 2px;
+  }
+  .cmp-icon-item--bad {
+    background: {{ section.settings.cross_bg }};
+    color: {{ section.settings.cross_color }};
+  }
+  .cmp-icon-item--good {
+    background: {{ section.settings.check_bg }};
+    color: {{ section.settings.check_color }};
+  }
+
+  /* ── RESPONSIVE ── */
+  @media (max-width: 768px) {
+    .cmp-grid { grid-template-columns: 1fr; }
+    .cmp-card { padding: 24px; }
+    .cmp-card--right { background: {{ section.settings.right_card_bg }}; }
+  }
+</style>
+
+{% schema %}
+{
+  "name": "Comparaison Sans / Avec",
+  "tag": "section",
+  "class": "section-comparison",
+  "settings": [
+
+    { "type": "header", "content": "🎨 Fond & Espacement" },
+    { "type": "color", "id": "bg_color", "label": "Couleur de fond", "default": "#ffffff" },
+    { "type": "range", "id": "padding_top", "label": "Padding haut (px)", "min": 0, "max": 150, "step": 5, "default": 70 },
+    { "type": "range", "id": "padding_bottom", "label": "Padding bas (px)", "min": 0, "max": 150, "step": 5, "default": 70 },
+
+    { "type": "header", "content": "🏷️ Badge (optionnel)" },
+    { "type": "text", "id": "badge_text", "label": "Texte du badge" },
+    { "type": "color", "id": "badge_bg", "label": "Fond du badge", "default": "#f3f4f6" },
+    { "type": "color", "id": "badge_color", "label": "Couleur texte badge", "default": "#374151" },
+
+    { "type": "header", "content": "✏️ Titre & Sous-titre" },
+    { "type": "textarea", "id": "title", "label": "Titre principal", "default": "Lance une boutique rentable,\nsans perdre des mois." },
+    { "type": "color", "id": "title_color", "label": "Couleur du titre", "default": "#0a0a0a" },
+    { "type": "range", "id": "title_size_desktop", "label": "Taille titre Desktop (px)", "min": 28, "max": 90, "step": 2, "default": 56 },
+    { "type": "range", "id": "title_size_mobile", "label": "Taille titre Mobile (px)", "min": 20, "max": 50, "step": 2, "default": 30 },
+    { "type": "textarea", "id": "subtitle", "label": "Sous-titre", "default": "Une structure validée, un produit rentable, et une stratégie simple à appliquer." },
+    { "type": "color", "id": "subtitle_color", "label": "Couleur sous-titre", "default": "#6b7280" },
+    { "type": "range", "id": "subtitle_size", "label": "Taille sous-titre (px)", "min": 12, "max": 20, "step": 1, "default": 15 },
+
+    { "type": "header", "content": "⬅️ Carte gauche — Sans" },
+    { "type": "color", "id": "left_card_bg", "label": "Fond carte gauche", "default": "#ffffff" },
+    { "type": "color", "id": "left_card_border", "label": "Bordure carte gauche", "default": "#e5e7eb" },
+    { "type": "image_picker", "id": "left_icon", "label": "Icône gauche (optionnel)" },
+    { "type": "text", "id": "left_title", "label": "Titre carte gauche", "default": "Apprendre seul" },
+    { "type": "color", "id": "left_title_color", "label": "Couleur titre gauche", "default": "#0a0a0a" },
+    { "type": "text", "id": "left_item_1", "label": "Point 1", "default": "Tu passes 3 semaines à créer une boutique… qui ne vend pas." },
+    { "type": "text", "id": "left_item_2", "label": "Point 2", "default": "Ton produit \"coup de cœur\" ne se vend pas" },
+    { "type": "text", "id": "left_item_3", "label": "Point 3", "default": "Fixe des prix au hasard, marge trop faible" },
+    { "type": "text", "id": "left_item_4", "label": "Point 4", "default": "Si j'ai du trafic, ça va vendre." },
+    { "type": "text", "id": "left_item_5", "label": "Point 5", "default": "Je dois être moins cher que les autres." },
+    { "type": "text", "id": "left_item_6", "label": "Point 6", "default": "Boutique construite en imitant des tutos" },
+    { "type": "color", "id": "left_item_color", "label": "Couleur texte points gauche", "default": "#374151" },
+
+    { "type": "header", "content": "➡️ Carte droite — Avec" },
+    { "type": "color", "id": "right_card_bg", "label": "Fond carte droite", "default": "#ffffff" },
+    { "type": "color", "id": "right_border_color_1", "label": "Bordure dégradé couleur 1", "default": "#f9a8d4" },
+    { "type": "color", "id": "right_border_color_2", "label": "Bordure dégradé couleur 2", "default": "#a5b4fc" },
+    { "type": "image_picker", "id": "right_icon", "label": "Icône droite (optionnel)" },
+    { "type": "text", "id": "right_title", "label": "Titre carte droite", "default": "Avec Edabos" },
+    { "type": "color", "id": "right_title_color", "label": "Couleur titre droite", "default": "#ec4899" },
+    { "type": "text", "id": "right_item_1", "label": "Point 1", "default": "Tu lances une boutique rentable plus vite grâce à une structure déjà prête." },
+    { "type": "text", "id": "right_item_2", "label": "Point 2", "default": "Produit sélectionné selon des données réelles : demande, marge, concurrence et cycle d'achat." },
+    { "type": "text", "id": "right_item_3", "label": "Point 3", "default": "Calculs de marge, cycles d'achat, tarifs optimisés" },
+    { "type": "text", "id": "right_item_4", "label": "Point 4", "default": "Tu focuses sur le taux de conversion, pas sur le trafic inutile." },
+    { "type": "text", "id": "right_item_5", "label": "Point 5", "default": "La valeur perçue > le prix." },
+    { "type": "text", "id": "right_item_6", "label": "Point 6", "default": "Maquette et structure UX prêtes pour convertir" },
+    { "type": "color", "id": "right_item_color", "label": "Couleur texte points droite", "default": "#374151" },
+
+    { "type": "header", "content": "✅ Icônes ✕ / ✓" },
+    { "type": "range", "id": "item_size", "label": "Taille texte des points (px)", "min": 11, "max": 18, "step": 1, "default": 14 },
+    { "type": "color", "id": "cross_bg", "label": "Fond icône ✕", "default": "#f3f4f6" },
+    { "type": "color", "id": "cross_color", "label": "Couleur ✕", "default": "#9ca3af" },
+    { "type": "color", "id": "check_bg", "label": "Fond icône ✓", "default": "#f0fdf4" },
+    { "type": "color", "id": "check_color", "label": "Couleur ✓", "default": "#16a34a" },
+
+    { "type": "header", "content": "〰️ Séparateur" },
+    { "type": "color", "id": "divider_color", "label": "Couleur séparateur", "default": "#e5e7eb" }
+
+  ],
+  "presets": [{ "name": "Comparaison Sans / Avec" }]
+}
+{% endschema %}
