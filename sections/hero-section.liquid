@@ -1,449 +1,278 @@
 <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 
-<section class="hdf-section">
-  <div class="hdf-noise"></div>
-  <div class="hdf-glow hdf-glow--left"></div>
-  <div class="hdf-glow hdf-glow--right"></div>
+<section class="hero-dark-section" style="padding: {{ section.settings.padding_top }}px 24px {{ section.settings.padding_bottom }}px;">
+  <div class="hero-noise"></div>
+  <div class="hero-glow hero-glow--left"></div>
+  <div class="hero-glow hero-glow--right"></div>
 
-  <div class="hdf-inner">
+  <div class="hero-inner">
 
-    <!-- ── BADGE ── -->
     {% if section.settings.badge_text != blank %}
-    <div class="hdf-badge">
-      <span class="hdf-dot" style="background:{{ section.settings.accent_color }};box-shadow:0 0 6px {{ section.settings.accent_color }};"></span>
+    <div class="hero-badge">
+      <span class="hero-badge__dot" style="background: {{ section.settings.accent_color }}; box-shadow: 0 0 6px {{ section.settings.accent_color }};"></span>
       {{ section.settings.badge_text }}
     </div>
     {% endif %}
 
-    <!-- ── TITRE ── -->
-    <h1 class="hdf-title">
+    <h1 class="hero-title">
       {{ section.settings.title_start }}
-      {% if section.settings.title_dim_1 != blank %}<span class="hdf-dim">{{ section.settings.title_dim_1 }}</span>{% endif %}
-      <span style="color:{{ section.settings.title_bold_color }};">{{ section.settings.title_bold_1 }}</span>
-      {{ section.settings.title_mid }}
-      <br>
-      <span class="hdf-dim">{{ section.settings.title_dim_2 }}</span>
-      <span style="color:{{ section.settings.title_bold_color }};">{{ section.settings.title_bold_2 }}</span>
+      {% if section.settings.title_highlight_1 != blank %}
+        <span class="hero-dim">{{ section.settings.title_highlight_1 }}</span>
+      {% endif %}
+      {{ section.settings.title_middle }}
+      {% if section.settings.title_break %}<br>{% endif %}
+      {% if section.settings.title_highlight_2 != blank %}
+        <span class="hero-dim">{{ section.settings.title_highlight_2 }}</span>
+      {% endif %}
+      {{ section.settings.title_end }}
     </h1>
 
-    <!-- ── DESCRIPTION ── -->
-    {% if section.settings.desc_bold != blank or section.settings.desc_text != blank %}
-    <p class="hdf-desc">
-      {% if section.settings.desc_bold != blank %}<strong>{{ section.settings.desc_bold }}</strong>{% endif %}
-      {{ section.settings.desc_text }}
+    {% if section.settings.description != blank %}
+    <p class="hero-desc">
+      {% if section.settings.description_bold != blank %}
+        <strong>{{ section.settings.description_bold }}</strong>
+      {% endif %}
+      {{ section.settings.description }}
     </p>
     {% endif %}
 
-    <!-- ── CTA ── -->
     {% if section.settings.cta_text != blank %}
-    <a href="{{ section.settings.cta_url }}" class="hdf-cta">
-      {% if section.settings.show_cta_dot %}<span class="hdf-dot" style="background:{{ section.settings.accent_color }};box-shadow:0 0 6px {{ section.settings.accent_color }};"></span>{% endif %}
+    <a href="{{ section.settings.cta_url }}" class="hero-cta">
+      {% if section.settings.show_cta_dot %}
+        <span class="hero-cta__dot" style="background: {{ section.settings.accent_color }}; box-shadow: 0 0 6px {{ section.settings.accent_color }};"></span>
+      {% endif %}
       {{ section.settings.cta_text }}
       <svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M9 18l6-6-6-6" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
     </a>
     {% endif %}
 
-    <!-- ── SOCIAL PROOF ── -->
-    {% if section.settings.show_social %}
-    <div class="hdf-social">
-      <div class="hdf-avatars">
-        {% if section.settings.avatar_1 != blank %}
-          <img src="{{ section.settings.avatar_1 | img_url: '68x68', crop: 'center' }}" class="hdf-avatar" alt="membre">
-        {% else %}
-          <div class="hdf-avatar hdf-avatar--fallback" style="background:linear-gradient(135deg,#f97316,#ec4899);"></div>
-        {% endif %}
-        {% if section.settings.avatar_2 != blank %}
-          <img src="{{ section.settings.avatar_2 | img_url: '68x68', crop: 'center' }}" class="hdf-avatar" alt="membre">
-        {% else %}
-          <div class="hdf-avatar hdf-avatar--fallback" style="background:linear-gradient(135deg,#3b82f6,#8b5cf6);"></div>
-        {% endif %}
-        {% if section.settings.avatar_3 != blank %}
-          <img src="{{ section.settings.avatar_3 | img_url: '68x68', crop: 'center' }}" class="hdf-avatar" alt="membre">
-        {% else %}
-          <div class="hdf-avatar hdf-avatar--fallback" style="background:linear-gradient(135deg,#10b981,#06b6d4);"></div>
-        {% endif %}
-        {% if section.settings.avatar_4 != blank %}
-          <img src="{{ section.settings.avatar_4 | img_url: '68x68', crop: 'center' }}" class="hdf-avatar" alt="membre">
-        {% else %}
-          <div class="hdf-avatar hdf-avatar--fallback" style="background:linear-gradient(135deg,#f59e0b,#ef4444);"></div>
-        {% endif %}
+    {% if section.settings.show_social_proof %}
+    <div class="hero-social">
+      <div class="hero-avatars">
+        <div class="hero-avatar" style="background: linear-gradient(135deg,#f97316,#ec4899);"></div>
+        <div class="hero-avatar" style="background: linear-gradient(135deg,#3b82f6,#8b5cf6);"></div>
+        <div class="hero-avatar" style="background: linear-gradient(135deg,#10b981,#06b6d4);"></div>
+        <div class="hero-avatar" style="background: linear-gradient(135deg,#f59e0b,#ef4444);"></div>
       </div>
-      <div class="hdf-social-info">
-        <div class="hdf-stars">
-          {% for i in (1..5) %}<span style="color:{{ section.settings.star_color }};">★</span>{% endfor %}
+      <div class="hero-social__info">
+        <div class="hero-stars">
+          {% for i in (1..5) %}
+            <span style="color: {{ section.settings.star_color }}; font-size: 16px;">★</span>
+          {% endfor %}
         </div>
         {% if section.settings.social_count != blank %}
-          <span class="hdf-social-count">{{ section.settings.social_count }}</span>
+          <span class="hero-social__count">{{ section.settings.social_count }}</span>
         {% endif %}
       </div>
-    </div>
-    {% endif %}
-
-    <!-- ── TABS ── -->
-    {% if section.settings.show_tabs %}
-    <nav class="hdf-tabs" role="tablist">
-      {% for i in (1..6) %}
-        {% assign tab_text_key = 'tab_' | append: i | append: '_text' %}
-        {% assign tab_text = section.settings[tab_text_key] %}
-        {% if tab_text != blank %}
-        <button class="hdf-tab {% if i == 1 %}hdf-tab--active{% endif %}" role="tab" data-tab="{{ i }}">
-          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
-            {% if i == 1 %}<path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/>
-            {% elsif i == 2 %}<path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/>
-            {% elsif i == 3 %}<circle cx="12" cy="12" r="10"/><path d="M12 8v4l3 3"/>
-            {% elsif i == 4 %}<path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/>
-            {% elsif i == 5 %}<rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/>
-            {% elsif i == 6 %}<circle cx="12" cy="12" r="3"/><path d="M19.07 4.93a10 10 0 0 1 0 14.14M4.93 4.93a10 10 0 0 0 0 14.14"/>
-            {% endif %}
-          </svg>
-          {{ tab_text }}
-        </button>
-        {% endif %}
-      {% endfor %}
-    </nav>
-    {% endif %}
-
-    <!-- ── VIDEO ── -->
-    {% if section.settings.video_url != blank %}
-    <div class="hdf-video-wrap">
-      <div class="hdf-video-inner">
-        {% if section.settings.video_thumbnail != blank %}
-          <img src="{{ section.settings.video_thumbnail | img_url: 'master' }}" class="hdf-video-thumb" alt="video thumbnail">
-        {% endif %}
-        <div class="hdf-video-overlay"></div>
-        <button class="hdf-play-btn" id="hdf-play-btn" aria-label="Lire la vidéo">
-          <svg width="22" height="22" viewBox="0 0 24 24" fill="white"><path d="M5 3l14 9-14 9V3z"/></svg>
-        </button>
-        <div class="hdf-video-player" id="hdf-video-player" style="display:none;">
-          {% if section.settings.video_url contains 'youtube' or section.settings.video_url contains 'youtu.be' %}
-            {% assign yt_id = section.settings.video_url | split: 'v=' | last | split: '&' | first %}
-            {% if section.settings.video_url contains 'youtu.be' %}
-              {% assign yt_id = section.settings.video_url | split: '/' | last | split: '?' | first %}
-            {% endif %}
-            <iframe src="https://www.youtube.com/embed/{{ yt_id }}?autoplay=1&rel=0" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
-          {% elsif section.settings.video_url contains 'vimeo' %}
-            {% assign vimeo_id = section.settings.video_url | split: '/' | last %}
-            <iframe src="https://player.vimeo.com/video/{{ vimeo_id }}?autoplay=1" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
-          {% else %}
-            <video src="{{ section.settings.video_url }}" autoplay controls playsinline></video>
-          {% endif %}
-        </div>
-        <button class="hdf-fullscreen-btn" aria-label="Plein écran">
-          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2"><path d="M8 3H5a2 2 0 0 0-2 2v3m18 0V5a2 2 0 0 0-2-2h-3m0 18h3a2 2 0 0 0 2-2v-3M3 16v3a2 2 0 0 0 2 2h3"/></svg>
-        </button>
-      </div>
-    </div>
-    {% endif %}
-
-    <!-- ── STATS ── -->
-    {% if section.settings.show_stats %}
-    <div class="hdf-stats">
-      {% for i in (1..4) %}
-        {% assign stat_label_key = 'stat_' | append: i | append: '_label' %}
-        {% assign stat_value_key = 'stat_' | append: i | append: '_value' %}
-        {% assign stat_label = section.settings[stat_label_key] %}
-        {% assign stat_value = section.settings[stat_value_key] %}
-        {% if stat_value != blank %}
-        <div class="hdf-stat">
-          <span class="hdf-stat-label">{{ stat_label }}</span>
-          <span class="hdf-stat-value" style="color:{{ section.settings.stat_value_color }};">{{ stat_value }}</span>
-        </div>
-        {% endif %}
-      {% endfor %}
     </div>
     {% endif %}
 
   </div>
 </section>
 
-<script>
-  (function() {
-    var playBtn = document.getElementById('hdf-play-btn');
-    var player  = document.getElementById('hdf-video-player');
-    if (!playBtn || !player) return;
-    playBtn.addEventListener('click', function() {
-      player.style.display = 'block';
-      playBtn.style.display = 'none';
-      var thumb = playBtn.closest('.hdf-video-inner').querySelector('.hdf-video-thumb');
-      var overlay = playBtn.closest('.hdf-video-inner').querySelector('.hdf-video-overlay');
-      if (thumb) thumb.style.display = 'none';
-      if (overlay) overlay.style.display = 'none';
-    });
-    // Tabs
-    document.querySelectorAll('.hdf-tab').forEach(function(btn) {
-      btn.addEventListener('click', function() {
-        document.querySelectorAll('.hdf-tab').forEach(function(b) { b.classList.remove('hdf-tab--active'); });
-        btn.classList.add('hdf-tab--active');
-      });
-    });
-  })();
-</script>
-
 <style>
-  .hdf-section {
+  .hero-dark-section {
     position: relative;
     background: {{ section.settings.bg_color }};
+    min-height: {{ section.settings.min_height }}px;
     display: flex;
     align-items: center;
     justify-content: center;
     overflow: hidden;
-    padding: {{ section.settings.padding_top }}px 24px {{ section.settings.padding_bottom }}px;
     font-family: 'Plus Jakarta Sans', sans-serif;
   }
-  .hdf-noise {
-    position: absolute; inset: 0;
+  .hero-noise {
+    position: absolute;
+    inset: 0;
     opacity: 0.035;
-    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
-    background-size: 180px; pointer-events: none; z-index: 0;
+    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)'/%3E%3C/svg%3E");
+    background-size: 180px;
+    pointer-events: none;
+    z-index: 0;
   }
-  .hdf-glow {
-    position: absolute; width: 700px; height: 700px; border-radius: 50%;
-    filter: blur(140px); opacity: 0.15; pointer-events: none; z-index: 0;
+  .hero-glow {
+    position: absolute;
+    width: 600px;
+    height: 600px;
+    border-radius: 50%;
+    filter: blur(120px);
+    opacity: 0.18;
+    pointer-events: none;
+    z-index: 0;
   }
-  .hdf-glow--left  { background: radial-gradient(circle, #1a4a2e, transparent 70%); left: -250px; top: -100px; }
-  .hdf-glow--right { background: radial-gradient(circle, #1a3a4a, transparent 70%); right: -250px; bottom: -50px; }
-
-  .hdf-inner {
-    position: relative; z-index: 1;
+  .hero-glow--left {
+    background: radial-gradient(circle, #1a4a2e, transparent 70%);
+    left: -200px;
+    top: -100px;
+  }
+  .hero-glow--right {
+    background: radial-gradient(circle, #1a3a4a, transparent 70%);
+    right: -200px;
+    bottom: -100px;
+  }
+  .hero-inner {
+    position: relative;
+    z-index: 1;
     text-align: center;
-    max-width: 820px; width: 100%;
-    display: flex; flex-direction: column; align-items: center; gap: 20px;
-    animation: hdfUp 0.8s ease both;
+    max-width: 780px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    animation: heroFadeUp 0.8s ease both;
   }
-  @keyframes hdfUp {
-    from { opacity: 0; transform: translateY(28px); }
+  @keyframes heroFadeUp {
+    from { opacity: 0; transform: translateY(24px); }
     to   { opacity: 1; transform: translateY(0); }
   }
-
-  /* Badge */
-  .hdf-badge {
-    display: inline-flex; align-items: center; gap: 8px;
+  .hero-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
     padding: 6px 16px;
     background: rgba(255,255,255,0.07);
     border: 1px solid rgba(255,255,255,0.15);
     border-radius: 999px;
-    font-size: 12px; font-weight: 500;
+    font-size: 12.5px;
+    font-weight: 500;
     color: rgba(255,255,255,0.75);
+    letter-spacing: 0.01em;
     backdrop-filter: blur(8px);
   }
-  .hdf-dot {
-    width: 6px; height: 6px; border-radius: 50%; flex-shrink: 0;
-    animation: hdfPulse 2s infinite;
+  .hero-badge__dot {
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    animation: pulse 2s infinite;
   }
-  @keyframes hdfPulse { 0%,100%{opacity:1} 50%{opacity:0.35} }
-
-  /* Titre */
-  .hdf-title {
-    font-size: clamp(28px, 5vw, {{ section.settings.title_size }}px);
-    font-weight: 800; line-height: 1.1; letter-spacing: -0.03em;
-    color: #fff; margin: 0;
+  @keyframes pulse {
+    0%, 100% { opacity: 1; }
+    50%       { opacity: 0.4; }
   }
-  .hdf-dim { color: rgba(255,255,255,0.38); }
-
-  /* Description */
-  .hdf-desc {
-    font-size: 14px; color: rgba(255,255,255,0.5);
-    max-width: 520px; line-height: 1.75; letter-spacing: -0.01em; margin: 0;
+  .hero-title {
+    font-size: clamp(32px, 5.5vw, {{ section.settings.title_size }}px);
+    font-weight: 800;
+    line-height: 1.1;
+    letter-spacing: -0.03em;
+    color: #ffffff;
+    margin: 0;
   }
-  .hdf-desc strong { color: rgba(255,255,255,0.85); font-weight: 600; }
-
-  /* CTA */
-  .hdf-cta {
-    display: inline-flex; align-items: center; gap: 8px;
-    padding: 12px 28px; background: #fff; color: #0d0d0d;
-    border-radius: 999px; font-size: 14px; font-weight: 600;
-    text-decoration: none; letter-spacing: -0.01em;
-    transition: transform .2s, box-shadow .2s;
+  .hero-dim {
+    color: rgba(255,255,255,0.38);
+  }
+  .hero-desc {
+    font-size: 14.5px;
+    color: rgba(255,255,255,0.55);
+    max-width: 520px;
+    line-height: 1.7;
+    letter-spacing: -0.01em;
+    margin: 0;
+  }
+  .hero-desc strong {
+    color: rgba(255,255,255,0.85);
+    font-weight: 600;
+  }
+  .hero-cta {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 12px 26px;
+    background: #ffffff;
+    color: #0d0d0d;
+    border-radius: 999px;
+    font-size: 14px;
+    font-weight: 600;
+    text-decoration: none;
+    letter-spacing: -0.01em;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
     box-shadow: 0 0 0 1px rgba(0,0,0,0.08);
   }
-  .hdf-cta:hover { transform: translateY(-2px); box-shadow: 0 8px 28px rgba(255,255,255,0.1); }
-
-  /* Social proof */
-  .hdf-social { display: flex; align-items: center; gap: 12px; }
-  .hdf-avatars { display: flex; }
-  .hdf-avatar {
-    width: 36px; height: 36px; border-radius: 50%;
+  .hero-cta:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 30px rgba(255,255,255,0.12);
+  }
+  .hero-cta__dot {
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    animation: pulse 2s infinite;
+  }
+  .hero-social {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  }
+  .hero-avatars {
+    display: flex;
+  }
+  .hero-avatar {
+    width: 34px;
+    height: 34px;
+    border-radius: 50%;
     border: 2px solid {{ section.settings.bg_color }};
-    margin-left: -10px; object-fit: cover;
+    margin-left: -10px;
   }
-  .hdf-avatar--fallback { display: inline-block; }
-  .hdf-avatars .hdf-avatar:first-child { margin-left: 0; }
-  .hdf-social-info { display: flex; flex-direction: column; align-items: flex-start; gap: 1px; }
-  .hdf-stars { display: flex; gap: 1px; font-size: 16px; line-height: 1; }
-  .hdf-social-count { font-size: 12px; font-weight: 600; color: rgba(255,255,255,0.6); letter-spacing: -0.01em; }
-
-  /* Tabs */
-  .hdf-tabs {
-    display: flex; flex-wrap: wrap; justify-content: center; gap: 0;
-    border-bottom: 1px solid rgba(255,255,255,0.1);
-    width: 100%;
+  .hero-avatars .hero-avatar:first-child {
+    margin-left: 0;
   }
-  .hdf-tab {
-    display: inline-flex; align-items: center; gap: 6px;
-    padding: 10px 16px;
-    background: transparent; border: none;
-    color: rgba(255,255,255,0.45); font-size: 13px; font-weight: 500;
-    font-family: 'Plus Jakarta Sans', sans-serif;
-    cursor: pointer; letter-spacing: -0.01em;
-    border-bottom: 2px solid transparent;
-    margin-bottom: -1px;
-    transition: color .2s, border-color .2s;
+  .hero-social__info {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1px;
   }
-  .hdf-tab:hover { color: rgba(255,255,255,0.8); }
-  .hdf-tab--active { color: #fff; border-bottom-color: #fff; }
-
-  /* Video */
-  .hdf-video-wrap { width: 100%; max-width: 760px; }
-  .hdf-video-inner {
-    position: relative; border-radius: 16px; overflow: hidden;
-    aspect-ratio: 16/9; background: #111;
-    box-shadow: 0 24px 60px rgba(0,0,0,0.6);
+  .hero-stars {
+    display: flex;
+    gap: 1px;
+    line-height: 1;
   }
-  .hdf-video-thumb {
-    position: absolute; inset: 0; width: 100%; height: 100%;
-    object-fit: cover; z-index: 1;
+  .hero-social__count {
+    font-size: 12px;
+    font-weight: 600;
+    color: rgba(255,255,255,0.65);
+    letter-spacing: -0.01em;
   }
-  .hdf-video-overlay {
-    position: absolute; inset: 0; z-index: 2;
-    background: rgba(0,0,0,0.3);
-  }
-  .hdf-play-btn {
-    position: absolute; top: 50%; left: 50%;
-    transform: translate(-50%, -50%);
-    z-index: 3;
-    width: 56px; height: 56px; border-radius: 50%;
-    background: rgba(255,255,255,0.15);
-    border: 1.5px solid rgba(255,255,255,0.4);
-    backdrop-filter: blur(8px);
-    cursor: pointer; display: flex; align-items: center; justify-content: center;
-    transition: background .2s, transform .2s;
-    padding-left: 3px;
-  }
-  .hdf-play-btn:hover { background: rgba(255,255,255,0.25); transform: translate(-50%,-50%) scale(1.08); }
-  .hdf-video-player {
-    position: absolute; inset: 0; z-index: 4;
-  }
-  .hdf-video-player iframe,
-  .hdf-video-player video {
-    width: 100%; height: 100%; border: none;
-  }
-  .hdf-fullscreen-btn {
-    position: absolute; bottom: 12px; right: 12px; z-index: 5;
-    background: rgba(0,0,0,0.4); border: none; border-radius: 6px;
-    padding: 6px; cursor: pointer; display: flex;
-    backdrop-filter: blur(4px);
-    transition: background .2s;
-  }
-  .hdf-fullscreen-btn:hover { background: rgba(0,0,0,0.7); }
-
-  /* Stats */
-  .hdf-stats {
-    display: grid; grid-template-columns: repeat(4, 1fr);
-    gap: 1px; width: 100%; max-width: 760px;
-    background: rgba(255,255,255,0.06);
-    border-radius: 12px; overflow: hidden;
-  }
-  .hdf-stat {
-    display: flex; flex-direction: column; align-items: center;
-    gap: 4px; padding: 20px 16px;
-    background: {{ section.settings.bg_color }};
-  }
-  .hdf-stat-label {
-    font-size: 11.5px; color: rgba(255,255,255,0.45);
-    text-align: center; line-height: 1.4; letter-spacing: -0.01em;
-  }
-  .hdf-stat-value {
-    font-size: clamp(22px, 3vw, 28px); font-weight: 800;
-    letter-spacing: -0.03em; line-height: 1;
-  }
-
-  /* ── RESPONSIVE ── */
-  @media (max-width: 768px) {
-    .hdf-title { font-size: 28px; }
-    .hdf-tabs { gap: 0; overflow-x: auto; flex-wrap: nowrap; justify-content: flex-start; padding-bottom: 0; -webkit-overflow-scrolling: touch; }
-    .hdf-tab { white-space: nowrap; font-size: 12px; padding: 10px 12px; }
-    .hdf-stats { grid-template-columns: repeat(2, 1fr); }
-    .hdf-stat { padding: 16px 12px; }
-  }
-  @media (max-width: 480px) {
-    .hdf-title { font-size: 24px; }
-    .hdf-stats { grid-template-columns: repeat(2, 1fr); }
-    .hdf-cta { font-size: 13px; padding: 11px 22px; }
+  @media (max-width: 640px) {
+    .hero-title { font-size: 30px; }
   }
 </style>
 
 {% schema %}
 {
-  "name": "Hero Dark Complet",
+  "name": "Hero Dark",
   "tag": "section",
-  "class": "section-hero-dark-full",
+  "class": "section-hero-dark",
   "settings": [
-
-    { "type": "header", "content": "🎨 Couleurs globales" },
-    { "type": "color", "id": "bg_color", "label": "Fond", "default": "#0d0d0d" },
-    { "type": "color", "id": "accent_color", "label": "Couleur accent (point animé)", "default": "#00B67A" },
-
-    { "type": "header", "content": "📐 Espacement" },
-    { "type": "range", "id": "padding_top", "label": "Padding haut (px)", "min": 0, "max": 150, "step": 5, "default": 70 },
-    { "type": "range", "id": "padding_bottom", "label": "Padding bas (px)", "min": 0, "max": 150, "step": 5, "default": 70 },
-
+    { "type": "header", "content": "🎨 Couleurs & Style" },
+    { "type": "color", "id": "bg_color", "label": "Couleur de fond", "default": "#0d0d0d" },
+    { "type": "color", "id": "accent_color", "label": "Couleur d'accent (dot, CTA)", "default": "#00B67A" },
+    { "type": "color", "id": "star_color", "label": "Couleur des étoiles", "default": "#00B67A" },
+    { "type": "header", "content": "📐 Dimensions" },
+    { "type": "range", "id": "min_height", "label": "Hauteur minimum (px)", "min": 300, "max": 900, "step": 10, "default": 520 },
+    { "type": "range", "id": "padding_top", "label": "Padding haut (px)", "min": 0, "max": 150, "step": 5, "default": 80 },
+    { "type": "range", "id": "padding_bottom", "label": "Padding bas (px)", "min": 0, "max": 150, "step": 5, "default": 80 },
     { "type": "header", "content": "🏷️ Badge" },
     { "type": "text", "id": "badge_text", "label": "Texte du badge", "default": "8lab Ecosystem · The Infinite" },
-
     { "type": "header", "content": "✏️ Titre" },
-    { "type": "range", "id": "title_size", "label": "Taille max titre (px)", "min": 30, "max": 100, "step": 2, "default": 62 },
-    { "type": "text", "id": "title_start", "label": "Texte blanc - début", "default": "Le seul écosystème" },
-    { "type": "text", "id": "title_dim_1", "label": "Texte gris atténué 1", "default": "pour" },
-    { "type": "text", "id": "title_bold_1", "label": "Texte coloré 1", "default": "créer" },
-    { "type": "text", "id": "title_mid", "label": "Texte blanc - milieu", "default": "et" },
-    { "type": "text", "id": "title_dim_2", "label": "Texte gris atténué 2", "default": "scaler" },
-    { "type": "text", "id": "title_bold_2", "label": "Texte coloré 2", "default": "son" },
-    { "type": "color", "id": "title_bold_color", "label": "Couleur des mots colorés", "default": "#ffffff" },
-
+    { "type": "range", "id": "title_size", "label": "Taille max du titre (px)", "min": 32, "max": 100, "step": 2, "default": 62 },
+    { "type": "text", "id": "title_start", "label": "Début du titre (blanc)", "default": "Le seul écosystème" },
+    { "type": "text", "id": "title_highlight_1", "label": "1er mot atténué (gris)", "default": "pour créer" },
+    { "type": "text", "id": "title_middle", "label": "Milieu du titre (blanc)", "default": "et scaler" },
+    { "type": "checkbox", "id": "title_break", "label": "Saut de ligne après le milieu", "default": true },
+    { "type": "text", "id": "title_highlight_2", "label": "2ème mot atténué (gris)", "default": "son" },
+    { "type": "text", "id": "title_end", "label": "Fin du titre (blanc)", "default": "empire e-commerce" },
     { "type": "header", "content": "📝 Description" },
-    { "type": "text", "id": "desc_bold", "label": "Texte en gras", "default": "Le 8lab vous offre un plan étape par étape," },
-    { "type": "textarea", "id": "desc_text", "label": "Suite du texte", "default": " le réseau et les outils pour créer une marque e-commerce pérenne." },
-
+    { "type": "text", "id": "description_bold", "label": "Texte en gras", "default": "Nous vous offrons un plan étape par étape," },
+    { "type": "textarea", "id": "description", "label": "Suite de la description", "default": " le réseau et les outils pour créer une marque e-commerce pérenne." },
     { "type": "header", "content": "🔘 Bouton CTA" },
     { "type": "text", "id": "cta_text", "label": "Texte du bouton", "default": "Rejoindre au prochain LIVE" },
     { "type": "url", "id": "cta_url", "label": "Lien du bouton" },
-    { "type": "checkbox", "id": "show_cta_dot", "label": "Afficher le point animé", "default": true },
-
+    { "type": "checkbox", "id": "show_cta_dot", "label": "Afficher le point animé sur le bouton", "default": true },
     { "type": "header", "content": "👥 Preuve sociale" },
-    { "type": "checkbox", "id": "show_social", "label": "Afficher la preuve sociale", "default": true },
-    { "type": "image_picker", "id": "avatar_1", "label": "Photo membre 1" },
-    { "type": "image_picker", "id": "avatar_2", "label": "Photo membre 2" },
-    { "type": "image_picker", "id": "avatar_3", "label": "Photo membre 3" },
-    { "type": "image_picker", "id": "avatar_4", "label": "Photo membre 4" },
-    { "type": "color", "id": "star_color", "label": "Couleur des étoiles", "default": "#00B67A" },
-    { "type": "text", "id": "social_count", "label": "Texte du compteur", "default": "+2086 membres" },
-
-    { "type": "header", "content": "🗂️ Onglets de navigation" },
-    { "type": "checkbox", "id": "show_tabs", "label": "Afficher les onglets", "default": true },
-    { "type": "text", "id": "tab_1_text", "label": "Onglet 1", "default": "Formation" },
-    { "type": "text", "id": "tab_2_text", "label": "Onglet 2", "default": "Coaching" },
-    { "type": "text", "id": "tab_3_text", "label": "Onglet 3", "default": "Networking" },
-    { "type": "text", "id": "tab_4_text", "label": "Onglet 4", "default": "Sourcing" },
-    { "type": "text", "id": "tab_5_text", "label": "Onglet 5", "default": "Convention" },
-    { "type": "text", "id": "tab_6_text", "label": "Onglet 6", "default": "Branding" },
-
-    { "type": "header", "content": "🎬 Vidéo" },
-    { "type": "text", "id": "video_url", "label": "URL vidéo (YouTube, Vimeo ou fichier .mp4)", "default": "https://www.youtube.com/watch?v=VOTRE_ID" },
-    { "type": "image_picker", "id": "video_thumbnail", "label": "Miniature de la vidéo" },
-
-    { "type": "header", "content": "📊 Statistiques" },
-    { "type": "checkbox", "id": "show_stats", "label": "Afficher les statistiques", "default": true },
-    { "type": "color", "id": "stat_value_color", "label": "Couleur des chiffres", "default": "#ffffff" },
-    { "type": "text", "id": "stat_1_label", "label": "Stat 1 - Label", "default": "Nombre de membres actifs" },
-    { "type": "text", "id": "stat_1_value", "label": "Stat 1 - Valeur", "default": "1365" },
-    { "type": "text", "id": "stat_2_label", "label": "Stat 2 - Label", "default": "CA générés par les membres" },
-    { "type": "text", "id": "stat_2_value", "label": "Stat 2 - Valeur", "default": "$45M+" },
-    { "type": "text", "id": "stat_3_label", "label": "Stat 3 - Label", "default": "Satisfaction de nos membres" },
-    { "type": "text", "id": "stat_3_value", "label": "Stat 3 - Valeur", "default": "99,8%" },
-    { "type": "text", "id": "stat_4_label", "label": "Stat 4 - Label", "default": "Nombre d'heures de contenu" },
-    { "type": "text", "id": "stat_4_value", "label": "Stat 4 - Valeur", "default": "150" }
-
+    { "type": "checkbox", "id": "show_social_proof", "label": "Afficher la preuve sociale", "default": true },
+    { "type": "text", "id": "social_count", "label": "Texte du compteur", "default": "+2086 membres" }
   ],
-  "presets": [{ "name": "Hero Dark Complet" }]
+  "presets": [{ "name": "Hero Dark" }]
 }
 {% endschema %}
