@@ -190,43 +190,6 @@
         "input_text_color": ""
       }
     },
-    "social_proof_bar_qM9nHK": {
-      "type": "social-proof-bar",
-      "blocks": {
-        "image_bV48jN": {
-          "type": "image",
-          "settings": {}
-        },
-        "image_HdfKY7": {
-          "type": "image",
-          "settings": {}
-        },
-        "image_Lgi4Lh": {
-          "type": "image",
-          "settings": {}
-        }
-      },
-      "block_order": [
-        "image_bV48jN",
-        "image_HdfKY7",
-        "image_Lgi4Lh"
-      ],
-      "name": "Barre preuve sociale",
-      "settings": {
-        "text": "<p><em><strong>+3,000 Boutique Réalisés</strong></em></p>",
-        "bg_color": "#ffffff",
-        "text_color": "#333333",
-        "highlight_color": "#111111",
-        "image_size": 52,
-        "image_overlap": 10,
-        "image_radius": 10,
-        "alignment": "flex-start",
-        "max_width": 1400,
-        "font_size": 20,
-        "padding_top": 0,
-        "padding_bottom": 0
-      }
-    },
     "rich_text_eYq63L": {
       "type": "rich-text",
       "blocks": {
@@ -614,7 +577,6 @@
   "order": [
     "logo_scroll_LQGnj8",
     "featured_product_6NKNnk",
-    "social_proof_bar_qM9nHK",
     "rich_text_eYq63L",
     "testimonials_TjqyDD",
     "exemples_boutiques_LanHCb",
