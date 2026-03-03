@@ -70,6 +70,13 @@
     "featured_product_6NKNnk": {
       "type": "featured-product",
       "blocks": {
+        "liquid_GyWjwG": {
+          "type": "liquid",
+          "disabled": true,
+          "settings": {
+            "liquid": ""
+          }
+        },
         "title_3hLRq6": {
           "type": "title",
           "disabled": true,
@@ -152,6 +159,7 @@
         }
       },
       "block_order": [
+        "liquid_GyWjwG",
         "title_3hLRq6",
         "text_Gzwrqg",
         "badges_tXURHF",
