@@ -215,27 +215,28 @@
         "image_pbLaKm": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/BANNER_MOBILE_18.png",
+            "image": "shopify://shop_images/BANNER_MOBILE_22.png",
             "url": ""
           }
         },
         "image_KryENe": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/BANNER_MOBILE_19.png",
+            "image": "shopify://shop_images/BANNER_MOBILE_23.png",
             "url": ""
           }
         },
         "image_DbHyiw": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/BANNER_MOBILE_20.png",
+            "image": "shopify://shop_images/BANNER_MOBILE_24.png",
             "url": ""
           }
         },
         "image_ceGYLk": {
           "type": "image",
           "settings": {
+            "image": "shopify://shop_images/BANNER_MOBILE_21.png",
             "url": ""
           }
         }
@@ -256,14 +257,14 @@
         "heading_size": 18,
         "heading_size_mobile": 18,
         "heading_height": 130,
-        "scrolling_velocity": 30,
-        "scrolling_velocity_mobile": 20,
+        "scrolling_velocity": 22,
+        "scrolling_velocity_mobile": 14,
         "scrolling_direction": "left",
         "pause_hover": false,
-        "scrolling_gap": 70,
-        "scrolling_gap_mobile": 30,
-        "card_width_desktop": 310,
-        "card_width_mobile": 270,
+        "scrolling_gap": 0,
+        "scrolling_gap_mobile": 0,
+        "card_width_desktop": 360,
+        "card_width_mobile": 330,
         "heading_color": "#121212",
         "layout_bg_color": "#ffffff",
         "layout_border_color": "#121212",
