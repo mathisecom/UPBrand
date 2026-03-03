@@ -55,6 +55,103 @@
         "stat_4_value": "48H"
       }
     },
+    "custom_liquid_PXXVtp": {
+      "type": "custom-liquid",
+      "name": "Custom Liquid",
+      "settings": {
+        "full_width": true,
+        "remove_vertical_spacing": true,
+        "remove_horizontal_spacing": true,
+        "liquid": "<section style=\"padding: 30px 20px; text-align: center; font-family: 'Plus Jakarta Sans', Arial, sans-serif;\">\n  <!-- Badge -->\n  <div style=\"display: inline-flex; align-items: center; gap: 7px; padding: 5px 14px; border: 1.5px solid #d1d5db; border-radius: 20px; font-size: 13px; font-weight: 500; color: #111; margin-bottom: 20px;\">\n    <svg width=\"15\" height=\"15\" viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n      <path d=\"M12 15a6 6 0 1 0 0-12 6 6 0 0 0 0 12Z\" stroke=\"#111\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>\n      <path d=\"M8.21 13.89 7 23l5-3 5 3-1.21-9.12\" stroke=\"#111\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>\n    </svg>\n    Nos Réalisations\n  </div>\n  <!-- Titre -->\n  <h2 style=\"font-size: clamp(20px, 6vw, 36px); font-weight: 700; letter-spacing: -0.03em; color: #0a0a0a; margin: 0; line-height: 1.1;\">\n    Boutique Brandée <span style=\"font-family: 'Playfair Display', Georgia, serif; font-style: italic; font-weight: 700; color: #2563EB;\">Sur-Mesure.</span>\n  </h2>\n</section>\n<link href=\"https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,700&display=swap\" rel=\"stylesheet\">",
+        "background": "",
+        "background_gradient": "",
+        "text_color": ""
+      }
+    },
+    "logo_scroll_87Pz7t": {
+      "type": "logo-scroll",
+      "blocks": {
+        "image_yJMk7n": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Aa_17_8b917d4b-0b6c-4268-9266-31178c5f8185.webp",
+            "url": ""
+          }
+        },
+        "image_HAT4tx": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Aa_-_2026-01-02T203726.258.webp",
+            "url": ""
+          }
+        },
+        "image_n3BpxJ": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Aa_23_e0ea601b-486d-442b-9cdb-b42296756be2.webp",
+            "url": ""
+          }
+        },
+        "image_BJRtMU": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Aa_-_2026-01-02T203322.166.png",
+            "url": ""
+          }
+        },
+        "image_QLkWMH": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Aa_-_2026-01-02T203315.661.webp",
+            "url": ""
+          }
+        }
+      },
+      "block_order": [
+        "image_yJMk7n",
+        "image_HAT4tx",
+        "image_n3BpxJ",
+        "image_BJRtMU",
+        "image_QLkWMH"
+      ],
+      "name": "SS - Scrolling logo cloud #5",
+      "settings": {
+        "layout_radius": 30,
+        "layout_border_thickness": 0,
+        "heading": "",
+        "heading_custom": false,
+        "heading_font": "josefin_sans_n4",
+        "heading_size": 18,
+        "heading_size_mobile": 18,
+        "heading_height": 130,
+        "scrolling_velocity": 22,
+        "scrolling_velocity_mobile": 14,
+        "scrolling_direction": "left",
+        "pause_hover": false,
+        "scrolling_gap": 34,
+        "scrolling_gap_mobile": 28,
+        "card_width_desktop": 190,
+        "card_width_mobile": 170,
+        "heading_color": "#121212",
+        "layout_bg_color": "#ffffff",
+        "layout_border_color": "#121212",
+        "background_color": "#ffffff",
+        "border_color": "#121212",
+        "margin_top": 0,
+        "margin_bottom": 0,
+        "margin_horizontal": 0,
+        "margin_horizontal_mobile": 0,
+        "padding_top": 0,
+        "padding_bottom": 0,
+        "padding_horizontal": 5,
+        "padding_horizontal_mobile": 0,
+        "full_width": true,
+        "content_width": 1200,
+        "border_thickness": 0,
+        "section_radius": 0,
+        "lazy": true
+      }
+    },
     "comparaison_ajBPrk": {
       "type": "comparaison",
       "disabled": true,
@@ -104,14 +201,14 @@
         "divider_color": "#e5e7eb"
       }
     },
-    "custom_liquid_PXXVtp": {
+    "custom_liquid_rFmTFQ": {
       "type": "custom-liquid",
       "name": "Custom Liquid",
       "settings": {
         "full_width": true,
         "remove_vertical_spacing": true,
         "remove_horizontal_spacing": true,
-        "liquid": "<section style=\"padding: 60px 20px; text-align: center; font-family: 'Plus Jakarta Sans', Arial, sans-serif;\">\n\n  <!-- Badge -->\n  <div style=\"display: inline-flex; align-items: center; gap: 7px; padding: 5px 14px; border: 1.5px solid #d1d5db; border-radius: 20px; font-size: 13px; font-weight: 500; color: #111; margin-bottom: 20px;\">\n    <svg width=\"15\" height=\"15\" viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n      <path d=\"M12 15a6 6 0 1 0 0-12 6 6 0 0 0 0 12Z\" stroke=\"#111\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>\n      <path d=\"M8.21 13.89 7 23l5-3 5 3-1.21-9.12\" stroke=\"#111\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>\n    </svg>\n    + 6 Années D'Expériences\n  </div>\n\n  <!-- Titre -->\n  <h2 style=\"font-size: clamp(20px, 6vw, 36px); font-weight: 700; letter-spacing: -0.03em; color: #0a0a0a; margin: 0; line-height: 1.1;\">\n    Notre Expertises, <span style=\"font-family: 'Playfair Display', Georgia, serif; font-style: italic; font-weight: 700; color: #2563EB;\">au prix juste.</span>\n  </h2>\n\n</section>\n\n<link href=\"https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,700&display=swap\" rel=\"stylesheet\">",
+        "liquid": "<section style=\"padding: 30px 20px; text-align: center; font-family: 'Plus Jakarta Sans', Arial, sans-serif;\">\n  <!-- Badge -->\n  <div style=\"display: inline-flex; align-items: center; gap: 7px; padding: 5px 14px; border: 1.5px solid #d1d5db; border-radius: 20px; font-size: 13px; font-weight: 500; color: #111; margin-bottom: 20px;\">\n    <svg width=\"15\" height=\"15\" viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n      <path d=\"M12 15a6 6 0 1 0 0-12 6 6 0 0 0 0 12Z\" stroke=\"#111\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>\n      <path d=\"M8.21 13.89 7 23l5-3 5 3-1.21-9.12\" stroke=\"#111\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>\n    </svg>\n    + 6 Années D'Expériences\n  </div>\n  <!-- Titre -->\n  <h2 style=\"font-size: clamp(20px, 6vw, 36px); font-weight: 700; letter-spacing: -0.03em; color: #0a0a0a; margin: 0; line-height: 1.1;\">\n    Notre Expertises, <span style=\"font-family: 'Playfair Display', Georgia, serif; font-style: italic; font-weight: 700; color: #2563EB;\">au prix juste.</span>\n  </h2>\n</section>\n<link href=\"https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,700&display=swap\" rel=\"stylesheet\">",
         "background": "",
         "background_gradient": "",
         "text_color": ""
@@ -781,8 +878,10 @@
   },
   "order": [
     "hero_section_weVeAL",
-    "comparaison_ajBPrk",
     "custom_liquid_PXXVtp",
+    "logo_scroll_87Pz7t",
+    "comparaison_ajBPrk",
+    "custom_liquid_rFmTFQ",
     "featured_product_6NKNnk",
     "rich_text_R3LMfB",
     "logo_scroll_g9UXwK",
