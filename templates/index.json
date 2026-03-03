@@ -832,13 +832,21 @@
             "title": "Combien de temps faut-il pour recevoir ma boutique ?",
             "content": "<p>Ta boutique est livrée en 48H chrono après validation de ton formulaire de brief. On travaille vite, sans sacrifier la qualité.</p>"
           }
+        },
+        "item_ypCWtr": {
+          "type": "item",
+          "settings": {
+            "title": "Vos boutiques sont-elles générées par une IA ?",
+            "content": "<p>Non, chaque boutique est réalisée manuellement par nos experts (développeurs, spécialistes SEO, experts produits, etc.).</p>"
+          }
         }
       },
       "block_order": [
         "166442457738b23caf-0",
         "166442457738b23caf-1",
         "166442457738b23caf-2",
-        "item_dxJ4hb"
+        "item_dxJ4hb",
+        "item_ypCWtr"
       ],
       "settings": {
         "full_width": false,
