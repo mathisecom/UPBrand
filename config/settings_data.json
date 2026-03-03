@@ -29,6 +29,7 @@
     "secondary_button_text_color": "#ffffff",
     "product_card_text_color": "#1a1a1a",
     "product_rating_color": "#00b67a",
+    "product_on_sale_accent": "#2563eb",
     "product_primary_badge_background": "#803cee",
     "heading_font": "plus_jakarta_sans_n7",
     "heading_font_size": "small",
