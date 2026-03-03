@@ -305,7 +305,7 @@
             "icon": "none",
             "icon_width": 20,
             "title": "Comment ça Fonctionne ?",
-            "content": "<p>Share some content to your customers about your products.</p>",
+            "content": "<p><strong>Étape 1 — Tu nous parles de ton projet</strong><br/>Tu remplis notre formulaire en quelques minutes : ta niche, tes produits, ton style. On prend tout en main à partir de là.</p><p><strong>Étape 2 — On crée ta boutique</strong><br/>Notre équipe conçoit ton logo, ton identité visuelle et ta boutique complète. Chaque section est pensée pour convertir tes visiteurs en clients.</p><p><strong>Étape 3 — Tu reçois ta boutique en 48H</strong><br/>Ta boutique est livrée, testée et prête à vendre. Tu n'as plus qu'à lancer ta publicité et encaisser tes premières ventes.</p>",
             "page": ""
           }
         },
@@ -315,7 +315,7 @@
             "icon": "none",
             "icon_width": 20,
             "title": "Livraison en 48H",
-            "content": "<p>Share some content to your customers about your products.</p>",
+            "content": "<p><strong>On ne te fait pas attendre des semaines</strong>. Dès que ton brief est validé, notre équipe travaille en parallèle sur ton design, ton thème et ta <strong>configuration Shopify</strong>. </p><p><strong>48H plus tard</strong>, tu reçois une boutique clé en main, entièrement testée sur mobile et desktop, prête à accueillir tes premiers clients et à générer tes premières ventes.</p>",
             "page": ""
           }
         }
