@@ -347,7 +347,7 @@
             "image": "shopify://shop_images/file_2_1.jpg",
             "round_avatar": true,
             "show_rating": true,
-            "rating": 4,
+            "rating": 5,
             "author": "Victor - E-Commerçant ",
             "title": "Testimonial 3",
             "content": "<p>Share what your customers are saying about your products, customer service or shipping rates.</p>"
@@ -359,7 +359,7 @@
             "image": "shopify://shop_images/file_3.jpg",
             "round_avatar": true,
             "show_rating": true,
-            "rating": 4,
+            "rating": 5,
             "author": "Alexandre - E-Commerçant ",
             "title": "Testimonial",
             "content": "<p>Share what your customers are saying about your products, customer service or shipping rates.</p>"
@@ -376,6 +376,18 @@
             "title": "Testimonial",
             "content": "<p>Share what your customers are saying about your products, customer service or shipping rates.</p>"
           }
+        },
+        "testimonial_KVYBbf": {
+          "type": "testimonial",
+          "settings": {
+            "image": "shopify://shop_images/file_5.jpg",
+            "round_avatar": true,
+            "show_rating": true,
+            "rating": 5,
+            "author": "Anis - E-Commerçant ",
+            "title": "Testimonial",
+            "content": "<p>Share what your customers are saying about your products, customer service or shipping rates.</p>"
+          }
         }
       },
       "block_order": [
@@ -383,7 +395,8 @@
         "testimonial_V87RBB",
         "testimonial_3FD6dH",
         "testimonial_3MggbT",
-        "testimonial_Ph7CpA"
+        "testimonial_Ph7CpA",
+        "testimonial_KVYBbf"
       ],
       "name": "Testimonials",
       "settings": {
