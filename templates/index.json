@@ -310,7 +310,7 @@
         "scrolling_gap": 0,
         "scrolling_gap_mobile": 0,
         "card_width_desktop": 360,
-        "card_width_mobile": 260,
+        "card_width_mobile": 240,
         "heading_color": "#121212",
         "layout_bg_color": "#ffffff",
         "layout_border_color": "#121212",
