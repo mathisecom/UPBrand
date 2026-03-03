@@ -9,6 +9,47 @@
  */
 {
   "sections": {
+    "hero_section_weVeAL": {
+      "type": "hero-section",
+      "name": "Hero Dark Complet",
+      "settings": {
+        "bg_color": "#0d0d0d",
+        "accent_color": "#00B67A",
+        "padding_top": 70,
+        "padding_bottom": 70,
+        "badge_text": "8lab Ecosystem · The Infinite",
+        "title_size": 62,
+        "title_start": "Le seul écosystème",
+        "title_dim_1": "pour",
+        "title_bold_1": "créer",
+        "title_mid": "et",
+        "title_dim_2": "scaler",
+        "title_bold_2": "son",
+        "title_bold_color": "#ffffff",
+        "desc_bold": "Le 8lab vous offre un plan étape par étape,",
+        "desc_text": "le réseau et les outils pour créer une marque e-commerce pérenne.",
+        "cta_text": "Découvrir Notre Offre",
+        "cta_url": "#shopify-section-template--27670366191949__featured_product_6NKNnk",
+        "show_cta_dot": false,
+        "show_social": true,
+        "avatar_1": "shopify://shop_images/file_2.jpg",
+        "avatar_2": "shopify://shop_images/file_1_1.jpg",
+        "avatar_3": "shopify://shop_images/file_2_1.jpg",
+        "avatar_4": "shopify://shop_images/file_3.jpg",
+        "star_color": "#00B67A",
+        "social_count": "+3,000 Clients Satisfaits",
+        "show_stats": true,
+        "stat_value_color": "#ffffff",
+        "stat_1_label": "Nombre de membres actifs",
+        "stat_1_value": "1365",
+        "stat_2_label": "CA générés par les membres",
+        "stat_2_value": "$45M+",
+        "stat_3_label": "Satisfaction de nos membres",
+        "stat_3_value": "99,8%",
+        "stat_4_label": "Nombre d'heures de contenu",
+        "stat_4_value": "150"
+      }
+    },
     "stats_chiffres_KEqh3R": {
       "type": "stats-chiffres",
       "blocks": {
@@ -744,6 +785,7 @@
     }
   },
   "order": [
+    "hero_section_weVeAL",
     "stats_chiffres_KEqh3R",
     "custom_liquid_PXXVtp",
     "featured_product_6NKNnk",
