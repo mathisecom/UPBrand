@@ -213,7 +213,7 @@
       ],
       "name": "Barre preuve sociale",
       "settings": {
-        "text": "<p><em><strong>+3,000 Boutique Réalisés</strong></em><strong>, </strong>Depuis 6 Années D'Expériences.</p>",
+        "text": "<p><em><strong>+3,000 Boutique Réalisés</strong></em></p>",
         "bg_color": "#ffffff",
         "text_color": "#333333",
         "highlight_color": "#111111",
@@ -222,7 +222,7 @@
         "image_radius": 10,
         "alignment": "flex-start",
         "max_width": 1400,
-        "font_size": 19,
+        "font_size": 20,
         "padding_top": 0,
         "padding_bottom": 0
       }
