@@ -839,6 +839,13 @@
             "title": "Vos boutiques sont-elles générées par une IA ?",
             "content": "<p>Non, chaque boutique est réalisée manuellement par nos experts (développeurs, spécialistes SEO, experts produits, etc.).</p>"
           }
+        },
+        "item_676CRy": {
+          "type": "item",
+          "settings": {
+            "title": "Pourquoi vos tarifs sont-ils si abordables ?",
+            "content": "<p>Grâce à notre expertise dans la création de boutiques e-commerce, nous avons développé une méthodologie unique et une collaboration en équipe optimisée, ce qui nous permet d’être incroyablement efficaces. Cette approche nous permet de créer des boutiques performantes et esthétiques, tout en maintenant des tarifs compétitifs.</p>"
+          }
         }
       },
       "block_order": [
@@ -846,7 +853,8 @@
         "166442457738b23caf-1",
         "166442457738b23caf-2",
         "item_dxJ4hb",
-        "item_ypCWtr"
+        "item_ypCWtr",
+        "item_676CRy"
       ],
       "settings": {
         "full_width": false,
