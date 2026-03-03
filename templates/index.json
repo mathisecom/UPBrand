@@ -392,10 +392,11 @@
         "testimonial_BrpdFx": {
           "type": "testimonial",
           "settings": {
+            "image": "shopify://shop_images/file_2.jpg",
             "round_avatar": true,
             "show_rating": true,
             "rating": 5,
-            "author": "John S.",
+            "author": "Nao - E-Commerçant ",
             "title": "Testimonial 1",
             "content": "<p>Share what your customers are saying about your products, customer service or shipping rates.</p>"
           }
