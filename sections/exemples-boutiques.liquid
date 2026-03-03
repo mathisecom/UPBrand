@@ -1,0 +1,723 @@
+{% comment %}
+  Section: Portfolio / Réalisations
+  Design sombre avec logos clients + grille de projets (Avant → Après)
+  Entièrement personnalisable via l'éditeur de thème Shopify
+{% endcomment %}
+
+<section class="portfolio-section" id="portfolio-{{ section.id }}">
+
+  <style>
+    #portfolio-{{ section.id }} {
+      --bg:           {{ section.settings.bg_color }};
+      --card-bg:      {{ section.settings.card_bg_color }};
+      --accent:       {{ section.settings.accent_color }};
+      --accent2:      {{ section.settings.accent_color_2 }};
+      --text:         {{ section.settings.text_color }};
+      --muted:        {{ section.settings.muted_color }};
+      --border:       {{ section.settings.border_color }};
+      --badge-color:  {{ section.settings.badge_color }};
+    }
+
+    /* ── Base ── */
+    #portfolio-{{ section.id }} {
+      background: var(--bg, #111);
+      color: var(--text, #fff);
+      padding: {{ section.settings.padding_top }}px 20px {{ section.settings.padding_bottom }}px;
+      font-family: inherit;
+    }
+
+    #portfolio-{{ section.id }} * { box-sizing: border-box; }
+
+    #portfolio-{{ section.id }} .p-wrap {
+      max-width: 1100px;
+      margin: 0 auto;
+    }
+
+    /* ── Header ── */
+    #portfolio-{{ section.id }} .p-eyebrow {
+      text-align: center;
+      font-size: 10px;
+      font-weight: 700;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: var(--muted, #888);
+      margin: 0 0 20px;
+    }
+
+    #portfolio-{{ section.id }} .p-heading {
+      text-align: left;
+      font-size: clamp(28px, 4.5vw, 56px);
+      font-weight: 800;
+      line-height: 1.1;
+      color: var(--text, #fff);
+      margin: 0 0 56px;
+      max-width: 780px;
+    }
+
+    #portfolio-{{ section.id }} .p-heading em {
+      font-style: normal;
+      color: var(--accent, #c8f135);
+    }
+
+    #portfolio-{{ section.id }} .p-heading strong {
+      font-weight: 800;
+      color: var(--accent2, #c8f135);
+    }
+
+    /* ── Logo bar ── */
+    #portfolio-{{ section.id }} .p-logos {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 10px 28px;
+      margin-bottom: 60px;
+    }
+
+    #portfolio-{{ section.id }} .p-logo-item {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      font-size: 14px;
+      font-weight: 600;
+      color: var(--muted, #888);
+      opacity: 0.8;
+      white-space: nowrap;
+      transition: opacity 0.2s;
+    }
+
+    #portfolio-{{ section.id }} .p-logo-item:hover { opacity: 1; }
+
+    #portfolio-{{ section.id }} .p-logo-item img {
+      height: 20px;
+      width: auto;
+      filter: grayscale(1) brightness(1.5);
+      object-fit: contain;
+    }
+
+    /* ── Cards grid ── */
+    #portfolio-{{ section.id }} .p-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(480px, 1fr));
+      gap: 20px;
+      margin-bottom: 48px;
+    }
+
+    /* ── Card ── */
+    #portfolio-{{ section.id }} .p-card {
+      background: var(--card-bg, #1a1a1a);
+      border: 1px solid var(--border, #2a2a2a);
+      border-radius: 16px;
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+      gap: 0;
+    }
+
+    /* Card top labels */
+    #portfolio-{{ section.id }} .p-card-labels {
+      display: flex;
+      align-items: center;
+      gap: 0;
+      margin-bottom: 16px;
+    }
+
+    #portfolio-{{ section.id }} .p-card-label {
+      font-size: 10px;
+      font-weight: 700;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: var(--muted, #666);
+    }
+
+    #portfolio-{{ section.id }} .p-card-arrow {
+      flex: 1;
+      margin: 0 10px;
+      height: 1px;
+      background: repeating-linear-gradient(
+        90deg,
+        var(--muted, #444) 0px, var(--muted, #444) 6px,
+        transparent 6px, transparent 12px
+      );
+      position: relative;
+    }
+
+    #portfolio-{{ section.id }} .p-card-arrow::after {
+      content: '→';
+      position: absolute;
+      right: -6px;
+      top: 50%;
+      transform: translateY(-50%);
+      color: var(--muted, #666);
+      font-size: 12px;
+      background: var(--card-bg, #1a1a1a);
+      padding-left: 2px;
+    }
+
+    /* Images side by side */
+    #portfolio-{{ section.id }} .p-card-images {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 10px;
+      margin-bottom: 16px;
+    }
+
+    #portfolio-{{ section.id }} .p-card-img-wrap {
+      border-radius: 8px;
+      overflow: hidden;
+      aspect-ratio: 3/4;
+      background: #222;
+    }
+
+    #portfolio-{{ section.id }} .p-card-img-wrap img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: top;
+      display: block;
+      transition: transform 0.4s ease;
+    }
+
+    #portfolio-{{ section.id }} .p-card-img-wrap:hover img {
+      transform: scale(1.03);
+    }
+
+    /* Single image mode */
+    #portfolio-{{ section.id }} .p-card-images.single-image {
+      grid-template-columns: 1fr;
+    }
+
+    #portfolio-{{ section.id }} .p-card-images.single-image .p-card-img-wrap {
+      aspect-ratio: 16/10;
+    }
+
+    /* Card footer */
+    #portfolio-{{ section.id }} .p-card-footer {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 4px 16px;
+      padding-top: 12px;
+      border-top: 1px solid var(--border, #2a2a2a);
+    }
+
+    #portfolio-{{ section.id }} .p-card-footer-item {
+      display: flex;
+      flex-direction: column;
+      gap: 2px;
+    }
+
+    #portfolio-{{ section.id }} .p-card-footer-item.single {
+      grid-column: 1 / -1;
+    }
+
+    #portfolio-{{ section.id }} .p-card-name {
+      font-size: 14px;
+      font-weight: 700;
+      color: var(--text, #fff);
+    }
+
+    #portfolio-{{ section.id }} .p-card-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 4px;
+      font-size: 10px;
+      font-weight: 700;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--muted, #666);
+      text-decoration: none;
+      transition: color 0.2s;
+    }
+
+    #portfolio-{{ section.id }} .p-card-link:hover {
+      color: var(--accent, #c8f135);
+    }
+
+    #portfolio-{{ section.id }} .p-card-link svg {
+      width: 10px;
+      height: 10px;
+    }
+
+    /* ── Badge optionnel ── */
+    #portfolio-{{ section.id }} .p-card-badge {
+      display: inline-block;
+      font-size: 9px;
+      font-weight: 700;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      background: var(--badge-color, #c8f135);
+      color: #111;
+      padding: 3px 8px;
+      border-radius: 4px;
+      margin-bottom: 10px;
+      align-self: flex-start;
+    }
+
+    /* ── CTA ── */
+    #portfolio-{{ section.id }} .p-cta {
+      text-align: center;
+      margin-top: 8px;
+    }
+
+    #portfolio-{{ section.id }} .p-cta-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: transparent;
+      border: 2px solid var(--text, #fff);
+      color: var(--text, #fff);
+      font-size: 13px;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      padding: 14px 32px;
+      border-radius: 100px;
+      text-decoration: none;
+      transition: background 0.25s, color 0.25s;
+    }
+
+    #portfolio-{{ section.id }} .p-cta-btn:hover {
+      background: var(--text, #fff);
+      color: var(--bg, #111);
+    }
+
+    /* ── Responsive ── */
+    @media (max-width: 900px) {
+      #portfolio-{{ section.id }} .p-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    @media (max-width: 600px) {
+      #portfolio-{{ section.id }} .p-heading {
+        font-size: 28px;
+      }
+      #portfolio-{{ section.id }} .p-card-footer {
+        grid-template-columns: 1fr;
+      }
+      #portfolio-{{ section.id }} .p-card-footer-item.single {
+        grid-column: auto;
+      }
+    }
+  </style>
+
+  <div class="p-wrap">
+
+    {%- comment %} ── Header ── {%- endcomment %}
+    {%- if section.settings.eyebrow != blank -%}
+      <p class="p-eyebrow">{{ section.settings.eyebrow }}</p>
+    {%- endif -%}
+
+    {%- if section.settings.heading != blank -%}
+      <h2 class="p-heading">{{ section.settings.heading }}</h2>
+    {%- endif -%}
+
+    {%- comment %} ── Logos clients ── {%- endcomment %}
+    {%- assign logos = section.blocks | where: "type", "logo" -%}
+    {%- if logos.size > 0 -%}
+      <div class="p-logos">
+        {%- for block in logos -%}
+          <div class="p-logo-item" {{ block.shopify_attributes }}>
+            {%- if block.settings.logo_image != blank -%}
+              <img
+                src="{{ block.settings.logo_image | image_url: width: 120 }}"
+                alt="{{ block.settings.logo_name }}"
+                loading="lazy"
+              >
+            {%- else -%}
+              {%- if block.settings.logo_emoji != blank -%}
+                <span>{{ block.settings.logo_emoji }}</span>
+              {%- endif -%}
+              <span>{{ block.settings.logo_name }}</span>
+            {%- endif -%}
+          </div>
+        {%- endfor -%}
+      </div>
+    {%- endif -%}
+
+    {%- comment %} ── Grille de projets ── {%- endcomment %}
+    {%- assign projects = section.blocks | where: "type", "project" -%}
+    {%- if projects.size > 0 -%}
+      <div class="p-grid">
+        {%- for block in projects -%}
+
+          {%- assign has_before = false -%}
+          {%- assign has_after  = false -%}
+          {%- if block.settings.before_image != blank -%}{%- assign has_before = true -%}{%- endif -%}
+          {%- if block.settings.after_image  != blank -%}{%- assign has_after  = true -%}{%- endif -%}
+
+          <div class="p-card" {{ block.shopify_attributes }}>
+
+            {%- if block.settings.badge != blank -%}
+              <span class="p-card-badge">{{ block.settings.badge }}</span>
+            {%- endif -%}
+
+            {%- comment %} Labels TEMPLATE → LIVE SITE {%- endcomment %}
+            <div class="p-card-labels">
+              <span class="p-card-label">{{ block.settings.label_before | default: 'TEMPLATE' }}</span>
+              <span class="p-card-arrow"></span>
+              <span class="p-card-label">{{ block.settings.label_after | default: 'LIVE SITE' }}</span>
+            </div>
+
+            {%- comment %} Images {%- endcomment %}
+            <div class="p-card-images{% unless has_before and has_after %} single-image{% endunless %}">
+              {%- if has_before -%}
+                <div class="p-card-img-wrap">
+                  {{
+                    block.settings.before_image
+                    | image_url: width: 540
+                    | image_tag: loading: 'lazy', alt: block.settings.title_before
+                  }}
+                </div>
+              {%- endif -%}
+              {%- if has_after -%}
+                <div class="p-card-img-wrap">
+                  {{
+                    block.settings.after_image
+                    | image_url: width: 540
+                    | image_tag: loading: 'lazy', alt: block.settings.title_after
+                  }}
+                </div>
+              {%- endif -%}
+            </div>
+
+            {%- comment %} Footer noms + liens {%- endcomment %}
+            <div class="p-card-footer{% unless has_before and has_after %} single{% endunless %}">
+
+              {%- if has_before or block.settings.title_before != blank -%}
+                <div class="p-card-footer-item{% unless has_before and has_after %} single{% endunless %}">
+                  {%- if block.settings.title_before != blank -%}
+                    <span class="p-card-name">{{ block.settings.title_before }}</span>
+                  {%- endif -%}
+                  {%- if block.settings.link_before != blank -%}
+                    <a href="{{ block.settings.link_before }}" class="p-card-link" target="_blank" rel="noopener">
+                      {{ block.settings.link_before_label | default: 'VOIR LE TEMPLATE' }}
+                      <svg viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M2 8L8 2M8 2H3.5M8 2V6.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                      </svg>
+                    </a>
+                  {%- endif -%}
+                </div>
+              {%- endif -%}
+
+              {%- if has_after or block.settings.title_after != blank -%}
+                <div class="p-card-footer-item">
+                  {%- if block.settings.title_after != blank -%}
+                    <span class="p-card-name">{{ block.settings.title_after }}</span>
+                  {%- endif -%}
+                  {%- if block.settings.link_after != blank -%}
+                    <a href="{{ block.settings.link_after }}" class="p-card-link" target="_blank" rel="noopener">
+                      {{ block.settings.link_after_label | default: 'VOIR LE SITE' }}
+                      <svg viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M2 8L8 2M8 2H3.5M8 2V6.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                      </svg>
+                    </a>
+                  {%- endif -%}
+                </div>
+              {%- endif -%}
+
+            </div>
+          </div>
+
+        {%- endfor -%}
+      </div>
+    {%- endif -%}
+
+    {%- comment %} ── CTA ── {%- endcomment %}
+    {%- if section.settings.cta_label != blank and section.settings.cta_url != blank -%}
+      <div class="p-cta">
+        <a href="{{ section.settings.cta_url }}" class="p-cta-btn">
+          {{ section.settings.cta_label }}
+          <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M3 8H13M13 8L9 4M13 8L9 12" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </a>
+      </div>
+    {%- endif -%}
+
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "Portfolio / Réalisations",
+  "tag": "section",
+  "class": "portfolio-section-wrapper",
+  "settings": [
+    {
+      "type": "header",
+      "content": "Texte d'introduction"
+    },
+    {
+      "type": "text",
+      "id": "eyebrow",
+      "label": "Texte eyebrow (au-dessus du titre)",
+      "default": "AVIS & EXEMPLES"
+    },
+    {
+      "type": "richtext",
+      "id": "heading",
+      "label": "Titre principal (utilisez <em> pour la couleur accentuée)",
+      "default": "<p>Templates utilisés par <em>4 000+</em> sites pour <em>1 540+</em> freelances et agences satisfaits !</p>"
+    },
+    {
+      "type": "header",
+      "content": "Bouton CTA"
+    },
+    {
+      "type": "text",
+      "id": "cta_label",
+      "label": "Texte du bouton",
+      "default": "VOIR TOUTES MES RÉALISATIONS"
+    },
+    {
+      "type": "url",
+      "id": "cta_url",
+      "label": "Lien du bouton"
+    },
+    {
+      "type": "header",
+      "content": "Espacement"
+    },
+    {
+      "type": "range",
+      "id": "padding_top",
+      "min": 0,
+      "max": 120,
+      "step": 4,
+      "unit": "px",
+      "label": "Espacement haut",
+      "default": 80
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom",
+      "min": 0,
+      "max": 120,
+      "step": 4,
+      "unit": "px",
+      "label": "Espacement bas",
+      "default": 80
+    },
+    {
+      "type": "header",
+      "content": "Couleurs"
+    },
+    {
+      "type": "color",
+      "id": "bg_color",
+      "label": "Fond de la section",
+      "default": "#111111"
+    },
+    {
+      "type": "color",
+      "id": "card_bg_color",
+      "label": "Fond des cartes",
+      "default": "#1a1a1a"
+    },
+    {
+      "type": "color",
+      "id": "accent_color",
+      "label": "Couleur d'accentuation (chiffres en surbrillance)",
+      "default": "#c8f135"
+    },
+    {
+      "type": "color",
+      "id": "accent_color_2",
+      "label": "Couleur d'accentuation 2",
+      "default": "#c8f135"
+    },
+    {
+      "type": "color",
+      "id": "text_color",
+      "label": "Couleur du texte principal",
+      "default": "#ffffff"
+    },
+    {
+      "type": "color",
+      "id": "muted_color",
+      "label": "Couleur du texte secondaire / labels",
+      "default": "#666666"
+    },
+    {
+      "type": "color",
+      "id": "border_color",
+      "label": "Couleur des bordures",
+      "default": "#2a2a2a"
+    },
+    {
+      "type": "color",
+      "id": "badge_color",
+      "label": "Couleur des badges",
+      "default": "#c8f135"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "logo",
+      "name": "Logo client",
+      "settings": [
+        {
+          "type": "text",
+          "id": "logo_name",
+          "label": "Nom du client",
+          "default": "Nom Client"
+        },
+        {
+          "type": "text",
+          "id": "logo_emoji",
+          "label": "Emoji / symbole (si pas d'image)",
+          "default": "✦"
+        },
+        {
+          "type": "image_picker",
+          "id": "logo_image",
+          "label": "Logo (optionnel, remplace l'emoji)"
+        }
+      ]
+    },
+    {
+      "type": "project",
+      "name": "Projet / Réalisation",
+      "settings": [
+        {
+          "type": "text",
+          "id": "badge",
+          "label": "Badge (ex: NOUVEAU, FEATURED…)"
+        },
+        {
+          "type": "header",
+          "content": "Colonne gauche — Avant / Template"
+        },
+        {
+          "type": "text",
+          "id": "label_before",
+          "label": "Label colonne gauche",
+          "default": "TEMPLATE"
+        },
+        {
+          "type": "image_picker",
+          "id": "before_image",
+          "label": "Image avant / template"
+        },
+        {
+          "type": "text",
+          "id": "title_before",
+          "label": "Nom du template / projet",
+          "default": "Template · Nom"
+        },
+        {
+          "type": "text",
+          "id": "link_before_label",
+          "label": "Texte du lien gauche",
+          "default": "VOIR LE TEMPLATE"
+        },
+        {
+          "type": "url",
+          "id": "link_before",
+          "label": "Lien template"
+        },
+        {
+          "type": "header",
+          "content": "Colonne droite — Après / Live Site"
+        },
+        {
+          "type": "text",
+          "id": "label_after",
+          "label": "Label colonne droite",
+          "default": "LIVE SITE"
+        },
+        {
+          "type": "image_picker",
+          "id": "after_image",
+          "label": "Image après / site live"
+        },
+        {
+          "type": "text",
+          "id": "title_after",
+          "label": "Nom du site / client",
+          "default": "Site client"
+        },
+        {
+          "type": "text",
+          "id": "link_after_label",
+          "label": "Texte du lien droit",
+          "default": "VOIR LE SITE"
+        },
+        {
+          "type": "url",
+          "id": "link_after",
+          "label": "Lien site live"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Portfolio / Réalisations",
+      "blocks": [
+        {
+          "type": "logo",
+          "settings": { "logo_name": "Studio Créatif", "logo_emoji": "◈" }
+        },
+        {
+          "type": "logo",
+          "settings": { "logo_name": "Agence Nord", "logo_emoji": "⬡" }
+        },
+        {
+          "type": "logo",
+          "settings": { "logo_name": "BrandLab", "logo_emoji": "✦" }
+        },
+        {
+          "type": "logo",
+          "settings": { "logo_name": "OpenStore", "logo_emoji": "◉" }
+        },
+        {
+          "type": "project",
+          "settings": {
+            "label_before": "TEMPLATE",
+            "label_after": "LIVE SITE",
+            "title_before": "Template · Advisora",
+            "link_before_label": "VOIR LE TEMPLATE",
+            "title_after": "Site Agence",
+            "link_after_label": "VOIR LE SITE"
+          }
+        },
+        {
+          "type": "project",
+          "settings": {
+            "label_before": "TEMPLATE",
+            "label_after": "LIVE SITE",
+            "title_before": "Template · Harmoni",
+            "link_before_label": "VOIR LE TEMPLATE",
+            "title_after": "Site Yoga",
+            "link_after_label": "VOIR LE SITE"
+          }
+        },
+        {
+          "type": "project",
+          "settings": {
+            "label_before": "TEMPLATE",
+            "label_after": "PERSONNALISATION",
+            "title_before": "Template · Momentus",
+            "link_before_label": "VOIR LE TEMPLATE",
+            "title_after": "Yoga Academy",
+            "link_after_label": "VOIR LE SITE"
+          }
+        },
+        {
+          "type": "project",
+          "settings": {
+            "label_before": "TEMPLATE",
+            "label_after": "LIVE SITE",
+            "title_before": "Template · Miros",
+            "link_before_label": "VOIR LE TEMPLATE",
+            "title_after": "App Website",
+            "link_after_label": "VOIR LE SITE"
+          }
+        }
+      ]
+    }
+  ],
+  "max_blocks": 30
+}
+{% endschema %}
