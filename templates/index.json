@@ -282,6 +282,90 @@
         "testimonial_card_text_color": ""
       }
     },
+    "exemples_boutiques_LanHCb": {
+      "type": "exemples-boutiques",
+      "blocks": {
+        "project_t6x67g": {
+          "type": "project",
+          "settings": {
+            "badge": "",
+            "label_before": "TEMPLATE",
+            "title_before": "Template · Advisora",
+            "link_before_label": "VOIR LE TEMPLATE",
+            "link_before": "",
+            "label_after": "LIVE SITE",
+            "title_after": "Site Agence",
+            "link_after_label": "VOIR LE SITE",
+            "link_after": ""
+          }
+        },
+        "project_ynBVCe": {
+          "type": "project",
+          "settings": {
+            "badge": "",
+            "label_before": "TEMPLATE",
+            "title_before": "Template · Harmoni",
+            "link_before_label": "VOIR LE TEMPLATE",
+            "link_before": "",
+            "label_after": "LIVE SITE",
+            "title_after": "Site Yoga",
+            "link_after_label": "VOIR LE SITE",
+            "link_after": ""
+          }
+        },
+        "project_Phd4xi": {
+          "type": "project",
+          "settings": {
+            "badge": "",
+            "label_before": "TEMPLATE",
+            "title_before": "Template · Momentus",
+            "link_before_label": "VOIR LE TEMPLATE",
+            "link_before": "",
+            "label_after": "PERSONNALISATION",
+            "title_after": "Yoga Academy",
+            "link_after_label": "VOIR LE SITE",
+            "link_after": ""
+          }
+        },
+        "project_WNaGdx": {
+          "type": "project",
+          "settings": {
+            "badge": "",
+            "label_before": "TEMPLATE",
+            "title_before": "Template · Miros",
+            "link_before_label": "VOIR LE TEMPLATE",
+            "link_before": "",
+            "label_after": "LIVE SITE",
+            "title_after": "App Website",
+            "link_after_label": "VOIR LE SITE",
+            "link_after": ""
+          }
+        }
+      },
+      "block_order": [
+        "project_t6x67g",
+        "project_ynBVCe",
+        "project_Phd4xi",
+        "project_WNaGdx"
+      ],
+      "name": "Portfolio / Réalisations",
+      "settings": {
+        "eyebrow": "NOS RÉALISATIONS",
+        "heading": "<p>Templates utilisés par <em>4 000+</em> sites pour <em>1 540+</em> freelances et agences satisfaits !</p>",
+        "cta_label": "OBTENIR MON SITE",
+        "cta_url": "#shopify-section-template--27670366191949__featured_product_6NKNnk",
+        "padding_top": 80,
+        "padding_bottom": 80,
+        "bg_color": "#111111",
+        "card_bg_color": "#1a1a1a",
+        "accent_color": "#c8f135",
+        "accent_color_2": "#c8f135",
+        "text_color": "#ffffff",
+        "muted_color": "#666666",
+        "border_color": "#2a2a2a",
+        "badge_color": "#c8f135"
+      }
+    },
     "step_process_M7mPTb": {
       "type": "step-process",
       "blocks": {
@@ -326,8 +410,8 @@
         "eyebrow": "3 étapes simples.",
         "heading": "Notre Processus.",
         "subheading": "",
-        "cta_label": "",
-        "cta_url": "",
+        "cta_label": "OBTENIR MON SITE",
+        "cta_url": "#shopify-section-template--27670366191949__featured_product_6NKNnk",
         "section_padding_top": 28,
         "section_padding_bottom": 28,
         "section_bg_color": "#fcfcfc",
@@ -457,6 +541,7 @@
     "featured_product_6NKNnk",
     "rich_text_eYq63L",
     "testimonials_TjqyDD",
+    "exemples_boutiques_LanHCb",
     "step_process_M7mPTb",
     "multi_column_UxP6EL",
     "faq"
