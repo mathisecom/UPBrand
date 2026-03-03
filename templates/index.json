@@ -620,8 +620,8 @@
           "type": "step",
           "settings": {
             "step_label": "ÉTAPE 0",
-            "card_title": "Choisissez un template",
-            "card_description": "Parcourez notre collection de templates premium pour trouver le design parfait pour votre projet.",
+            "card_title": "Briefing & Stratégie",
+            "card_description": "Tu remplis notre formulaire en 5 minutes. On analyse ton marché, ta cible et tes objectifs pour poser les bases d'une boutique pensée pour vendre.",
             "floating_label": "",
             "floating_icon": ""
           }
@@ -630,8 +630,8 @@
           "type": "step",
           "settings": {
             "step_label": "ÉTAPE 0",
-            "card_title": "Personnalisez-le",
-            "card_description": "Modifiez facilement les contenus, couleurs et typographies en quelques minutes pour refléter votre marque.",
+            "card_title": "Création & Design",
+            "card_description": "Notre équipe conçoit ton identité visuelle, intègre ton thème premium et optimise chaque section pour la conversion. Tu valides, on ajuste.",
             "floating_label": "",
             "floating_icon": ""
           }
