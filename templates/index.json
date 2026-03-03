@@ -185,12 +185,12 @@
         "right_border_color_2": "#a5b4fc",
         "right_title": "UPBrand Agency",
         "right_title_color": "#2563eb",
-        "right_item_1": "Tu lances une boutique rentable plus vite grâce à une structure déjà prête.",
-        "right_item_2": "Produit sélectionné selon des données réelles : demande, marge, concurrence et cycle d'achat.",
-        "right_item_3": "Calculs de marge, cycles d'achat, tarifs optimisés",
-        "right_item_4": "Tu focuses sur le taux de conversion, pas sur le trafic inutile.",
-        "right_item_5": "La valeur perçue > le prix.",
-        "right_item_6": "Maquette et structure UX prêtes pour convertir",
+        "right_item_1": "Boutique livrée en 48H, prête à vendre dès le premier jour.",
+        "right_item_2": "Conçue par des experts e-commerce avec 6 ans d'expérience.",
+        "right_item_3": "Chaque détail est pensé par des professionnels : structure, navigation, copywriting et psychologie d'achat.",
+        "right_item_4": "Design 100% orienté conversion : chaque section pousse le visiteur à acheter, pas juste à regarder.",
+        "right_item_5": "Identité visuelle sur-mesure et cohérente qui inspire confiance et justifie ton prix dès le premier coup d'œil.",
+        "right_item_6": "Pages produits optimisées avec preuves sociales, urgence et éléments de réassurance intégrés.",
         "right_item_color": "#374151",
         "item_size": 14,
         "cross_bg": "#f3f4f6",
@@ -612,99 +612,6 @@
         "testimonial_card_text_color": ""
       }
     },
-    "exemples_boutiques_LanHCb": {
-      "type": "exemples-boutiques",
-      "blocks": {
-        "project_t6x67g": {
-          "type": "project",
-          "settings": {
-            "badge": "",
-            "label_before": "AVANT",
-            "before_image": "shopify://shop_images/9xyw9x5zebh8Y5bJEdTDHjCcQ.avif",
-            "title_before": "",
-            "link_before_label": "",
-            "link_before": "",
-            "label_after": "Après",
-            "after_image": "shopify://shop_images/fGKFtouh2pyTaZltyEcmfwER0c.avif",
-            "title_after": "",
-            "link_after_label": "",
-            "link_after": ""
-          }
-        },
-        "project_geFn6z": {
-          "type": "project",
-          "settings": {
-            "badge": "",
-            "label_before": "AVANT",
-            "before_image": "shopify://shop_images/d6L1TMDxwqB06n4LT16sGwvUY7M.avif",
-            "title_before": "",
-            "link_before_label": "",
-            "link_before": "",
-            "label_after": "Après",
-            "after_image": "shopify://shop_images/dUvj57zaPsnlgaFU2mdn8dW5lmc.webp",
-            "title_after": "",
-            "link_after_label": "",
-            "link_after": ""
-          }
-        },
-        "project_End3Tf": {
-          "type": "project",
-          "settings": {
-            "badge": "",
-            "label_before": "AVANT",
-            "before_image": "shopify://shop_images/9xyw9x5zebh8Y5bJEdTDHjCcQ.avif",
-            "title_before": "",
-            "link_before_label": "",
-            "link_before": "",
-            "label_after": "Après",
-            "after_image": "shopify://shop_images/fGKFtouh2pyTaZltyEcmfwER0c.avif",
-            "title_after": "",
-            "link_after_label": "",
-            "link_after": ""
-          }
-        },
-        "project_gBkzMf": {
-          "type": "project",
-          "settings": {
-            "badge": "",
-            "label_before": "AVANT",
-            "before_image": "shopify://shop_images/9xyw9x5zebh8Y5bJEdTDHjCcQ.avif",
-            "title_before": "",
-            "link_before_label": "",
-            "link_before": "",
-            "label_after": "Après",
-            "after_image": "shopify://shop_images/fGKFtouh2pyTaZltyEcmfwER0c.avif",
-            "title_after": "",
-            "link_after_label": "",
-            "link_after": ""
-          }
-        }
-      },
-      "block_order": [
-        "project_t6x67g",
-        "project_geFn6z",
-        "project_End3Tf",
-        "project_gBkzMf"
-      ],
-      "disabled": true,
-      "name": "Portfolio / Réalisations",
-      "settings": {
-        "eyebrow": "Une architecture pensée pour vendre",
-        "heading": "<p>Nos <em>Réalisations.</em></p>",
-        "cta_label": "OBTENIR MON SITE",
-        "cta_url": "#shopify-section-template--27670366191949__featured_product_6NKNnk",
-        "padding_top": 28,
-        "padding_bottom": 28,
-        "bg_color": "#111111",
-        "card_bg_color": "#1a1a1a",
-        "accent_color": "#c8f135",
-        "accent_color_2": "#c8f135",
-        "text_color": "#ffffff",
-        "muted_color": "#666666",
-        "border_color": "#2a2a2a",
-        "badge_color": "#c8f135"
-      }
-    },
     "step_process_M7mPTb": {
       "type": "step-process",
       "blocks": {
@@ -760,6 +667,60 @@
         "badge_text_color": "#ffffff",
         "heading_color": "#111111",
         "body_color": "#555555"
+      }
+    },
+    "benef_PJqrrV": {
+      "type": "benef",
+      "name": "Bento Fonctionnalités",
+      "settings": {
+        "bg_color": "#ffffff",
+        "use_gradient": true,
+        "gradient_color_1": "#ffffff",
+        "gradient_color_2": "#ffffff",
+        "gradient_color_3": "#f7faff",
+        "padding_top": 60,
+        "padding_bottom": 60,
+        "padding_x": 24,
+        "grid_gap": 16,
+        "title": "Pourquoi nos boutiques vendent là où les autres échouent...",
+        "title_color": "#0a0a0a",
+        "title_size_desktop": 42,
+        "title_size_mobile": 28,
+        "subtitle": "Une architecture pensée pour vendre, pas juste pour \"faire joli\"",
+        "subtitle_color": "#6b7280",
+        "subtitle_size": 15,
+        "header_gap": 36,
+        "badge_text": "€380 (Thème premium habituellement vendu 380€)",
+        "badge_bg": "#f0fdf4",
+        "badge_color": "#16a34a",
+        "card_radius": 20,
+        "card_min_height": 400,
+        "card_title_size": 17,
+        "card_desc_size": 14,
+        "card1_title": "Un thème premium conçu par des développeurs experts",
+        "card1_desc": "Plus de 50 sections sur-mesure, pensées pour la conversion, le branding et l'expérience utilisateur.",
+        "card1_bg": "#ffffff",
+        "card1_border": "#e5e7eb",
+        "card1_title_color": "#0a0a0a",
+        "card1_desc_color": "#6b7280",
+        "card2_title": "Panier optimisé pour la conversion",
+        "card2_desc": "Barre de progression, bénéfices, impulsions d'achat, garanties + upsells sans quitter le panier.",
+        "card2_bg": "#ffffff",
+        "card2_border": "#e5e7eb",
+        "card2_title_color": "#0a0a0a",
+        "card2_desc_color": "#6b7280",
+        "card3_title": "Mobile-first & ultra rapide",
+        "card3_desc": "Performant là où se font les ventes",
+        "card3_bg": "#ffffff",
+        "card3_border": "#e5e7eb",
+        "card3_title_color": "#0a0a0a",
+        "card3_desc_color": "#6b7280",
+        "card4_title": "Pages Produits Ultra Complètes",
+        "card4_desc": "UGC, storytelling, FAQ intégrée, comparatif, avant/après…",
+        "card4_bg": "#ffffff",
+        "card4_border": "#e5e7eb",
+        "card4_title_color": "#0a0a0a",
+        "card4_desc_color": "#6b7280"
       }
     },
     "multi_column_UxP6EL": {
@@ -886,8 +847,8 @@
     "logo_scroll_g9UXwK",
     "rich_text_eYq63L",
     "testimonials_TjqyDD",
-    "exemples_boutiques_LanHCb",
     "step_process_M7mPTb",
+    "benef_PJqrrV",
     "multi_column_UxP6EL",
     "faq"
   ]
