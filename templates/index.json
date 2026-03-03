@@ -301,11 +301,20 @@
         },
         "collapsible_text_zRgpxD": {
           "type": "collapsible_text",
-          "disabled": true,
           "settings": {
             "icon": "none",
             "icon_width": 20,
-            "title": "Comment ca Fonctionne ?",
+            "title": "Comment ça Fonctionne ?",
+            "content": "<p>Share some content to your customers about your products.</p>",
+            "page": ""
+          }
+        },
+        "collapsible_text_DXmqPR": {
+          "type": "collapsible_text",
+          "settings": {
+            "icon": "none",
+            "icon_width": 20,
+            "title": "Livraison en 48H",
             "content": "<p>Share some content to your customers about your products.</p>",
             "page": ""
           }
@@ -324,7 +333,8 @@
         "variant_picker_8e3kex",
         "quantity_selector_GYfDKW",
         "buy_buttons_dKAM7q",
-        "collapsible_text_zRgpxD"
+        "collapsible_text_zRgpxD",
+        "collapsible_text_DXmqPR"
       ],
       "name": "Featured product",
       "settings": {
@@ -672,6 +682,7 @@
     },
     "benef_PJqrrV": {
       "type": "benef",
+      "disabled": true,
       "name": "Bento Fonctionnalités",
       "settings": {
         "bg_color": "#ffffff",
@@ -679,10 +690,10 @@
         "gradient_color_1": "#ffffff",
         "gradient_color_2": "#ffffff",
         "gradient_color_3": "#f7faff",
-        "padding_top": 60,
-        "padding_bottom": 60,
-        "padding_x": 24,
-        "grid_gap": 16,
+        "padding_top": 40,
+        "padding_bottom": 55,
+        "padding_x": 16,
+        "grid_gap": 24,
         "title": "Pourquoi nos boutiques vendent là où les autres échouent...",
         "title_color": "#0a0a0a",
         "title_size_desktop": 42,
@@ -691,13 +702,13 @@
         "subtitle_color": "#6b7280",
         "subtitle_size": 15,
         "header_gap": 36,
-        "badge_text": "€380 (Thème premium habituellement vendu 380€)",
+        "badge_text": "",
         "badge_bg": "#f0fdf4",
         "badge_color": "#16a34a",
         "card_radius": 20,
         "card_min_height": 400,
         "card_title_size": 17,
-        "card_desc_size": 14,
+        "card_desc_size": 13,
         "card1_title": "Un thème premium conçu par des développeurs experts",
         "card1_desc": "Plus de 50 sections sur-mesure, pensées pour la conversion, le branding et l'expérience utilisateur.",
         "card1_bg": "#ffffff",
