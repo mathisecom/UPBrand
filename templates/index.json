@@ -15,17 +15,17 @@
       "settings": {
         "bg_color": "#0d0d0d",
         "accent_color": "#00B67A",
-        "padding_top": 70,
-        "padding_bottom": 70,
-        "badge_text": "8lab Ecosystem · The Infinite",
-        "title_size": 62,
+        "padding_top": 35,
+        "padding_bottom": 30,
+        "badge_text": "Votre Boutique Sur-Mesure en 48H",
+        "title_size": 52,
         "title_start": "Le seul écosystème",
-        "title_dim_1": "pour",
-        "title_bold_1": "créer",
+        "title_dim_1": "",
+        "title_bold_1": "",
         "title_mid": "et",
-        "title_dim_2": "scaler",
-        "title_bold_2": "son",
-        "title_bold_color": "#ffffff",
+        "title_dim_2": "",
+        "title_bold_2": "",
+        "title_bold_color": "#2563eb",
         "desc_bold": "Le 8lab vous offre un plan étape par étape,",
         "desc_text": "le réseau et les outils pour créer une marque e-commerce pérenne.",
         "cta_text": "Découvrir Notre Offre",
@@ -40,73 +40,14 @@
         "social_count": "+3,000 Clients Satisfaits",
         "show_stats": true,
         "stat_value_color": "#ffffff",
-        "stat_1_label": "Nombre de membres actifs",
-        "stat_1_value": "1365",
-        "stat_2_label": "CA générés par les membres",
-        "stat_2_value": "$45M+",
-        "stat_3_label": "Satisfaction de nos membres",
+        "stat_1_label": "D'Expériences",
+        "stat_1_value": "+6 Ans",
+        "stat_2_label": "CA Généré",
+        "stat_2_value": "+23M€",
+        "stat_3_label": "Satisfaction Clients",
         "stat_3_value": "99,8%",
-        "stat_4_label": "Nombre d'heures de contenu",
-        "stat_4_value": "150"
-      }
-    },
-    "stats_chiffres_KEqh3R": {
-      "type": "stats-chiffres",
-      "blocks": {
-        "stat_GnNGbM": {
-          "type": "stat",
-          "settings": {
-            "number": "+6 Ans",
-            "label": "D'Expériences"
-          }
-        },
-        "stat_4i3T8B": {
-          "type": "stat",
-          "settings": {
-            "number": "+23M€",
-            "label": "CA généré par nos Clients"
-          }
-        },
-        "stat_G6UzEn": {
-          "type": "stat",
-          "settings": {
-            "number": "99,8%",
-            "label": "De Nos Clients Satisfaits"
-          }
-        },
-        "stat_cVrMCG": {
-          "type": "stat",
-          "settings": {
-            "number": "48H",
-            "label": "Livraison Rapide en 48H"
-          }
-        }
-      },
-      "block_order": [
-        "stat_GnNGbM",
-        "stat_4i3T8B",
-        "stat_G6UzEn",
-        "stat_cVrMCG"
-      ],
-      "disabled": true,
-      "name": "Chiffres clés / Stats",
-      "settings": {
-        "max_width": 1400,
-        "gap": 80,
-        "alignment": "center",
-        "padding_top": 28,
-        "padding_bottom": 28,
-        "bg_color": "#000000",
-        "number_color": "#ffffff",
-        "label_color": "#aaaaaa",
-        "number_size_min": 32,
-        "number_size_max": 52,
-        "label_size": 15,
-        "show_dividers": false,
-        "divider_color": "#1a1a1a",
-        "show_stars": true,
-        "show_glow": false,
-        "glow_color": "#2563eb"
+        "stat_4_label": "Livraison Rapide en",
+        "stat_4_value": "48H"
       }
     },
     "custom_liquid_PXXVtp": {
@@ -786,7 +727,6 @@
   },
   "order": [
     "hero_section_weVeAL",
-    "stats_chiffres_KEqh3R",
     "custom_liquid_PXXVtp",
     "featured_product_6NKNnk",
     "rich_text_R3LMfB",
