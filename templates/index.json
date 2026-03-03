@@ -451,70 +451,78 @@
           "type": "project",
           "settings": {
             "badge": "",
-            "label_before": "",
+            "label_before": "AVANT",
+            "before_image": "shopify://shop_images/9xyw9x5zebh8Y5bJEdTDHjCcQ.avif",
             "title_before": "",
             "link_before_label": "",
             "link_before": "",
-            "label_after": "",
+            "label_after": "Après",
+            "after_image": "shopify://shop_images/fGKFtouh2pyTaZltyEcmfwER0c.avif",
             "title_after": "",
             "link_after_label": "",
             "link_after": ""
           }
         },
-        "project_ynBVCe": {
+        "project_geFn6z": {
           "type": "project",
           "settings": {
             "badge": "",
-            "label_before": "TEMPLATE",
-            "title_before": "Template · Harmoni",
-            "link_before_label": "VOIR LE TEMPLATE",
+            "label_before": "AVANT",
+            "before_image": "shopify://shop_images/d6L1TMDxwqB06n4LT16sGwvUY7M.avif",
+            "title_before": "",
+            "link_before_label": "",
             "link_before": "",
-            "label_after": "LIVE SITE",
-            "title_after": "Site Yoga",
-            "link_after_label": "VOIR LE SITE",
+            "label_after": "Après",
+            "after_image": "shopify://shop_images/dUvj57zaPsnlgaFU2mdn8dW5lmc.webp",
+            "title_after": "",
+            "link_after_label": "",
             "link_after": ""
           }
         },
-        "project_Phd4xi": {
+        "project_End3Tf": {
           "type": "project",
           "settings": {
             "badge": "",
-            "label_before": "TEMPLATE",
-            "title_before": "Template · Momentus",
-            "link_before_label": "VOIR LE TEMPLATE",
+            "label_before": "AVANT",
+            "before_image": "shopify://shop_images/9xyw9x5zebh8Y5bJEdTDHjCcQ.avif",
+            "title_before": "",
+            "link_before_label": "",
             "link_before": "",
-            "label_after": "PERSONNALISATION",
-            "title_after": "Yoga Academy",
-            "link_after_label": "VOIR LE SITE",
+            "label_after": "Après",
+            "after_image": "shopify://shop_images/fGKFtouh2pyTaZltyEcmfwER0c.avif",
+            "title_after": "",
+            "link_after_label": "",
             "link_after": ""
           }
         },
-        "project_WNaGdx": {
+        "project_gBkzMf": {
           "type": "project",
           "settings": {
             "badge": "",
-            "label_before": "TEMPLATE",
-            "title_before": "Template · Miros",
-            "link_before_label": "VOIR LE TEMPLATE",
+            "label_before": "AVANT",
+            "before_image": "shopify://shop_images/9xyw9x5zebh8Y5bJEdTDHjCcQ.avif",
+            "title_before": "",
+            "link_before_label": "",
             "link_before": "",
-            "label_after": "LIVE SITE",
-            "title_after": "App Website",
-            "link_after_label": "VOIR LE SITE",
+            "label_after": "Après",
+            "after_image": "shopify://shop_images/fGKFtouh2pyTaZltyEcmfwER0c.avif",
+            "title_after": "",
+            "link_after_label": "",
             "link_after": ""
           }
         }
       },
       "block_order": [
         "project_t6x67g",
-        "project_ynBVCe",
-        "project_Phd4xi",
-        "project_WNaGdx"
+        "project_geFn6z",
+        "project_End3Tf",
+        "project_gBkzMf"
       ],
       "disabled": true,
       "name": "Portfolio / Réalisations",
       "settings": {
-        "eyebrow": "",
-        "heading": "",
+        "eyebrow": "Une architecture pensée pour vendre",
+        "heading": "<p>Nos <em>Réalisations.</em></p>",
         "cta_label": "OBTENIR MON SITE",
         "cta_url": "#shopify-section-template--27670366191949__featured_product_6NKNnk",
         "padding_top": 28,
