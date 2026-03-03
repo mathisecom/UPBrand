@@ -154,7 +154,6 @@
     },
     "comparaison_ajBPrk": {
       "type": "comparaison",
-      "disabled": true,
       "name": "Comparaison Sans / Avec",
       "settings": {
         "bg_color": "#ffffff",
