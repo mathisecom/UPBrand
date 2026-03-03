@@ -222,12 +222,14 @@
         "image_KryENe": {
           "type": "image",
           "settings": {
+            "image": "shopify://shop_images/BANNER_MOBILE_19.png",
             "url": ""
           }
         },
         "image_DbHyiw": {
           "type": "image",
           "settings": {
+            "image": "shopify://shop_images/BANNER_MOBILE_20.png",
             "url": ""
           }
         },
