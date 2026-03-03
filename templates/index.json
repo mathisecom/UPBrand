@@ -47,6 +47,7 @@
         "stat_G6UzEn",
         "stat_cVrMCG"
       ],
+      "disabled": true,
       "name": "Chiffres clés / Stats",
       "settings": {
         "max_width": 1400,
