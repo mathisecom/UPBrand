@@ -332,10 +332,11 @@
         "testimonial_V87RBB": {
           "type": "testimonial",
           "settings": {
+            "image": "shopify://shop_images/file_1_1.jpg",
             "round_avatar": true,
             "show_rating": true,
             "rating": 5,
-            "author": "Mary U.",
+            "author": "Paul - E-Commerçant",
             "title": "Testimonial 2",
             "content": "<p>Share what your customers are saying about your products, customer service or shipping rates.</p>"
           }
@@ -343,10 +344,11 @@
         "testimonial_3FD6dH": {
           "type": "testimonial",
           "settings": {
+            "image": "shopify://shop_images/file_2_1.jpg",
             "round_avatar": true,
             "show_rating": true,
             "rating": 4,
-            "author": "Joshua A.",
+            "author": "Victor - E-Commerçant ",
             "title": "Testimonial 3",
             "content": "<p>Share what your customers are saying about your products, customer service or shipping rates.</p>"
           }
@@ -354,10 +356,11 @@
         "testimonial_3MggbT": {
           "type": "testimonial",
           "settings": {
+            "image": "shopify://shop_images/file_3.jpg",
             "round_avatar": true,
             "show_rating": true,
             "rating": 4,
-            "author": "",
+            "author": "Alexandre - E-Commerçant ",
             "title": "Testimonial",
             "content": "<p>Share what your customers are saying about your products, customer service or shipping rates.</p>"
           }
@@ -365,21 +368,11 @@
         "testimonial_Ph7CpA": {
           "type": "testimonial",
           "settings": {
+            "image": "shopify://shop_images/file_4.jpg",
             "round_avatar": true,
             "show_rating": true,
             "rating": 4,
-            "author": "",
-            "title": "Testimonial",
-            "content": "<p>Share what your customers are saying about your products, customer service or shipping rates.</p>"
-          }
-        },
-        "testimonial_RmFqeU": {
-          "type": "testimonial",
-          "settings": {
-            "round_avatar": true,
-            "show_rating": true,
-            "rating": 4,
-            "author": "",
+            "author": "Hamza - E-Commerçant ",
             "title": "Testimonial",
             "content": "<p>Share what your customers are saying about your products, customer service or shipping rates.</p>"
           }
@@ -390,8 +383,7 @@
         "testimonial_V87RBB",
         "testimonial_3FD6dH",
         "testimonial_3MggbT",
-        "testimonial_Ph7CpA",
-        "testimonial_RmFqeU"
+        "testimonial_Ph7CpA"
       ],
       "name": "Testimonials",
       "settings": {
