@@ -15,8 +15,8 @@
         "stat_GnNGbM": {
           "type": "stat",
           "settings": {
-            "number": "+3,000",
-            "label": "Boutiques créées depuis 2020"
+            "number": "+6 Ans",
+            "label": "D'Expériences"
           }
         },
         "stat_4i3T8B": {
@@ -30,7 +30,7 @@
           "type": "stat",
           "settings": {
             "number": "99,8%",
-            "label": "De nos Clients Satisfaits"
+            "label": "De Nos Clients Satisfaits"
           }
         },
         "stat_cVrMCG": {
@@ -54,7 +54,7 @@
         "alignment": "center",
         "padding_top": 60,
         "padding_bottom": 60,
-        "bg_color": "#1a1a1a",
+        "bg_color": "#000000",
         "number_color": "#ffffff",
         "label_color": "#aaaaaa",
         "number_size_min": 36,
@@ -62,7 +62,7 @@
         "label_size": 16,
         "show_dividers": false,
         "divider_color": "#1a1a1a",
-        "show_stars": false,
+        "show_stars": true,
         "show_glow": false,
         "glow_color": "#2563eb"
       }
