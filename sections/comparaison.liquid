@@ -44,31 +44,33 @@
         </ul>
       </div>
 
-      <!-- Carte droite (avec) -->
-      <div class="cmp-card cmp-card--right">
-        <div class="cmp-card-header">
-          <div class="cmp-icon cmp-icon--gradient">
-            {% if section.settings.right_icon != blank %}
-              <img src="{{ section.settings.right_icon | img_url: '60x60', crop: 'center' }}" alt="icon">
-            {% else %}
-              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-            {% endif %}
+      <!-- Carte droite (avec) — wrapper gradient -->
+      <div class="cmp-card-gradient-wrapper">
+        <div class="cmp-card cmp-card--right">
+          <div class="cmp-card-header">
+            <div class="cmp-icon cmp-icon--gradient">
+              {% if section.settings.right_icon != blank %}
+                <img src="{{ section.settings.right_icon | img_url: '60x60', crop: 'center' }}" alt="icon">
+              {% else %}
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+              {% endif %}
+            </div>
+            <h3 class="cmp-card-title" style="color:{{ section.settings.right_title_color }};">{{ section.settings.right_title }}</h3>
           </div>
-          <h3 class="cmp-card-title" style="color:{{ section.settings.right_title_color }};">{{ section.settings.right_title }}</h3>
+          <hr class="cmp-divider">
+          <ul class="cmp-list">
+            {% for i in (1..6) %}
+              {% assign item_key = 'right_item_' | append: i %}
+              {% assign item = section.settings[item_key] %}
+              {% if item != blank %}
+              <li class="cmp-list-item cmp-list-item--good">
+                <span class="cmp-icon-item cmp-icon-item--good">✓</span>
+                {{ item }}
+              </li>
+              {% endif %}
+            {% endfor %}
+          </ul>
         </div>
-        <hr class="cmp-divider">
-        <ul class="cmp-list">
-          {% for i in (1..6) %}
-            {% assign item_key = 'right_item_' | append: i %}
-            {% assign item = section.settings[item_key] %}
-            {% if item != blank %}
-            <li class="cmp-list-item cmp-list-item--good">
-              <span class="cmp-icon-item cmp-icon-item--good">✓</span>
-              {{ item }}
-            </li>
-            {% endif %}
-          {% endfor %}
-        </ul>
       </div>
 
     </div>
@@ -134,6 +136,13 @@
     width: 100%;
   }
 
+  /* ── WRAPPER DÉGRADÉ (carte droite) ── */
+  .cmp-card-gradient-wrapper {
+    padding: {{ section.settings.gradient_border_width }}px;
+    border-radius: calc(20px + {{ section.settings.gradient_border_width }}px);
+    background: linear-gradient(135deg, {{ section.settings.right_border_color_1 }}, {{ section.settings.right_border_color_2 }});
+  }
+
   /* ── CARTES ── */
   .cmp-card {
     border-radius: 20px;
@@ -141,6 +150,8 @@
     display: flex;
     flex-direction: column;
     gap: 0;
+    height: 100%;
+    box-sizing: border-box;
   }
   .cmp-card--left {
     background: {{ section.settings.left_card_bg }};
@@ -148,17 +159,7 @@
   }
   .cmp-card--right {
     background: {{ section.settings.right_card_bg }};
-    border: 2px solid transparent;
-    background-clip: padding-box;
-    position: relative;
-  }
-  .cmp-card--right::before {
-    content: '';
-    position: absolute;
-    inset: -2px;
-    border-radius: 22px;
-    background: linear-gradient(135deg, {{ section.settings.right_border_color_1 }}, {{ section.settings.right_border_color_2 }});
-    z-index: -1;
+    border: none;
   }
 
   /* ── ICÔNE ── */
@@ -228,20 +229,13 @@
     font-weight: 700;
     margin-top: 2px;
   }
-  .cmp-icon-item--bad {
-    background: {{ section.settings.cross_bg }};
-    color: {{ section.settings.cross_color }};
-  }
-  .cmp-icon-item--good {
-    background: {{ section.settings.check_bg }};
-    color: {{ section.settings.check_color }};
-  }
+  .cmp-icon-item--bad  { background: {{ section.settings.cross_bg }}; color: {{ section.settings.cross_color }}; }
+  .cmp-icon-item--good { background: {{ section.settings.check_bg }}; color: {{ section.settings.check_color }}; }
 
   /* ── RESPONSIVE ── */
   @media (max-width: 768px) {
     .cmp-grid { grid-template-columns: 1fr; }
     .cmp-card { padding: 24px; }
-    .cmp-card--right { background: {{ section.settings.right_card_bg }}; }
   }
 </style>
 
@@ -287,10 +281,11 @@
 
     { "type": "header", "content": "➡️ Carte droite — Avec" },
     { "type": "color", "id": "right_card_bg", "label": "Fond carte droite", "default": "#ffffff" },
-    { "type": "color", "id": "right_border_color_1", "label": "Bordure dégradé couleur 1", "default": "#f9a8d4" },
-    { "type": "color", "id": "right_border_color_2", "label": "Bordure dégradé couleur 2", "default": "#a5b4fc" },
+    { "type": "color", "id": "right_border_color_1", "label": "Dégradé bordure couleur 1", "default": "#f9a8d4" },
+    { "type": "color", "id": "right_border_color_2", "label": "Dégradé bordure couleur 2", "default": "#a5b4fc" },
+    { "type": "range", "id": "gradient_border_width", "label": "Épaisseur bordure dégradée (px)", "min": 1, "max": 6, "step": 1, "default": 2 },
     { "type": "image_picker", "id": "right_icon", "label": "Icône droite (optionnel)" },
-    { "type": "text", "id": "right_title", "label": "Titre carte droite", "default": "Avec Edabos" },
+    { "type": "text", "id": "right_title", "label": "Titre carte droite", "default": "Avec UPBrand Agency" },
     { "type": "color", "id": "right_title_color", "label": "Couleur titre droite", "default": "#ec4899" },
     { "type": "text", "id": "right_item_1", "label": "Point 1", "default": "Tu lances une boutique rentable plus vite grâce à une structure déjà prête." },
     { "type": "text", "id": "right_item_2", "label": "Point 2", "default": "Produit sélectionné selon des données réelles : demande, marge, concurrence et cycle d'achat." },
