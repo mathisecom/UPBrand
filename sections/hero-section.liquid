@@ -31,13 +31,24 @@
     </p>
     {% endif %}
 
-    {% if section.settings.cta_text != blank %}
-    <a href="{{ section.settings.cta_url }}" class="hdf-cta">
-      {% if section.settings.show_cta_dot %}<span class="hdf-dot" style="background:{{ section.settings.accent_color }};box-shadow:0 0 6px {{ section.settings.accent_color }};"></span>{% endif %}
-      {{ section.settings.cta_text }}
-      <svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M9 18l6-6-6-6" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
-    </a>
-    {% endif %}
+    <div class="hdf-buttons">
+      {% if section.settings.cta_text != blank %}
+      <a href="{{ section.settings.cta_url }}" class="hdf-cta">
+        {% if section.settings.show_cta_dot %}<span class="hdf-dot" style="background:{{ section.settings.accent_color }};box-shadow:0 0 6px {{ section.settings.accent_color }};"></span>{% endif %}
+        {{ section.settings.cta_text }}
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M9 18l6-6-6-6" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </a>
+      {% endif %}
+
+      {% if section.settings.contact_text != blank %}
+      <a href="{{ section.settings.contact_url }}" class="hdf-cta-secondary">
+        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.61 3.4 2 2 0 0 1 3.6 1.22h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.8a16 16 0 0 0 6.29 6.29l.96-.96a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/>
+        </svg>
+        {{ section.settings.contact_text }}
+      </a>
+      {% endif %}
+    </div>
 
     {% if section.settings.show_social %}
     <div class="hdf-social">
@@ -111,6 +122,7 @@
   .hdf-glow { position: absolute; width: 700px; height: 700px; border-radius: 50%; filter: blur(140px); opacity: 0.15; pointer-events: none; z-index: 0; }
   .hdf-glow--left  { background: radial-gradient(circle, #1a4a2e, transparent 70%); left: -250px; top: -100px; }
   .hdf-glow--right { background: radial-gradient(circle, #1a3a4a, transparent 70%); right: -250px; bottom: -50px; }
+
   .hdf-inner {
     position: relative; z-index: 1; text-align: center;
     max-width: 820px; width: 100%;
@@ -118,6 +130,7 @@
     animation: hdfUp 0.8s ease both;
   }
   @keyframes hdfUp { from { opacity: 0; transform: translateY(28px); } to { opacity: 1; transform: translateY(0); } }
+
   .hdf-badge {
     display: inline-flex; align-items: center; gap: 8px; padding: 6px 16px;
     background: rgba(255,255,255,0.07); border: 1px solid rgba(255,255,255,0.15);
@@ -126,16 +139,49 @@
   }
   .hdf-dot { width: 6px; height: 6px; border-radius: 50%; flex-shrink: 0; animation: hdfPulse 2s infinite; }
   @keyframes hdfPulse { 0%,100%{opacity:1} 50%{opacity:0.35} }
-  .hdf-title { font-size: clamp(28px, 5vw, {{ section.settings.title_size }}px); font-weight: 800; line-height: 1.1; letter-spacing: -0.03em; color: #fff; margin: 0; }
+
+  /* ── TITRE desktop ── */
+  .hdf-title {
+    font-size: {{ section.settings.title_size_desktop }}px;
+    font-weight: 800; line-height: 1.1; letter-spacing: -0.03em; color: #fff; margin: 0;
+  }
   .hdf-dim { color: rgba(255,255,255,0.38); }
-  .hdf-desc { font-size: 14px; color: rgba(255,255,255,0.5); max-width: 520px; line-height: 1.75; letter-spacing: -0.01em; margin: 0; }
+
+  /* ── DESCRIPTION desktop ── */
+  .hdf-desc {
+    font-size: {{ section.settings.desc_size_desktop }}px;
+    color: rgba(255,255,255,0.5); max-width: 520px; line-height: 1.75; letter-spacing: -0.01em; margin: 0;
+  }
   .hdf-desc strong { color: rgba(255,255,255,0.85); font-weight: 600; }
+
+  /* ── BOUTONS ── */
+  .hdf-buttons {
+    display: flex; flex-wrap: wrap; gap: 12px; align-items: center; justify-content: center;
+  }
   .hdf-cta {
     display: inline-flex; align-items: center; gap: 8px; padding: 12px 28px;
     background: #fff; color: #0d0d0d; border-radius: 999px; font-size: 14px; font-weight: 600;
     text-decoration: none; letter-spacing: -0.01em; transition: transform .2s, box-shadow .2s;
   }
   .hdf-cta:hover { transform: translateY(-2px); box-shadow: 0 8px 28px rgba(255,255,255,0.1); }
+
+  .hdf-cta-secondary {
+    display: inline-flex; align-items: center; gap: 8px; padding: 12px 28px;
+    background: transparent;
+    color: rgba(255,255,255,0.85);
+    border: 1.5px solid rgba(255,255,255,0.2);
+    border-radius: 999px; font-size: 14px; font-weight: 600;
+    text-decoration: none; letter-spacing: -0.01em;
+    transition: transform .2s, background .2s, border-color .2s;
+    backdrop-filter: blur(6px);
+  }
+  .hdf-cta-secondary:hover {
+    transform: translateY(-2px);
+    background: rgba(255,255,255,0.07);
+    border-color: rgba(255,255,255,0.4);
+  }
+
+  /* ── SOCIAL ── */
   .hdf-social { display: flex; align-items: center; gap: 12px; }
   .hdf-avatars { display: flex; }
   .hdf-avatar { width: 36px; height: 36px; border-radius: 50%; border: 2px solid {{ section.settings.bg_color }}; margin-left: -10px; object-fit: cover; }
@@ -144,6 +190,8 @@
   .hdf-social-info { display: flex; flex-direction: column; align-items: flex-start; gap: 1px; }
   .hdf-stars { display: flex; gap: 1px; font-size: 16px; line-height: 1; }
   .hdf-social-count { font-size: 12px; font-weight: 600; color: rgba(255,255,255,0.6); letter-spacing: -0.01em; }
+
+  /* ── STATS ── */
   .hdf-stats {
     display: grid; grid-template-columns: repeat(4, 1fr);
     gap: 1px; width: 100%; max-width: 760px;
@@ -152,14 +200,18 @@
   .hdf-stat { display: flex; flex-direction: column; align-items: center; gap: 4px; padding: 20px 16px; background: {{ section.settings.bg_color }}; }
   .hdf-stat-label { font-size: 11.5px; color: rgba(255,255,255,0.45); text-align: center; line-height: 1.4; letter-spacing: -0.01em; }
   .hdf-stat-value { font-size: clamp(22px, 3vw, 28px); font-weight: 800; letter-spacing: -0.03em; line-height: 1; }
+
+  /* ── RESPONSIVE MOBILE ── */
   @media (max-width: 768px) {
-    .hdf-title { font-size: 28px; }
+    .hdf-title { font-size: {{ section.settings.title_size_mobile }}px; }
+    .hdf-desc  { font-size: {{ section.settings.desc_size_mobile }}px; }
     .hdf-stats { grid-template-columns: repeat(2, 1fr); }
-    .hdf-stat { padding: 16px 12px; }
+    .hdf-stat  { padding: 16px 12px; }
+    .hdf-buttons { flex-direction: column; width: 100%; }
+    .hdf-cta, .hdf-cta-secondary { width: 100%; justify-content: center; }
   }
   @media (max-width: 480px) {
-    .hdf-title { font-size: 24px; }
-    .hdf-cta { font-size: 13px; padding: 11px 22px; }
+    .hdf-cta, .hdf-cta-secondary { font-size: 13px; padding: 11px 22px; }
   }
 </style>
 
@@ -172,13 +224,17 @@
     { "type": "header", "content": "🎨 Couleurs globales" },
     { "type": "color", "id": "bg_color", "label": "Fond", "default": "#0d0d0d" },
     { "type": "color", "id": "accent_color", "label": "Couleur accent", "default": "#00B67A" },
+
     { "type": "header", "content": "📐 Espacement" },
     { "type": "range", "id": "padding_top", "label": "Padding haut (px)", "min": 0, "max": 150, "step": 5, "default": 70 },
     { "type": "range", "id": "padding_bottom", "label": "Padding bas (px)", "min": 0, "max": 150, "step": 5, "default": 70 },
+
     { "type": "header", "content": "🏷️ Badge" },
     { "type": "text", "id": "badge_text", "label": "Texte du badge", "default": "8lab Ecosystem · The Infinite" },
+
     { "type": "header", "content": "✏️ Titre" },
-    { "type": "range", "id": "title_size", "label": "Taille max titre (px)", "min": 30, "max": 100, "step": 2, "default": 62 },
+    { "type": "range", "id": "title_size_desktop", "label": "Taille titre — Desktop (px)", "min": 30, "max": 100, "step": 2, "default": 62 },
+    { "type": "range", "id": "title_size_mobile", "label": "Taille titre — Mobile (px)", "min": 18, "max": 60, "step": 2, "default": 28 },
     { "type": "text", "id": "title_start", "label": "Texte blanc - début", "default": "Le seul écosystème" },
     { "type": "text", "id": "title_dim_1", "label": "Texte gris 1", "default": "pour" },
     { "type": "text", "id": "title_bold_1", "label": "Texte coloré 1", "default": "créer" },
@@ -186,13 +242,22 @@
     { "type": "text", "id": "title_dim_2", "label": "Texte gris 2", "default": "scaler" },
     { "type": "text", "id": "title_bold_2", "label": "Texte coloré 2", "default": "son" },
     { "type": "color", "id": "title_bold_color", "label": "Couleur des mots colorés", "default": "#ffffff" },
+
     { "type": "header", "content": "📝 Description" },
+    { "type": "range", "id": "desc_size_desktop", "label": "Taille description — Desktop (px)", "min": 10, "max": 24, "step": 1, "default": 14 },
+    { "type": "range", "id": "desc_size_mobile", "label": "Taille description — Mobile (px)", "min": 10, "max": 20, "step": 1, "default": 13 },
     { "type": "text", "id": "desc_bold", "label": "Texte en gras", "default": "Le 8lab vous offre un plan étape par étape," },
     { "type": "textarea", "id": "desc_text", "label": "Suite du texte", "default": " le réseau et les outils pour créer une marque e-commerce pérenne." },
-    { "type": "header", "content": "🔘 Bouton CTA" },
+
+    { "type": "header", "content": "🔘 Bouton principal (CTA)" },
     { "type": "text", "id": "cta_text", "label": "Texte du bouton", "default": "Rejoindre au prochain LIVE" },
     { "type": "url", "id": "cta_url", "label": "Lien du bouton" },
     { "type": "checkbox", "id": "show_cta_dot", "label": "Afficher le point animé", "default": true },
+
+    { "type": "header", "content": "📞 Bouton secondaire (Contactez-Nous)" },
+    { "type": "text", "id": "contact_text", "label": "Texte du bouton", "default": "Contactez-Nous" },
+    { "type": "url", "id": "contact_url", "label": "Lien du bouton (tel: ou page)" },
+
     { "type": "header", "content": "👥 Preuve sociale" },
     { "type": "checkbox", "id": "show_social", "label": "Afficher la preuve sociale", "default": true },
     { "type": "image_picker", "id": "avatar_1", "label": "Photo membre 1" },
@@ -201,6 +266,7 @@
     { "type": "image_picker", "id": "avatar_4", "label": "Photo membre 4" },
     { "type": "color", "id": "star_color", "label": "Couleur des étoiles", "default": "#00B67A" },
     { "type": "text", "id": "social_count", "label": "Texte du compteur", "default": "+2086 membres" },
+
     { "type": "header", "content": "📊 Statistiques" },
     { "type": "checkbox", "id": "show_stats", "label": "Afficher les statistiques", "default": true },
     { "type": "color", "id": "stat_value_color", "label": "Couleur des chiffres", "default": "#ffffff" },
