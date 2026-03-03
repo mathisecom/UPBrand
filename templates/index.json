@@ -302,7 +302,7 @@
         "liquid_7HQMh9": {
           "type": "liquid",
           "settings": {
-            "liquid": "<center><div style=\"display: inline-flex; align-items: center; gap: 8px; padding: 8px 16px; background: #111; border-radius: 999px; font-family: 'Plus Jakarta Sans', sans-serif;\">\n  <span style=\"width: 8px; height: 8px; border-radius: 50%; background: #00B67A; box-shadow: 0 0 6px #00B67A; flex-shrink: 0; animation: livPulse 2s infinite;\"></span>\n  <span style=\"font-size: 13px; font-weight: 600; color: #fff; letter-spacing: -0.01em; white-space: nowrap;\">Tu Recoit un formulaire dès la commande ta boutique</span>\n</div>\n\n<style>\n  @keyframes livPulse {\n    0%, 100% { opacity: 1; }\n    50% { opacity: 0.3; }\n  }\n</style>"
+            "liquid": "<center><div style=\"display: inline-flex; align-items: center; gap: 8px; padding: 4px 16px; background: #202020; border-radius: 999px; font-family: 'Plus Jakarta Sans', sans-serif; border: 1.5px dashed rgba(255,255,255,0.35); max-width: 100%;\">\n  <span style=\"width: 8px; height: 8px; border-radius: 50%; background: #00B67A; box-shadow: 0 0 6px #00B67A; flex-shrink: 0; animation: livPulse 2s infinite;\"></span>\n  <span style=\"font-size: 11px; font-weight: 600; color: #fff; letter-spacing: -0.01em;\">Formulaire & Suivi WhatsApp dès la commande</span>\n</div>\n<style>\n  @keyframes livPulse {\n    0%, 100% { opacity: 1; }\n    50% { opacity: 0.3; }\n  }\n</style>"
           }
         },
         "collapsible_text_zRgpxD": {
