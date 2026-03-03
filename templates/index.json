@@ -67,78 +67,6 @@
         "glow_color": "#2563eb"
       }
     },
-    "logo_scroll_LQGnj8": {
-      "type": "logo-scroll",
-      "blocks": {
-        "image_L4D7LX": {
-          "type": "image",
-          "settings": {
-            "url": ""
-          }
-        },
-        "image_BkUewp": {
-          "type": "image",
-          "settings": {
-            "url": ""
-          }
-        },
-        "image_3WKRrn": {
-          "type": "image",
-          "settings": {
-            "url": ""
-          }
-        },
-        "image_UtYAUy": {
-          "type": "image",
-          "settings": {
-            "url": ""
-          }
-        }
-      },
-      "block_order": [
-        "image_L4D7LX",
-        "image_BkUewp",
-        "image_3WKRrn",
-        "image_UtYAUy"
-      ],
-      "name": "SS - Scrolling logo cloud #5",
-      "settings": {
-        "layout_radius": 30,
-        "layout_border_thickness": 0,
-        "heading": "",
-        "heading_custom": false,
-        "heading_font": "josefin_sans_n4",
-        "heading_size": 18,
-        "heading_size_mobile": 18,
-        "heading_height": 130,
-        "scrolling_velocity": 30,
-        "scrolling_velocity_mobile": 20,
-        "scrolling_direction": "left",
-        "pause_hover": false,
-        "scrolling_gap": 70,
-        "scrolling_gap_mobile": 30,
-        "card_width_desktop": 130,
-        "card_width_mobile": 100,
-        "heading_color": "#121212",
-        "layout_bg_color": "#ffffff",
-        "layout_border_color": "#121212",
-        "background_color": "#ffffff",
-        "border_color": "#121212",
-        "margin_top": 12,
-        "margin_bottom": 0,
-        "margin_horizontal": 0,
-        "margin_horizontal_mobile": 0,
-        "padding_top": 0,
-        "padding_bottom": 0,
-        "padding_horizontal": 5,
-        "padding_horizontal_mobile": 0,
-        "full_width": true,
-        "content_width": 1200,
-        "border_thickness": 0,
-        "section_radius": 0,
-        "lazy": true
-      }
-    },
     "featured_product_6NKNnk": {
       "type": "featured-product",
       "blocks": {
@@ -740,7 +668,6 @@
   },
   "order": [
     "stats_chiffres_KEqh3R",
-    "logo_scroll_LQGnj8",
     "featured_product_6NKNnk",
     "rich_text_R3LMfB",
     "logo_scroll_g9UXwK",
