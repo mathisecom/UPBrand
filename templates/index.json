@@ -825,12 +825,20 @@
             "title": "Est-ce que je peux modifier ma boutique après livraison ?",
             "content": "<p>Absolument. Tu reçois une boutique clé en main sur Shopify, une plateforme intuitive que tu peux gérer seul facilement. On reste aussi disponibles sur WhatsApp pour t'accompagner.</p>"
           }
+        },
+        "item_dxJ4hb": {
+          "type": "item",
+          "settings": {
+            "title": "Combien de temps faut-il pour recevoir ma boutique ?",
+            "content": "<p>Ta boutique est livrée en 48H chrono après validation de ton formulaire de brief. On travaille vite, sans sacrifier la qualité.</p>"
+          }
         }
       },
       "block_order": [
         "166442457738b23caf-0",
         "166442457738b23caf-1",
-        "166442457738b23caf-2"
+        "166442457738b23caf-2",
+        "item_dxJ4hb"
       ],
       "settings": {
         "full_width": false,
