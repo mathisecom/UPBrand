@@ -640,8 +640,8 @@
           "type": "step",
           "settings": {
             "step_label": "ÉTAPE 0",
-            "card_title": "Publiez instantanément",
-            "card_description": "Mettez votre boutique en ligne en un clic. Aucun code, aucun développeur, aucun stress.",
+            "card_title": "Livraison & Lancement",
+            "card_description": "Ta boutique est livrée en 48H, clé en main, prête à accueillir tes premiers clients. Tu vends, on reste disponibles pour t'accompagner.",
             "floating_label": "",
             "floating_icon": ""
           }
