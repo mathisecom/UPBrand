@@ -299,6 +299,12 @@
             "payment_button_text_color": ""
           }
         },
+        "liquid_7HQMh9": {
+          "type": "liquid",
+          "settings": {
+            "liquid": "<center><div style=\"display: inline-flex; align-items: center; gap: 8px; padding: 8px 16px; background: #111; border-radius: 999px; font-family: 'Plus Jakarta Sans', sans-serif;\">\n  <span style=\"width: 8px; height: 8px; border-radius: 50%; background: #00B67A; box-shadow: 0 0 6px #00B67A; flex-shrink: 0; animation: livPulse 2s infinite;\"></span>\n  <span style=\"font-size: 13px; font-weight: 600; color: #fff; letter-spacing: -0.01em; white-space: nowrap;\">Tu Recoit un formulaire dès la commande ta boutique</span>\n</div>\n\n<style>\n  @keyframes livPulse {\n    0%, 100% { opacity: 1; }\n    50% { opacity: 0.3; }\n  }\n</style>"
+          }
+        },
         "collapsible_text_zRgpxD": {
           "type": "collapsible_text",
           "settings": {
@@ -333,6 +339,7 @@
         "variant_picker_8e3kex",
         "quantity_selector_GYfDKW",
         "buy_buttons_dKAM7q",
+        "liquid_7HQMh9",
         "collapsible_text_zRgpxD",
         "collapsible_text_DXmqPR"
       ],
