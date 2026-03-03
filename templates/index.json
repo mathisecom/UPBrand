@@ -9,41 +9,6 @@
  */
 {
   "sections": {
-    "rich_text_yxCh4p": {
-      "type": "rich-text",
-      "blocks": {
-        "subheading_7HrAc4": {
-          "type": "subheading",
-          "disabled": true,
-          "settings": {
-            "text": "Notre Savoir Faire, Boutique Brandée"
-          }
-        },
-        "heading_LCFPBW": {
-          "type": "heading",
-          "settings": {
-            "text": "Nos Réalisations",
-            "heading_tag": "h1",
-            "text_color": "",
-            "gradient": ""
-          }
-        }
-      },
-      "block_order": [
-        "subheading_7HrAc4",
-        "heading_LCFPBW"
-      ],
-      "disabled": true,
-      "name": "Rich text",
-      "settings": {
-        "full_width": true,
-        "content_width": "small",
-        "text_position": "center",
-        "background": "",
-        "background_gradient": "",
-        "text_color": ""
-      }
-    },
     "logo_scroll_LQGnj8": {
       "type": "logo-scroll",
       "blocks": {
@@ -109,7 +74,7 @@
         "padding_bottom": 0,
         "padding_horizontal": 5,
         "padding_horizontal_mobile": 0,
-        "full_width": false,
+        "full_width": true,
         "content_width": 1200,
         "border_thickness": 0,
         "section_radius": 0,
@@ -610,7 +575,6 @@
     }
   },
   "order": [
-    "rich_text_yxCh4p",
     "logo_scroll_LQGnj8",
     "featured_product_6NKNnk",
     "rich_text_eYq63L",
