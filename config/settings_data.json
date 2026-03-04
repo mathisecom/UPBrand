@@ -43,6 +43,7 @@
     "cart_icon": "shopping_cart",
     "social_instagram": "https://www.instagram.com/upbrand_agency/",
     "social_tiktok": "https://www.tiktok.com/@upbrandagency",
+    "favicon": "shopify://shop_images/323809241_534123555407381_4950037426324025936_n.jpg",
     "checkout_accent_color": "#f0c417",
     "checkout_button_color": "#1a1a1a",
     "content_for_index": []
