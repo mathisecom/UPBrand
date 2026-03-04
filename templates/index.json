@@ -649,6 +649,7 @@
             "step_label": "ÉTAPE 0",
             "card_title": "Création & Design",
             "card_description": "Notre équipe conçoit ton identité visuelle, intègre ton thème premium et optimise chaque section pour la conversion. Tu valides, on ajuste.",
+            "card_image": "shopify://shop_images/refonte-site-shopify.png",
             "floating_label": "",
             "floating_icon": ""
           }
