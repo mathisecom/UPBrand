@@ -935,6 +935,27 @@
         "accordion_background": "",
         "accordion_text_color": ""
       }
+    },
+    "contact_QrTEzD": {
+      "type": "contact",
+      "name": "Contact form",
+      "settings": {
+        "full_width": true,
+        "subheading": "Contactez-Nous",
+        "title": "",
+        "content": "<p>Via <a href=\"https://api.whatsapp.com/send/?phone=33615823575&text&type=phone_number&app_absent=0\" target=\"_blank\" title=\"https://api.whatsapp.com/send/?phone=33615823575&text&type=phone_number&app_absent=0\">WhatsApp</a> ou Bien Par Mail</p>",
+        "text_position": "center",
+        "contact_form_size": "large",
+        "background": "",
+        "background_gradient": "",
+        "text_color": "",
+        "heading_color": "",
+        "heading_gradient": "",
+        "contact_background": "",
+        "contact_text_color": "",
+        "button_background": "",
+        "button_text_color": ""
+      }
     }
   },
   "order": [
@@ -952,6 +973,7 @@
     "benef_PJqrrV",
     "multi_column_UxP6EL",
     "qui_sommes_nous_BkELeP",
-    "faq"
+    "faq",
+    "contact_QrTEzD"
   ]
 }
