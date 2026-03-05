@@ -17,28 +17,19 @@
         "message": {
           "type": "message",
           "settings": {
-            "text": "OFFRE DE LANCEMENT ÉCONOMISEZ 100,00 €",
-            "url": ""
-          }
-        },
-        "message_R6HRJm": {
-          "type": "message",
-          "disabled": true,
-          "settings": {
-            "text": "Livraison Rapide en 48H",
+            "text": "ÉCONOMISEZ 100€ - 5 PLACES CE MOIS-CI",
             "url": ""
           }
         }
       },
       "block_order": [
-        "message",
-        "message_R6HRJm"
+        "message"
       ],
       "settings": {
         "enable_sticky": false,
         "autoplay": true,
         "cycle_speed": 6,
-        "text_size": "text-xs",
+        "text_size": "text-xxs",
         "navigation_mode": "arrows",
         "scrolling_speed": 10,
         "background": "#2563eb",
