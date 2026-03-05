@@ -299,6 +299,18 @@
             "payment_button_text_color": ""
           }
         },
+        "button_Vy99wJ": {
+          "type": "button",
+          "settings": {
+            "link": "#shopify-section-template--27670366191949__featured_product_6NKNnk",
+            "text": "Contactez-Nous",
+            "size": "lg",
+            "style": "fill",
+            "stretch": true,
+            "background": "",
+            "text_color": ""
+          }
+        },
         "liquid_7HQMh9": {
           "type": "liquid",
           "settings": {
@@ -339,6 +351,7 @@
         "variant_picker_8e3kex",
         "quantity_selector_GYfDKW",
         "buy_buttons_dKAM7q",
+        "button_Vy99wJ",
         "liquid_7HQMh9",
         "collapsible_text_zRgpxD",
         "collapsible_text_DXmqPR"
