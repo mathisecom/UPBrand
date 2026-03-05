@@ -96,7 +96,7 @@
           "type": "text",
           "settings": {
             "title": "Contactez-Nous",
-            "content": "<p>Tél : 06 15 82 35 75</p><p><a href=\"https://api.whatsapp.com/send/?phone=33615823575&text&type=phone_number&app_absent=0\" target=\"_blank\" title=\"https://api.whatsapp.com/send/?phone=33615823575&text&type=phone_number&app_absent=0\">WhatsApp</a></p>",
+            "content": "<p>Tél : 06 15 82 35 75</p><p>Mail : mathisecom@gmail.com</p><p><a href=\"https://api.whatsapp.com/send/?phone=33615823575&text&type=phone_number&app_absent=0\" target=\"_blank\" title=\"https://api.whatsapp.com/send/?phone=33615823575&text&type=phone_number&app_absent=0\">WhatsApp</a></p>",
             "enable_follow_on_shop": true
           }
         }
