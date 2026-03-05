@@ -943,7 +943,7 @@
         "full_width": true,
         "subheading": "Contactez-Nous",
         "title": "",
-        "content": "<p>Via <a href=\"https://api.whatsapp.com/send/?phone=33615823575&text&type=phone_number&app_absent=0\" target=\"_blank\" title=\"https://api.whatsapp.com/send/?phone=33615823575&text&type=phone_number&app_absent=0\">WhatsApp</a> ou Bien Par Mail</p>",
+        "content": "<p>Via <a href=\"https://api.whatsapp.com/send/?phone=33615823575&text&type=phone_number&app_absent=0\" target=\"_blank\" title=\"https://api.whatsapp.com/send/?phone=33615823575&text&type=phone_number&app_absent=0\">WhatsApp</a> ou Remplissez le Formulaire</p>",
         "text_position": "center",
         "contact_form_size": "large",
         "background": "",
