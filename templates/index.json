@@ -304,7 +304,7 @@
           "settings": {
             "link": "#shopify-section-template--27670366191949__featured_product_6NKNnk",
             "text": "Contactez-Nous",
-            "size": "lg",
+            "size": "base",
             "style": "fill",
             "stretch": true,
             "background": "",
