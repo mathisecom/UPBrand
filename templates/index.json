@@ -660,6 +660,7 @@
             "step_label": "ÉTAPE 0",
             "card_title": "Livraison & Lancement",
             "card_description": "Ta boutique est livrée en 48H, clé en main, prête à accueillir tes premiers clients. Tu vends, on reste disponibles pour t'accompagner.",
+            "card_image": "shopify://shop_images/livraison-600x498_1.png",
             "floating_label": "",
             "floating_icon": ""
           }
