@@ -805,6 +805,46 @@
         "text_color": "#ffffff"
       }
     },
+    "qui_sommes_nous_BkELeP": {
+      "type": "qui-sommes-nous",
+      "blocks": {
+        "member_QKFB9y": {
+          "type": "member",
+          "settings": {
+            "name": "Mathis UPBrand",
+            "role": "Expert en Création de Site",
+            "role_color": "#2563eb",
+            "bio": "Expert en création de sites web et branding, Mehdi vous dévoilera étape par étape sa méthodologie pour concevoir des boutiques en ligne performantes. Ayant créé des sites qui ont généré plusieurs dizaines de millions de dollars de ventes, son approche stratégique garantit des plateformes qui convertissent efficacement.",
+            "badge_type": "shopify",
+            "stat_1_value": "$23M+",
+            "stat_1_label": "de CA générés",
+            "stat_2_value": "3,000+",
+            "stat_2_label": "boutiques créées",
+            "stat_3_value": "6 ans",
+            "stat_3_label": "d'expérience"
+          }
+        }
+      },
+      "block_order": [
+        "member_QKFB9y"
+      ],
+      "name": "Qui Sommes Nous",
+      "settings": {
+        "bg_color": "#0d0d0d",
+        "card_bg": "#1a1a1a",
+        "heading_color": "#ffffff",
+        "accent_color": "#2563eb",
+        "card_radius": 16,
+        "photo_width": 220,
+        "padding_top": 45,
+        "padding_bottom": 45,
+        "max_width": 900,
+        "badge_text": "L'Expertise à Votre Service",
+        "heading": "Qui Sommes-Nous ?",
+        "heading_size": 42,
+        "subheading": ""
+      }
+    },
     "faq": {
       "type": "faq",
       "blocks": {
@@ -896,6 +936,7 @@
     "step_process_M7mPTb",
     "benef_PJqrrV",
     "multi_column_UxP6EL",
+    "qui_sommes_nous_BkELeP",
     "faq"
   ]
 }
