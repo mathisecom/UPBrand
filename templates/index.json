@@ -302,9 +302,9 @@
         "button_Vy99wJ": {
           "type": "button",
           "settings": {
-            "link": "#shopify-section-template--27670366191949__featured_product_6NKNnk",
+            "link": "https://api.whatsapp.com/send/?phone=33615823575&text&type=phone_number&app_absent=0",
             "text": "Contactez-Nous",
-            "size": "base",
+            "size": "sm",
             "style": "fill",
             "stretch": true,
             "background": "",
