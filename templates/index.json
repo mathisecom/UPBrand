@@ -811,11 +811,13 @@
         "member_QKFB9y": {
           "type": "member",
           "settings": {
+            "photo": "shopify://shop_images/CREA_1080X1080_-_2026-03-05T111242.016.jpg",
             "name": "Mathis UPBrand",
             "role": "Expert en Création de Site",
             "role_color": "#2563eb",
             "bio": "Expert en création de sites web et branding, Mehdi vous dévoilera étape par étape sa méthodologie pour concevoir des boutiques en ligne performantes. Ayant créé des sites qui ont généré plusieurs dizaines de millions de dollars de ventes, son approche stratégique garantit des plateformes qui convertissent efficacement.",
             "badge_type": "shopify",
+            "badge_logo": "shopify://shop_images/Vestige._9.png",
             "stat_1_value": "$23M+",
             "stat_1_label": "de CA générés",
             "stat_2_value": "3,000+",
