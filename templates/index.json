@@ -223,8 +223,15 @@
             "liquid": "<div class=\"main-product__block main-product__block-custom_liquid\">\n  <div class=\"m-product-text\">\n    <style>\n      .badges-container {\n        display: flex;\n        flex-wrap: wrap;\n        gap: 8px;\n        align-items: center;\n        padding: 0;\n        margin: 0;\n      }\n      .badge-outline {\n        display: inline-flex;\n        align-items: center;\n        gap: 6px;\n        padding: 5px 12px;\n        font-size: 12px;\n        font-weight: 600;\n        color: #111;\n        background-color: #ffffff;\n        border: 1.5px solid #d1d5db;\n        border-radius: 20px;\n        white-space: nowrap;\n      }\n      .badge-outline svg {\n        flex-shrink: 0;\n      }\n    </style>\n    <div class=\"badges-container\">\n\n      <div class=\"badge-outline\">\n        <svg width=\"14\" height=\"14\" viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n          <path d=\"M5 8h14M5 8a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-6a2 2 0 0 0-2-2M5 8V6a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2v2m-7 5h.01\" stroke=\"#111\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>\n        </svg>\n        Livraison 48H\n      </div>\n\n      <div class=\"badge-outline\">\n        <svg width=\"14\" height=\"14\" viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n          <path d=\"M12 3L2 7l10 4 10-4-10-4ZM2 17l10 4 10-4M2 12l10 4 10-4\" stroke=\"#111\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>\n        </svg>\n        Boutique Sur Mesure\n      </div>\n\n    </div>\n  </div>\n</div>"
           }
         },
+        "text_yq98cJ": {
+          "type": "text",
+          "settings": {
+            "text": "<h3>Site Brandée de A à Z - UPBrand</h3>"
+          }
+        },
         "title_3hLRq6": {
           "type": "title",
+          "disabled": true,
           "settings": {
             "heading_tag": "h3"
           }
@@ -340,6 +347,7 @@
       },
       "block_order": [
         "liquid_GyWjwG",
+        "text_yq98cJ",
         "title_3hLRq6",
         "liquid_AQPzW3",
         "text_Gzwrqg",
