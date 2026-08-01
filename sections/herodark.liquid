@@ -53,6 +53,25 @@
         {% endif %}
       </div>
 
+      <!-- ── VSL : vidéo responsive sous les boutons ── -->
+      {% if section.settings.show_vsl and section.settings.vsl_video_url != blank %}
+      <div class="hdf-vsl">
+        <div class="hdf-vsl-frame">
+          <video
+            class="hdf-vsl-video"
+            src="{{ section.settings.vsl_video_url }}"
+            {% if section.settings.vsl_poster != blank %}poster="{{ section.settings.vsl_poster | img_url: '1200x' }}"{% endif %}
+            {% if section.settings.vsl_autoplay %}autoplay muted{% endif %}
+            {% if section.settings.vsl_loop %}loop{% endif %}
+            {% if section.settings.vsl_controls %}controls{% endif %}
+            playsinline
+            preload="metadata"
+          ></video>
+        </div>
+      </div>
+      {% endif %}
+      <!-- ── FIN VSL ── -->
+
       {% if section.settings.show_social %}
       <div class="hdf-social">
         <div class="hdf-avatars">
@@ -91,7 +110,7 @@
     </div>
     <!-- ── FIN colonne contenu ── -->
 
-    <!-- ── COLONNE DROITE : vidéo animée ── -->
+    <!-- ── COLONNE DROITE : vidéo animée (côté) ── -->
     {% if section.settings.video_url != blank %}
     <div class="hdf-video-col">
       <div class="hdf-video-wrap">
@@ -181,7 +200,7 @@
     gap: 20px;
     animation: hdfUp 0.8s ease both;
   }
-  /* Split layout quand vidéo présente */
+  /* Split layout quand vidéo latérale présente */
   .hdf-inner--split {
     flex-direction: row;
     align-items: center;
@@ -195,6 +214,7 @@
     flex: 1;
     display: flex; flex-direction: column;
     gap: 20px;
+    width: 100%;
   }
   .hdf-inner:not(.hdf-inner--split) .hdf-content { align-items: center; }
   .hdf-inner--split .hdf-content { align-items: flex-start; }
@@ -245,6 +265,34 @@
   }
   .hdf-cta-secondary:hover { transform: translateY(-2px); background: rgba(255,255,255,0.07); border-color: rgba(255,255,255,0.4); }
 
+  /* ─────────────── VSL (vidéo sous les boutons) ─────────────── */
+  .hdf-vsl {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  .hdf-inner--split .hdf-vsl { justify-content: flex-start; }
+  .hdf-vsl-frame {
+    position: relative;
+    width: 100%;
+    max-width: {{ section.settings.vsl_max_width }}px;
+    aspect-ratio: 16 / 9;
+    border-radius: 16px;
+    overflow: hidden;
+    border: 1px solid rgba(255,255,255,0.12);
+    background: rgba(255,255,255,0.03);
+    box-shadow:
+      0 0 0 1px rgba(255,255,255,0.05),
+      0 24px 60px rgba(0,0,0,0.55),
+      inset 0 1px 0 rgba(255,255,255,0.08);
+  }
+  .hdf-vsl-video {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
   /* ─────────────── SOCIAL ─────────────── */
   .hdf-social { display: flex; align-items: center; gap: 12px; }
   .hdf-avatars { display: flex; }
@@ -255,7 +303,7 @@
   .hdf-stars { display: flex; gap: 1px; font-size: 16px; line-height: 1; }
   .hdf-social-count { font-size: 12px; font-weight: 600; color: rgba(255,255,255,0.6); letter-spacing: -0.01em; }
 
-  /* ─────────────── COLONNE VIDÉO ─────────────── */
+  /* ─────────────── COLONNE VIDÉO LATÉRALE ─────────────── */
   .hdf-video-col {
     flex: 0 0 auto;
     width: 320px;
@@ -265,7 +313,6 @@
     position: relative;
     display: flex; align-items: center; justify-content: center;
   }
-  /* Halo lumineux derrière */
   .hdf-video-glow {
     position: absolute;
     inset: -40px;
@@ -277,7 +324,6 @@
   }
   @keyframes hdfGlowPulse { 0%,100%{opacity:0.6; transform:scale(1)} 50%{opacity:1; transform:scale(1.08)} }
 
-  /* Cadre glass */
   .hdf-video-frame {
     position: relative; z-index: 1;
     border-radius: 24px;
@@ -288,7 +334,6 @@
       0 32px 80px rgba(0,0,0,0.6),
       inset 0 1px 0 rgba(255,255,255,0.1);
     background: rgba(255,255,255,0.03);
-    /* Animation d'entrée avec légère oscillation */
     animation: hdfFloat 6s ease-in-out infinite;
   }
   @keyframes hdfFloat {
@@ -302,7 +347,6 @@
     border-radius: 23px;
   }
 
-  /* ── Pastilles flottantes ── */
   .hdf-float {
     position: absolute; z-index: 2;
     display: inline-flex; align-items: center; gap: 6px;
@@ -338,6 +382,7 @@
   @media (max-width: 900px) {
     .hdf-inner--split { flex-direction: column; text-align: center; }
     .hdf-inner--split .hdf-content { align-items: center; }
+    .hdf-inner--split .hdf-vsl { justify-content: center; }
     .hdf-video-col { width: 260px; }
     .hdf-float--tl { left: -8px; }
     .hdf-float--br { right: -8px; }
@@ -350,6 +395,7 @@
     .hdf-buttons { flex-direction: column; width: 100%; }
     .hdf-cta, .hdf-cta-secondary { width: 100%; justify-content: center; }
     .hdf-video-col { width: 220px; }
+    .hdf-vsl-frame { border-radius: 12px; }
   }
   @media (max-width: 480px) {
     .hdf-cta, .hdf-cta-secondary { font-size: 13px; padding: 11px 22px; }
@@ -371,8 +417,17 @@
     { "type": "range", "id": "padding_top", "label": "Padding haut (px)", "min": 0, "max": 150, "step": 5, "default": 70 },
     { "type": "range", "id": "padding_bottom", "label": "Padding bas (px)", "min": 0, "max": 150, "step": 5, "default": 70 },
 
-    { "type": "header", "content": "🎬 Vidéo animée" },
-    { "type": "text", "id": "video_url", "label": "URL de la vidéo (CDN Shopify Files)", "info": "Uploadez votre .mp4 dans Contenu > Fichiers, puis collez l'URL ici." },
+    { "type": "header", "content": "🎬 Vidéo animée (colonne latérale)" },
+    { "type": "text", "id": "video_url", "label": "URL de la vidéo (CDN Shopify Files)", "info": "Uploadez votre .mp4 dans Contenu > Fichiers, puis collez l'URL ici. Active un layout en 2 colonnes." },
+
+    { "type": "header", "content": "🎥 Vidéo VSL (sous les boutons)" },
+    { "type": "checkbox", "id": "show_vsl", "label": "Afficher la vidéo VSL", "default": false },
+    { "type": "text", "id": "vsl_video_url", "label": "URL de la vidéo VSL (CDN Shopify Files)", "info": "Uploadez votre .mp4 dans Contenu > Fichiers, puis collez l'URL ici." },
+    { "type": "image_picker", "id": "vsl_poster", "label": "Image d'aperçu (poster)", "info": "Affichée avant le lancement de la vidéo, surtout utile si la lecture auto est désactivée." },
+    { "type": "range", "id": "vsl_max_width", "label": "Largeur max de la vidéo (px)", "min": 320, "max": 1200, "step": 10, "default": 720 },
+    { "type": "checkbox", "id": "vsl_autoplay", "label": "Lecture automatique (muet)", "default": false },
+    { "type": "checkbox", "id": "vsl_loop", "label": "Lecture en boucle", "default": false },
+    { "type": "checkbox", "id": "vsl_controls", "label": "Afficher les contrôles (play/pause, volume...)", "default": true },
 
     { "type": "header", "content": "🏷️ Badge" },
     { "type": "text", "id": "badge_text", "label": "Texte du badge", "default": "8lab Ecosystem · The Infinite" },
