@@ -631,6 +631,13 @@
             "image": "shopify://shop_images/1.webp",
             "url": ""
           }
+        },
+        "image_NNTRND": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/32.webp",
+            "url": ""
+          }
         }
       },
       "block_order": [
@@ -639,7 +646,8 @@
         "image_mLmtqb",
         "image_mj9Hkr",
         "image_BJRtMU",
-        "image_QLkWMH"
+        "image_QLkWMH",
+        "image_NNTRND"
       ],
       "name": "SS - Scrolling logo cloud #5",
       "settings": {
