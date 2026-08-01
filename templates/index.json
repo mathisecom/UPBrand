@@ -75,90 +75,6 @@
         "text_color": ""
       }
     },
-    "logo_scroll_87Pz7t": {
-      "type": "logo-scroll",
-      "blocks": {
-        "image_yJMk7n": {
-          "type": "image",
-          "settings": {
-            "image": "shopify://shop_images/Aa_17_8b917d4b-0b6c-4268-9266-31178c5f8185.webp",
-            "url": ""
-          }
-        },
-        "image_HAT4tx": {
-          "type": "image",
-          "settings": {
-            "image": "shopify://shop_images/Aa_-_2026-01-02T203726.258.webp",
-            "url": ""
-          }
-        },
-        "image_n3BpxJ": {
-          "type": "image",
-          "settings": {
-            "image": "shopify://shop_images/Aa_23_e0ea601b-486d-442b-9cdb-b42296756be2.webp",
-            "url": ""
-          }
-        },
-        "image_BJRtMU": {
-          "type": "image",
-          "settings": {
-            "image": "shopify://shop_images/Aa_-_2026-01-02T203322.166.png",
-            "url": ""
-          }
-        },
-        "image_QLkWMH": {
-          "type": "image",
-          "settings": {
-            "image": "shopify://shop_images/Aa_-_2026-01-02T203315.661.webp",
-            "url": ""
-          }
-        }
-      },
-      "block_order": [
-        "image_yJMk7n",
-        "image_HAT4tx",
-        "image_n3BpxJ",
-        "image_BJRtMU",
-        "image_QLkWMH"
-      ],
-      "name": "SS - Scrolling logo cloud #5",
-      "settings": {
-        "layout_radius": 30,
-        "layout_border_thickness": 0,
-        "heading": "",
-        "heading_custom": false,
-        "heading_font": "josefin_sans_n4",
-        "heading_size": 18,
-        "heading_size_mobile": 18,
-        "heading_height": 130,
-        "scrolling_velocity": 22,
-        "scrolling_velocity_mobile": 20,
-        "scrolling_direction": "left",
-        "pause_hover": false,
-        "scrolling_gap": 34,
-        "scrolling_gap_mobile": 28,
-        "card_width_desktop": 210,
-        "card_width_mobile": 210,
-        "heading_color": "#121212",
-        "layout_bg_color": "#ffffff",
-        "layout_border_color": "#121212",
-        "background_color": "#ffffff",
-        "border_color": "#121212",
-        "margin_top": 0,
-        "margin_bottom": 0,
-        "margin_horizontal": 0,
-        "margin_horizontal_mobile": 0,
-        "padding_top": 0,
-        "padding_bottom": 0,
-        "padding_horizontal": 5,
-        "padding_horizontal_mobile": 0,
-        "full_width": true,
-        "content_width": 1200,
-        "border_thickness": 0,
-        "section_radius": 0,
-        "lazy": true
-      }
-    },
     "comparaison_ajBPrk": {
       "type": "comparaison",
       "name": "Comparaison Sans / Avec",
@@ -658,6 +574,90 @@
         "testimonial_card_text_color": ""
       }
     },
+    "logo_scroll_87Pz7t": {
+      "type": "logo-scroll",
+      "blocks": {
+        "image_yJMk7n": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Aa_17_8b917d4b-0b6c-4268-9266-31178c5f8185.webp",
+            "url": ""
+          }
+        },
+        "image_HAT4tx": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Aa_-_2026-01-02T203726.258.webp",
+            "url": ""
+          }
+        },
+        "image_n3BpxJ": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Aa_23_e0ea601b-486d-442b-9cdb-b42296756be2.webp",
+            "url": ""
+          }
+        },
+        "image_BJRtMU": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Aa_-_2026-01-02T203322.166.png",
+            "url": ""
+          }
+        },
+        "image_QLkWMH": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Aa_-_2026-01-02T203315.661.webp",
+            "url": ""
+          }
+        }
+      },
+      "block_order": [
+        "image_yJMk7n",
+        "image_HAT4tx",
+        "image_n3BpxJ",
+        "image_BJRtMU",
+        "image_QLkWMH"
+      ],
+      "name": "SS - Scrolling logo cloud #5",
+      "settings": {
+        "layout_radius": 30,
+        "layout_border_thickness": 0,
+        "heading": "",
+        "heading_custom": false,
+        "heading_font": "josefin_sans_n4",
+        "heading_size": 18,
+        "heading_size_mobile": 18,
+        "heading_height": 130,
+        "scrolling_velocity": 22,
+        "scrolling_velocity_mobile": 20,
+        "scrolling_direction": "left",
+        "pause_hover": false,
+        "scrolling_gap": 34,
+        "scrolling_gap_mobile": 28,
+        "card_width_desktop": 210,
+        "card_width_mobile": 210,
+        "heading_color": "#121212",
+        "layout_bg_color": "#ffffff",
+        "layout_border_color": "#121212",
+        "background_color": "#ffffff",
+        "border_color": "#121212",
+        "margin_top": 0,
+        "margin_bottom": 0,
+        "margin_horizontal": 0,
+        "margin_horizontal_mobile": 0,
+        "padding_top": 0,
+        "padding_bottom": 0,
+        "padding_horizontal": 5,
+        "padding_horizontal_mobile": 0,
+        "full_width": true,
+        "content_width": 1200,
+        "border_thickness": 0,
+        "section_radius": 0,
+        "lazy": true
+      }
+    },
     "step_process_M7mPTb": {
       "type": "step-process",
       "blocks": {
@@ -975,8 +975,6 @@
   },
   "order": [
     "herodark_wNcDqY",
-    "custom_liquid_PXXVtp",
-    "logo_scroll_87Pz7t",
     "comparaison_ajBPrk",
     "custom_liquid_rFmTFQ",
     "featured_product_6NKNnk",
@@ -984,6 +982,8 @@
     "logo_scroll_g9UXwK",
     "rich_text_eYq63L",
     "testimonials_TjqyDD",
+    "custom_liquid_PXXVtp",
+    "logo_scroll_87Pz7t",
     "step_process_M7mPTb",
     "benef_PJqrrV",
     "multi_column_UxP6EL",
