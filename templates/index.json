@@ -581,6 +581,14 @@
     "logo_scroll_87Pz7t": {
       "type": "logo-scroll",
       "blocks": {
+        "image_tFpqpw": {
+          "type": "image",
+          "disabled": true,
+          "settings": {
+            "image": "shopify://shop_images/9_1.jpg",
+            "url": ""
+          }
+        },
         "image_yJMk7n": {
           "type": "image",
           "settings": {
@@ -618,6 +626,7 @@
         }
       },
       "block_order": [
+        "image_tFpqpw",
         "image_yJMk7n",
         "image_HAT4tx",
         "image_n3BpxJ",
