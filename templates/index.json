@@ -583,14 +583,42 @@
       "blocks": {
         "image_tFpqpw": {
           "type": "image",
-          "disabled": true,
           "settings": {
             "image": "shopify://shop_images/9_1.jpg",
             "url": ""
           }
         },
+        "image_4h4yjC": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/01_zaap_fr.png",
+            "url": ""
+          }
+        },
+        "image_mLmtqb": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/02_primal_sante_fr.png",
+            "url": ""
+          }
+        },
+        "image_4Dg9bQ": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/03_fat_cow_fr.png",
+            "url": ""
+          }
+        },
+        "image_XLkqLb": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/04_auri_fr.png",
+            "url": ""
+          }
+        },
         "image_yJMk7n": {
           "type": "image",
+          "disabled": true,
           "settings": {
             "image": "shopify://shop_images/Aa_17_8b917d4b-0b6c-4268-9266-31178c5f8185.webp",
             "url": ""
@@ -598,6 +626,7 @@
         },
         "image_HAT4tx": {
           "type": "image",
+          "disabled": true,
           "settings": {
             "image": "shopify://shop_images/Aa_-_2026-01-02T203726.258.webp",
             "url": ""
@@ -605,6 +634,7 @@
         },
         "image_n3BpxJ": {
           "type": "image",
+          "disabled": true,
           "settings": {
             "image": "shopify://shop_images/Aa_23_e0ea601b-486d-442b-9cdb-b42296756be2.webp",
             "url": ""
@@ -612,6 +642,7 @@
         },
         "image_BJRtMU": {
           "type": "image",
+          "disabled": true,
           "settings": {
             "image": "shopify://shop_images/Aa_-_2026-01-02T203322.166.png",
             "url": ""
@@ -619,6 +650,7 @@
         },
         "image_QLkWMH": {
           "type": "image",
+          "disabled": true,
           "settings": {
             "image": "shopify://shop_images/Aa_-_2026-01-02T203315.661.webp",
             "url": ""
@@ -627,6 +659,10 @@
       },
       "block_order": [
         "image_tFpqpw",
+        "image_4h4yjC",
+        "image_mLmtqb",
+        "image_4Dg9bQ",
+        "image_XLkqLb",
         "image_yJMk7n",
         "image_HAT4tx",
         "image_n3BpxJ",
