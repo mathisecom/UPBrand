@@ -139,8 +139,15 @@
         },
         "text_yq98cJ": {
           "type": "text",
+          "disabled": true,
           "settings": {
             "text": "<h3>Site Brandée de A à Z - UPBrand</h3>"
+          }
+        },
+        "liquid_eD7iLU": {
+          "type": "liquid",
+          "settings": {
+            "liquid": "<link href=\"https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700;800&display=swap\" rel=\"stylesheet\">\n\n<div class=\"tp-block\">\n  <h2 class=\"tp-title\">Site Brandée de A à Z – UPBrand</h2>\n\n  <div class=\"tp-price-row\">\n    <span class=\"tp-price-new\">259,99€</span>\n    <span class=\"tp-price-old\">359,99€</span>\n    <span class=\"tp-badge\">ÉTÉ 2026 · ÉCONOMISEZ 100€</span>\n  </div>\n</div>\n\n<style>\n  .tp-block {\n    font-family: 'Plus Jakarta Sans', sans-serif;\n    display: flex;\n    flex-direction: column;\n    gap: 10px;\n  }\n\n  .tp-title {\n    font-size: 22px;\n    font-weight: 800;\n    color: #0d0d0d;\n    letter-spacing: -0.02em;\n    line-height: 1.25;\n    margin: 0;\n  }\n\n  .tp-price-row {\n    display: flex;\n    align-items: center;\n    flex-wrap: wrap;\n    gap: 10px;\n  }\n\n  .tp-price-new {\n    font-size: 26px;\n    font-weight: 800;\n    color: #1a6bff;\n    letter-spacing: -0.02em;\n    line-height: 1;\n  }\n\n  .tp-price-old {\n    font-size: 16px;\n    font-weight: 600;\n    color: #9a9a9a;\n    text-decoration: line-through;\n    line-height: 1;\n  }\n\n  .tp-badge {\n    display: inline-flex;\n    align-items: center;\n    padding: 6px 14px;\n    background: #1a6bff;\n    color: #fff;\n    font-size: 12px;\n    font-weight: 700;\n    letter-spacing: -0.01em;\n    border-radius: 999px;\n    white-space: nowrap;\n  }\n\n  /* ─────────────── RESPONSIVE MOBILE ─────────────── */\n  @media (max-width: 500px) {\n    .tp-title { font-size: 20px; }\n    .tp-price-new { font-size: 20px; }\n    .tp-price-old { font-size: 14px; }\n    .tp-badge { font-size: 9px; padding: 5px 12px; }\n    .tp-price-row { gap: 8px; }\n  }\n</style>"
           }
         },
         "title_3hLRq6": {
@@ -170,6 +177,7 @@
         },
         "price_MLhfBz": {
           "type": "price",
+          "disabled": true,
           "settings": {
             "show_taxes_notice": false
           }
@@ -262,6 +270,7 @@
       "block_order": [
         "liquid_GyWjwG",
         "text_yq98cJ",
+        "liquid_eD7iLU",
         "title_3hLRq6",
         "liquid_AQPzW3",
         "text_Gzwrqg",
