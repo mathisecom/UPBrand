@@ -625,13 +625,6 @@
             "url": ""
           }
         },
-        "image_KVjpfE": {
-          "type": "image",
-          "settings": {
-            "image": "shopify://shop_images/32_ee24e822-dea9-48a0-af41-50cbe7ddec51.webp",
-            "url": ""
-          }
-        },
         "image_mj9Hkr": {
           "type": "image",
           "settings": {
@@ -653,6 +646,13 @@
             "url": ""
           }
         },
+        "image_6GtNqR": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/32_2.webp",
+            "url": ""
+          }
+        },
         "image_NNTRND": {
           "type": "image",
           "settings": {
@@ -667,10 +667,10 @@
         "image_4h4yjC",
         "image_mLmtqb",
         "image_tFpqpw",
-        "image_KVjpfE",
         "image_mj9Hkr",
         "image_BJRtMU",
         "image_QLkWMH",
+        "image_6GtNqR",
         "image_NNTRND"
       ],
       "name": "SS - Scrolling logo cloud #5",
