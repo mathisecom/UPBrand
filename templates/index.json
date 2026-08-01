@@ -79,13 +79,137 @@
         "text_color": ""
       }
     },
+    "logo_scroll_87Pz7t": {
+      "type": "logo-scroll",
+      "blocks": {
+        "image_JfpE3t": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/9_1.webp",
+            "url": ""
+          }
+        },
+        "image_DAzywC": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/32_1.webp",
+            "url": ""
+          }
+        },
+        "image_4h4yjC": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/9_5.jpg",
+            "url": ""
+          }
+        },
+        "image_mLmtqb": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/9_4.jpg",
+            "url": ""
+          }
+        },
+        "image_tFpqpw": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/9_1.jpg",
+            "url": ""
+          }
+        },
+        "image_mj9Hkr": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/9_2.jpg",
+            "url": ""
+          }
+        },
+        "image_BJRtMU": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/2.webp",
+            "url": ""
+          }
+        },
+        "image_QLkWMH": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/1.webp",
+            "url": ""
+          }
+        },
+        "image_6GtNqR": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/32_2.webp",
+            "url": ""
+          }
+        },
+        "image_NNTRND": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/32.webp",
+            "url": ""
+          }
+        }
+      },
+      "block_order": [
+        "image_JfpE3t",
+        "image_DAzywC",
+        "image_4h4yjC",
+        "image_mLmtqb",
+        "image_tFpqpw",
+        "image_mj9Hkr",
+        "image_BJRtMU",
+        "image_QLkWMH",
+        "image_6GtNqR",
+        "image_NNTRND"
+      ],
+      "name": "SS - Scrolling logo cloud #5",
+      "settings": {
+        "layout_radius": 30,
+        "layout_border_thickness": 0,
+        "heading": "",
+        "heading_custom": false,
+        "heading_font": "josefin_sans_n4",
+        "heading_size": 18,
+        "heading_size_mobile": 18,
+        "heading_height": 130,
+        "scrolling_velocity": 22,
+        "scrolling_velocity_mobile": 20,
+        "scrolling_direction": "left",
+        "pause_hover": false,
+        "scrolling_gap": 34,
+        "scrolling_gap_mobile": 28,
+        "card_width_desktop": 210,
+        "card_width_mobile": 210,
+        "heading_color": "#121212",
+        "layout_bg_color": "#ffffff",
+        "layout_border_color": "#121212",
+        "background_color": "#ffffff",
+        "border_color": "#121212",
+        "margin_top": 0,
+        "margin_bottom": 16,
+        "margin_horizontal": 0,
+        "margin_horizontal_mobile": 0,
+        "padding_top": 0,
+        "padding_bottom": 0,
+        "padding_horizontal": 5,
+        "padding_horizontal_mobile": 0,
+        "full_width": true,
+        "content_width": 1200,
+        "border_thickness": 0,
+        "section_radius": 0,
+        "lazy": true
+      }
+    },
     "comparaison_ajBPrk": {
       "type": "comparaison",
       "name": "Comparaison Sans / Avec",
       "settings": {
         "bg_color": "#ffffff",
         "padding_top": 25,
-        "padding_bottom": 0,
+        "padding_bottom": 35,
         "badge_text": "",
         "badge_bg": "#f3f4f6",
         "badge_color": "#374151",
@@ -585,130 +709,6 @@
         "heading_gradient": "",
         "testimonial_card_background": "",
         "testimonial_card_text_color": ""
-      }
-    },
-    "logo_scroll_87Pz7t": {
-      "type": "logo-scroll",
-      "blocks": {
-        "image_JfpE3t": {
-          "type": "image",
-          "settings": {
-            "image": "shopify://shop_images/9_1.webp",
-            "url": ""
-          }
-        },
-        "image_DAzywC": {
-          "type": "image",
-          "settings": {
-            "image": "shopify://shop_images/32_1.webp",
-            "url": ""
-          }
-        },
-        "image_4h4yjC": {
-          "type": "image",
-          "settings": {
-            "image": "shopify://shop_images/9_5.jpg",
-            "url": ""
-          }
-        },
-        "image_mLmtqb": {
-          "type": "image",
-          "settings": {
-            "image": "shopify://shop_images/9_4.jpg",
-            "url": ""
-          }
-        },
-        "image_tFpqpw": {
-          "type": "image",
-          "settings": {
-            "image": "shopify://shop_images/9_1.jpg",
-            "url": ""
-          }
-        },
-        "image_mj9Hkr": {
-          "type": "image",
-          "settings": {
-            "image": "shopify://shop_images/9_2.jpg",
-            "url": ""
-          }
-        },
-        "image_BJRtMU": {
-          "type": "image",
-          "settings": {
-            "image": "shopify://shop_images/2.webp",
-            "url": ""
-          }
-        },
-        "image_QLkWMH": {
-          "type": "image",
-          "settings": {
-            "image": "shopify://shop_images/1.webp",
-            "url": ""
-          }
-        },
-        "image_6GtNqR": {
-          "type": "image",
-          "settings": {
-            "image": "shopify://shop_images/32_2.webp",
-            "url": ""
-          }
-        },
-        "image_NNTRND": {
-          "type": "image",
-          "settings": {
-            "image": "shopify://shop_images/32.webp",
-            "url": ""
-          }
-        }
-      },
-      "block_order": [
-        "image_JfpE3t",
-        "image_DAzywC",
-        "image_4h4yjC",
-        "image_mLmtqb",
-        "image_tFpqpw",
-        "image_mj9Hkr",
-        "image_BJRtMU",
-        "image_QLkWMH",
-        "image_6GtNqR",
-        "image_NNTRND"
-      ],
-      "name": "SS - Scrolling logo cloud #5",
-      "settings": {
-        "layout_radius": 30,
-        "layout_border_thickness": 0,
-        "heading": "",
-        "heading_custom": false,
-        "heading_font": "josefin_sans_n4",
-        "heading_size": 18,
-        "heading_size_mobile": 18,
-        "heading_height": 130,
-        "scrolling_velocity": 22,
-        "scrolling_velocity_mobile": 20,
-        "scrolling_direction": "left",
-        "pause_hover": false,
-        "scrolling_gap": 34,
-        "scrolling_gap_mobile": 28,
-        "card_width_desktop": 210,
-        "card_width_mobile": 210,
-        "heading_color": "#121212",
-        "layout_bg_color": "#ffffff",
-        "layout_border_color": "#121212",
-        "background_color": "#ffffff",
-        "border_color": "#121212",
-        "margin_top": 0,
-        "margin_bottom": 0,
-        "margin_horizontal": 0,
-        "margin_horizontal_mobile": 0,
-        "padding_top": 0,
-        "padding_bottom": 0,
-        "padding_horizontal": 5,
-        "padding_horizontal_mobile": 0,
-        "full_width": true,
-        "content_width": 1200,
-        "border_thickness": 0,
-        "section_radius": 0,
-        "lazy": true
       }
     },
     "step_process_M7mPTb": {
