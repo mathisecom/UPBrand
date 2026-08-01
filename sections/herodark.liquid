@@ -387,7 +387,11 @@
   .hdf-bottom-notch {
     position: relative;
     z-index: 1;
-    width: 100%;
+    width: 100vw;
+    left: 50%;
+    right: 50%;
+    margin-left: -50vw;
+    margin-right: -50vw;
     margin-top: 24px;
     height: var(--hdf-notch-h-desktop, 40px);
     clip-path: polygon(0% 0%, 50% 100%, 100% 0%, 100% 100%, 0% 100%);
