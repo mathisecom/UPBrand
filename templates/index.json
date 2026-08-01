@@ -591,52 +591,28 @@
         "image_4h4yjC": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/01_zaap_fr.png",
+            "image": "shopify://shop_images/9_5.jpg",
             "url": ""
           }
         },
         "image_mLmtqb": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/02_primal_sante_fr.png",
+            "image": "shopify://shop_images/9_4.jpg",
             "url": ""
           }
         },
         "image_4Dg9bQ": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/03_fat_cow_fr.png",
+            "image": "shopify://shop_images/9_3.jpg",
             "url": ""
           }
         },
-        "image_XLkqLb": {
+        "image_mj9Hkr": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/04_auri_fr.png",
-            "url": ""
-          }
-        },
-        "image_yJMk7n": {
-          "type": "image",
-          "disabled": true,
-          "settings": {
-            "image": "shopify://shop_images/Aa_17_8b917d4b-0b6c-4268-9266-31178c5f8185.webp",
-            "url": ""
-          }
-        },
-        "image_HAT4tx": {
-          "type": "image",
-          "disabled": true,
-          "settings": {
-            "image": "shopify://shop_images/Aa_-_2026-01-02T203726.258.webp",
-            "url": ""
-          }
-        },
-        "image_n3BpxJ": {
-          "type": "image",
-          "disabled": true,
-          "settings": {
-            "image": "shopify://shop_images/Aa_23_e0ea601b-486d-442b-9cdb-b42296756be2.webp",
+            "image": "shopify://shop_images/9_2.jpg",
             "url": ""
           }
         },
@@ -662,10 +638,7 @@
         "image_4h4yjC",
         "image_mLmtqb",
         "image_4Dg9bQ",
-        "image_XLkqLb",
-        "image_yJMk7n",
-        "image_HAT4tx",
-        "image_n3BpxJ",
+        "image_mj9Hkr",
         "image_BJRtMU",
         "image_QLkWMH"
       ],
@@ -680,7 +653,7 @@
         "heading_size_mobile": 18,
         "heading_height": 130,
         "scrolling_velocity": 22,
-        "scrolling_velocity_mobile": 20,
+        "scrolling_velocity_mobile": 14,
         "scrolling_direction": "left",
         "pause_hover": false,
         "scrolling_gap": 34,
