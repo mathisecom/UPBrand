@@ -358,7 +358,7 @@
         "image_a8D8Mi": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/Lenova.svg",
+            "image": "shopify://shop_images/Lenova_1.svg",
             "alignment": "start",
             "max_width": 500
           }
