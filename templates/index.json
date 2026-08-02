@@ -762,7 +762,7 @@
         "cta_label": "OBTENIR MON SITE",
         "cta_url": "#shopify-section-template--27670366191949__featured_product_6NKNnk",
         "section_padding_top": 28,
-        "section_padding_bottom": 28,
+        "section_padding_bottom": 64,
         "section_bg_color": "#fcfcfc",
         "card_bg_color": "#ffffff",
         "accent_color": "#2563eb",
