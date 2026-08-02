@@ -355,6 +355,14 @@
           "disabled": true,
           "settings": {}
         },
+        "image_a8D8Mi": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Lenova.svg",
+            "alignment": "start",
+            "max_width": 500
+          }
+        },
         "buy_buttons_dKAM7q": {
           "type": "buy_buttons",
           "settings": {
@@ -419,6 +427,7 @@
         "separator_PWMPRm",
         "variant_picker_8e3kex",
         "quantity_selector_GYfDKW",
+        "image_a8D8Mi",
         "buy_buttons_dKAM7q",
         "button_Vy99wJ",
         "liquid_7HQMh9",
