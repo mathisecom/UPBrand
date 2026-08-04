@@ -379,7 +379,7 @@
           "settings": {
             "link": "https://api.whatsapp.com/send/?phone=33615823575&text&type=phone_number&app_absent=0",
             "text": "Contactez-Nous",
-            "size": "sm",
+            "size": "base",
             "style": "fill",
             "stretch": true,
             "background": "",
