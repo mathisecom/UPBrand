@@ -255,6 +255,7 @@
     },
     "custom_liquid_rFmTFQ": {
       "type": "custom-liquid",
+      "disabled": true,
       "name": "Custom Liquid",
       "settings": {
         "full_width": true,
@@ -434,6 +435,7 @@
         "collapsible_text_zRgpxD",
         "collapsible_text_DXmqPR"
       ],
+      "disabled": true,
       "name": "Featured product",
       "settings": {
         "full_width": false,
