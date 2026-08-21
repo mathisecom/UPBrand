@@ -980,6 +980,7 @@
         },
         "item_676CRy": {
           "type": "item",
+          "disabled": true,
           "settings": {
             "title": "Pourquoi vos tarifs sont-ils si abordables ?",
             "content": "<p>Grâce à notre expertise dans la création de boutiques e-commerce, nous avons développé une méthodologie unique et une collaboration en équipe optimisée, ce qui nous permet d’être incroyablement efficaces. Cette approche nous permet de créer des boutiques performantes et esthétiques, tout en maintenant des tarifs compétitifs.</p>"
