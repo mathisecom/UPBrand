@@ -68,6 +68,7 @@
     },
     "custom_liquid_PXXVtp": {
       "type": "custom-liquid",
+      "disabled": true,
       "name": "Custom Liquid",
       "settings": {
         "full_width": true,
@@ -166,6 +167,7 @@
         "image_6GtNqR",
         "image_NNTRND"
       ],
+      "disabled": true,
       "name": "SS - Scrolling logo cloud #5",
       "settings": {
         "layout_radius": 30,
@@ -390,7 +392,7 @@
             "size": "xl",
             "style": "fill",
             "stretch": true,
-            "background": "#2563EB",
+            "background": "#2563eb",
             "text_color": ""
           }
         },
