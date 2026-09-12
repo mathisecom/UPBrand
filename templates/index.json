@@ -68,7 +68,6 @@
     },
     "custom_liquid_PXXVtp": {
       "type": "custom-liquid",
-      "disabled": true,
       "name": "Custom Liquid",
       "settings": {
         "full_width": true,
@@ -111,13 +110,6 @@
             "url": ""
           }
         },
-        "image_tFpqpw": {
-          "type": "image",
-          "settings": {
-            "image": "shopify://shop_images/9_1.jpg",
-            "url": ""
-          }
-        },
         "image_mj9Hkr": {
           "type": "image",
           "settings": {
@@ -139,14 +131,6 @@
             "url": ""
           }
         },
-        "image_6GtNqR": {
-          "type": "image",
-          "disabled": true,
-          "settings": {
-            "image": "shopify://shop_images/32_2.webp",
-            "url": ""
-          }
-        },
         "image_NNTRND": {
           "type": "image",
           "settings": {
@@ -160,14 +144,11 @@
         "image_DAzywC",
         "image_4h4yjC",
         "image_mLmtqb",
-        "image_tFpqpw",
         "image_mj9Hkr",
         "image_BJRtMU",
         "image_QLkWMH",
-        "image_6GtNqR",
         "image_NNTRND"
       ],
-      "disabled": true,
       "name": "SS - Scrolling logo cloud #5",
       "settings": {
         "layout_radius": 30,
