@@ -305,7 +305,6 @@
         },
         "price_MLhfBz": {
           "type": "price",
-          "disabled": true,
           "settings": {
             "show_taxes_notice": false
           }
@@ -355,7 +354,6 @@
         },
         "buy_buttons_dKAM7q": {
           "type": "buy_buttons",
-          "disabled": true,
           "settings": {
             "show_payment_button": false,
             "show_gift_card_recipient": false,
@@ -367,6 +365,7 @@
         },
         "button_Vy99wJ": {
           "type": "button",
+          "disabled": true,
           "settings": {
             "link": "https://api.whatsapp.com/send/?phone=33615823575&text&type=phone_number&app_absent=0",
             "text": "Contactez-Nous ➜",
